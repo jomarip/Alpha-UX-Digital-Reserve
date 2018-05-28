@@ -52,19 +52,16 @@ table {
     font-family: AvertaRegular;
     src: url("assets/fonts/Averta-Regular.otf") format("opentype");
 }
-
 /* Bold */
 @font-face {
     font-family: AvertaBold;
     src: url("assets/fonts/Averta-Semibold.otf") format("opentype");
 }
-
 /* 800 */
 @font-face {
     font-family: AvertaExtraBold;
     src: url("assets/fonts/Averta-Bold.otf") format("opentype");
 }
-
 /* 900 */
 @font-face {
     font-family: AvertaUltraBold;
