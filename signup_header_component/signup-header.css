@@ -10,14 +10,3 @@
     border: none;
     outline: none;
 }
-.lg-logo-image{
-    display: none;
-}
-@media screen and (min-width: 1024px){
-    .lg-logo-image{
-        display: block;
-    }
-    .sm-logo{
-        display: none;
-    }   
-}
