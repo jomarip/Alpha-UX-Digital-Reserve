@@ -1,6 +1,5 @@
 .navbar-light .navbar-toggler-icon.toggle-icon{
-    background-image: url('../assets/images/mobile-toggler-icon.png');
-    background-repeat: no-repeat;
+    background: url('../assets/images/mobile-toggler-icon.png') no-repeat;
     width: 14px;
     height: 14px;
     background-size: 14px 14px;
@@ -13,7 +12,8 @@
     width: 218px;
     height: auto;
 }
-.nav-item .nav-link.list-link,  .navbar-nav .nav-link.list-link:focus, .navbar-nav .nav-link.list-link:hover{
+.nav-item .nav-link.list-link, .navbar-nav .nav-link.list-link:focus, 
+.navbar-nav .nav-link.list-link:hover{
     font-size: 12px;
     font-family: AvertaBold;
     line-height: 1.83;
@@ -26,7 +26,6 @@
 .navbar.navbar-expand-lg.justify-content-between.header-wrapper{
     padding:35px 15px;
 }
-
 .navbar-expand-lg .navbar-nav .nav-link.list-link{
     padding: 13px 15px;
 }
