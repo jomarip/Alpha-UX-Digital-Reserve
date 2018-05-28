@@ -1,5 +1,4 @@
 .navbar-light .navbar-toggler-icon.toggle-icon{
-    background-image: none;
     background-image: url('../assets/images/mobile-toggler-icon.png');
     background-repeat: no-repeat;
     width: 14px;
@@ -14,25 +13,25 @@
     width: 218px;
     height: auto;
 }
-.nav-item .nav-link.list-link, .navbar-light .navbar-nav .nav-link.list-link:focus, .navbar-light .navbar-nav .nav-link.list-link:hover{
+.nav-item .nav-link.list-link,  .navbar-nav .nav-link.list-link:focus, .navbar-nav .nav-link.list-link:hover{
     font-size: 12px;
     font-family: AvertaBold;
     line-height: 1.83;
     color: #2c2c2c;
 }
-.navbar-light .navbar-nav .active >.nav-link.list-link{
+.navbar-nav .active >.nav-link.list-link{
     color: #3f9dfe;
     border-bottom: 2px solid #3f9dfe;
 }
-.navbar.navbar-expand-lg.navbar-light.justify-content-between.header-wrapper{
+.navbar.navbar-expand-lg.justify-content-between.header-wrapper{
     padding:35px 15px;
 }
 
-.nav-link.list-link{
-    padding: 13px 15px!important;
+.navbar-expand-lg .navbar-nav .nav-link.list-link{
+    padding: 13px 15px;
 }
 @media screen and (min-width: 1024px){
-    .navbar.navbar-expand-lg.navbar-light.justify-content-between.header-wrapper{
+    .navbar.navbar-expand-lg.justify-content-between.header-wrapper{
         padding:46px 65px;
     }
 }
