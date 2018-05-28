@@ -10,3 +10,18 @@
     border: none;
     outline: none;
 }
+.logo-icon{
+    width: 218px;
+    height: auto;
+}
+.nav-item .nav-link.list-link, .navbar-light .navbar-nav .nav-link.list-link:focus, .navbar-light .navbar-nav .nav-link.list-link:hover{
+    font-size: 12px;
+    font-family: AvertaBold;
+    line-height: 1.83;
+    color: #2c2c2c;
+}
+.navbar-light .navbar-nav .active >.nav-link.list-link{
+    color: #3f9dfe;
+    border-bottom: 2px solid #3f9dfe;
+}
+.navbar-light .navbar-nav .nav-link.list-link:focus, .navbar-light .navbar-nav .nav-link.list-link:hover
