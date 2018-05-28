@@ -24,3 +24,16 @@
     color: #3f9dfe;
     border-bottom: 2px solid #3f9dfe;
 }
+.navbar.navbar-expand-lg.navbar-light.justify-content-between.header-wrapper{
+    padding:35px 15px;
+}
+
+.nav-link.list-link{
+    padding: 13px 15px!important;
+}
+@media screen and (min-width: 1024px){
+    .navbar.navbar-expand-lg.navbar-light.justify-content-between.header-wrapper{
+        padding:46px 65px;
+    }
+    
+}
