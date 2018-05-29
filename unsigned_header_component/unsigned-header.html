@@ -2,12 +2,23 @@
     <nav class="navbar navbar-expand-lg justify-content-between header-wrapper">
         <a class="navbar-brand header-text-wrap" href="#">
             <img src="assets/images/dark-home-logo.png" class="d-block logo-icon" id="dark-header-logo" alt="The Digital Reserve">
+            <!-- <img src="assets/images/dark-home-logo.png" class="mobile-light-header-logo"> -->
             <!-- <img src="assets/images/light-home-logo.png" class="d-none  logo-icon" id="light-header-logo" alt="The Digital Reserve"> -->
             </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navbar-menu" data-target="#navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon toggle-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end " id="navbar-menu">
+        <div class="collapse navbar-collapse justify-content-md-end align-items-md-end  justify-content-sm-start flex-sm-column collapse-wrapper">
+            <div class="menu-list-items">
+                <div class="d-flex justify-content-between align-items-center mobile-logo-wrapper">
+                    <div class="d-flex flex-sm-row align-items-center">
+                        <img src="assets/images/collapsable-menu-icon.png" class="mobile-light-header-logo">
+                        <span class="menu-header">The Digital Reserve</span> 
+
+                    </div>
+                        <span class="close-icon"></span>
+                </div>
+            </div>
             <ul class="navbar-nav nav-items-wrap">
             <li class="nav-item active">
                 <a class="nav-link list-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -21,12 +32,16 @@
             <li class="nav-item"> 
                 <a class="nav-link list-link" href="#">Contact Us</a>
             </li>
+            <li>
+                <div class="btn-wrapper">
+                    <button class="btn login-btn"> Login</button>
+                    <button class="btn revolution-btn">Join the Revolution!</button>
+                </div>
+            </li>
+              
             </ul>
         
-            <div class="btn-wrapper">
-                <button class="btn login-btn"> Login</button>
-                <button class="btn revolution-btn">Join the Revolution!</button>
-            </div>  
+            
         </div>  
     </nav>
 </header>
