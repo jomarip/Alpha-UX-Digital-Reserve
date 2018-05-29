@@ -102,12 +102,6 @@
     width: 30px;
     height: auto;
 }
-/* .header-wrapper.show-menu .navbar-toggler,.header-wrapper.show-menu .mobile-light-header-logo{
-    position: absolute;
-    right: 9px;
-    z-index: 1000;
-    top: 44px;
-} */
 .header-wrapper.show-menu .navbar-collapse.justify-content-end.collapse 
 .menu-list-items,.header-wrapper.show-menu .menu-list-items .mobile-light-header-logo, .header-wrapper.show-menu .menu-list-items {
     display: block;
@@ -140,6 +134,10 @@
         line-height: 1.83;
         padding: 13px 15px;
     }
+    .header-wrapper .collapse-wrapper{
+        position: static;
+        background: transparent
+    }
 }
 @media screen and (max-width: 992px){
     .btn.login-btn, .btn.revolution-btn{
@@ -151,8 +149,4 @@
         display: block;
         margin-bottom: 13px;
     }
-    /* .btn-wrapper{
-        margin-left: 15px;
-        font-size: 12px;
-    } */
 }
