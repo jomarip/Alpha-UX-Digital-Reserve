@@ -1,0 +1,154 @@
+*,*:focus{
+    outline: none !important;
+}
+.backdrop{
+    top: 0;
+    left: 100vw;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    position: fixed;
+    background-color: transparent;
+    transition: 0.3s all ease-in-out;
+    -o-transition: 0.3s all ease-in-out;
+    -moz-transition: 0.3s all ease-in-out;
+    -webkit-transition: 0.3s all ease-in-out;
+}
+#loginSection.login-open .backdrop,
+#loginSection.login-open .unsigned-login-wrapper{
+    left: 0;
+}
+.unsigned-login-wrapper{
+    top: 0;
+    left: -630px;
+    bottom: 0;
+    z-index: 2;
+    width: 600px;
+    height: 100vh;
+    overflow: auto;
+    position: fixed;
+    /* opacity: 0.9; */
+    box-shadow: 0 0 19px 0 rgba(0, 0, 0, 0.5);
+    background-color: #ffffff;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    transition: 0.3s all ease-in-out;
+    -o-transition: 0.3s all ease-in-out;
+    -moz-transition: 0.3s all ease-in-out;
+    -webkit-transition: 0.3s all ease-in-out;
+}
+.unsigned-login-wrapper .login-content{
+    padding: 50px 80px;
+}
+.unsigned-login-wrapper .login-content .login-header #dark-close-icon{
+    margin-top: 12px;
+    cursor: pointer;
+}
+.unsigned-login-wrapper .login-content .login-text{
+    margin-top: 130px;
+}
+.unsigned-login-wrapper .login-content .login-text h4{
+    color: #0c152e;
+    font-size: 28px;
+    font-family: AvertaRegular;
+}
+.unsigned-login-wrapper .login-content .login-text p{
+    color: #010101;
+    opacity: 0.5;
+    font-size: 10px;
+    margin-top: 15px;
+    line-height: 1.8;
+    font-family: AvertaRegular;
+}
+.unsigned-login-wrapper .login-content form{
+    margin-top: 70px;
+}
+.unsigned-login-wrapper .login-content form .form-group{
+    position: relative;
+}
+.unsigned-login-wrapper .login-content form label{
+    top: 50%;
+    left: 0;
+    color: #010101;
+    opacity: 0.5;
+    font-size: 16px;
+    line-height: 1.13;
+    position: absolute;
+    font-family: AvertaRegular;
+    transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transition: 0.3s all ease-in-out;
+    -o-transition: 0.3s all ease-in-out;
+    -moz-transition: 0.3s all ease-in-out;
+    -webkit-transition: 0.3s all ease-in-out;
+}
+.unsigned-login-wrapper .login-content form input{
+    color: #010101;
+    border: 0;
+    padding: 0;
+    font-size: 16px;
+    box-shadow: none;
+    line-height: 40px;
+    border-radius: 0;
+    font-family: AvertaRegular;
+    border-bottom: solid 1px #a0a0a0;
+}
+.unsigned-login-wrapper .login-content form .form-group input:focus + label{
+    left: 0;
+    top: 0px;
+    font-size: 10px;
+}
+.unsigned-login-wrapper .login-content form input[type="email"]{
+    margin-bottom: 50px;
+}
+.unsigned-login-wrapper .login-content form input:focus{
+    box-shadow: none;
+    border-bottom: 1px solid #3f9dfe;
+
+}
+.unsigned-login-wrapper .login-content form .forgot-pwd,
+.unsigned-login-wrapper .login-content form .sign-up{
+    color: #3f9dfe;
+    font-size: 12px;
+    line-height: 1.5;
+    font-family: AvertaBold;
+    text-decoration: underline;
+}
+.unsigned-login-wrapper .login-content form .forgot-pwd{
+    margin-top: 55px;
+}
+.unsigned-login-wrapper .login-content form .sign-up{
+    margin-top: 22px;
+}
+.unsigned-login-wrapper .login-content form button{
+    width: 100%;
+    color: #ffffff;
+    font-size: 15px;
+    margin-top: 55px;
+    text-align: center;
+    line-height: 1.47;
+    font-family: AvertaRegular;
+    border-radius: 3px;
+    background-color: #3f9dfe;
+}
+.unsigned-login-wrapper .login-content form button:focus,
+.unsigned-login-wrapper .login-content form button:active:focus{
+    box-shadow: none !important;
+}
+
+@media (max-width: 720px) and (min-width: 320px){
+    .unsigned-login-wrapper{
+        width: 100vw
+    }
+    .unsigned-login-wrapper .login-content{
+        padding: 30px;
+    }
+    .unsigned-login-wrapper .login-content .login-text{
+        margin-top: 40px;
+    }
+    .unsigned-login-wrapper .login-content form{
+        margin-top: 30px;
+    }
+}
