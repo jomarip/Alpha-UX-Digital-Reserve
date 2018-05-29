@@ -106,7 +106,6 @@
 .menu-list-items,.header-wrapper.show-menu .menu-list-items .mobile-light-header-logo, .header-wrapper.show-menu .menu-list-items {
     display: block;
 }
-
 @media screen and (min-width: 1024px){
     .btn-wrapper{
         margin-left: 21px;
