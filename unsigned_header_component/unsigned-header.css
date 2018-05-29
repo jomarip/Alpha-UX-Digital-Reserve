@@ -1,0 +1,86 @@
+ .navbar-toggler-icon.toggle-icon{
+    background: url('../assets/images/unsigned-hamburger-menu.png') no-repeat;
+    width: 14px;
+    height: 14px;
+    background-size: 14px 14px;
+}   
+.navbar-toggler:not(:disabled):not(.disabled){
+    border: none;
+    outline: none;
+}
+.logo-icon{
+    width: 218px;
+    height: auto;
+}
+.nav-item .nav-link.list-link, .navbar-nav .nav-link.list-link:focus, 
+.navbar-nav .nav-link.list-link:hover{
+    font-size: 12px;
+    font-family: AvertaBold;
+    line-height: 1.83;
+    color: #fff;
+}
+.navbar-brand.header-text-wrap, .navbar-toggler{
+    margin: 0;
+    padding: 0;
+}
+.navbar-collapse.justify-content-end.collapse .navbar-nav.nav-items-wrap{
+    margin-top: 20px;
+}
+.navbar-nav .active >.nav-link.list-link{
+    color: #3f9dfe;
+    border-bottom: 2px solid #3f9dfe;
+}
+.navbar.navbar-expand-lg.justify-content-between.header-wrapper{
+    padding:35px 15px;
+}
+.navbar-expand-lg .navbar-nav .nav-link.list-link{
+    padding: 13px 15px;
+}
+.main-header-container{
+    background-image: linear-gradient(119deg, #0f1b3a, #090f23);
+}
+.btn.login-btn, .btn.revolution-btn{
+    background-color: #060606;
+    color: #50a6ff;
+    font-family: AvertaExtraBold;
+}
+.btn.login-btn{
+    padding: 13px 64.5px;
+    margin-bottom: 9px;
+    border-radius: 3px;
+}
+.btn.revolution-btn{
+    padding: 13px 25px;
+}
+.btn-wrapper{
+    margin-bottom: 10px;
+}
+@media screen and (min-width: 1024px){
+    .btn-wrapper{
+        margin-left: 21px;
+        margin-bottom: 0;
+    }
+    .btn.login-btn{
+        margin:0 9px 0 0;
+    }
+    .navbar-collapse.justify-content-end.collapse .navbar-nav.nav-items-wrap{
+        margin: 0;
+    }
+}
+@media screen and (max-width: 992px){
+    .btn.login-btn, .btn.revolution-btn{
+            background: transparent;
+            padding: 0;
+            font-family: AvertaBold;
+            font-size: 12px;
+            padding: 0;
+    }
+    .btn.login-btn{
+        display: block;
+        margin-bottom: 13px;
+    }
+    .btn-wrapper{
+        margin-left: 15px;
+        font-size: 12px;
+    }
+}
