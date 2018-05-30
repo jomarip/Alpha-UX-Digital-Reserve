@@ -33,7 +33,7 @@
     margin-top: 20px;
 }
 .navbar.navbar-expand-lg.justify-content-between.header-wrapper{
-    padding:35px 15px;
+    padding:35px 62px;
 }
 .main-header-container{
     background-image: linear-gradient(119deg, #0f1b3a, #090f23);
@@ -65,12 +65,13 @@
 .navbar-nav .nav-link.list-link:hover, .btn.revolution-btn, .btn.login-btn{
     font-size: 30px;
 }
-.menu-list-items, .menu-header, .mobile-light-header-logo{
+.menu-list-items, .menu-header, .mobile-light-header-logo, .menu-list-items .close-icon{
     display: none;
 }
 .menu-list-items .close-icon{
     width: 14px;
     height: 14px;
+
 }
 .header-wrapper .collapse-wrapper{
     position: fixed;
@@ -135,6 +136,9 @@
     }
     .btn.login-btn{
             margin-bottom: 13px;
+    }
+    .menu-list-items .close-icon, .btn.login-btn{
+        display: block;
     }
     .menu-header, .mobile-light-header-logo{
         display: flex;
