@@ -136,13 +136,9 @@
     .btn.login-btn{
             margin-bottom: 13px;
     }
-    /* .header-wrapper .menu-list-items, .header-wrapper.show-menu  .menu-list-items, .menu-header,.header-wrapper.show-menu .mobile-light-header-logo, .btn.login-btn{
-        display: block;
-    } */
     .menu-header, .mobile-light-header-logo{
         display: flex;
     }
-
     .header-wrapper .menu-list-items{
         position: absolute;
         left: 0;
@@ -155,6 +151,8 @@
         justify-content: center;
         overflow-x: hidden;
         overflow-y: auto;
-    
     }
+    .collapse {
+        z-index: 1;
+      }
 }
