@@ -1,13 +1,15 @@
 *,*:focus{
     outline: none !important;
 }
-.navbar-toggler-icon.toggle-icon,.header-wrapper.show-menu .menu-list-items .close-icon {
+.navbar-toggler-icon.toggle-icon,.header-wrapper .menu-list-items .close-icon {
     background: url('../assets/images/unsigned-hamburger-menu.png') no-repeat;
     width: 14px;
     height: 14px;
     background-size: 14px 14px;
 }
-
+.navbar.navbar-expand-lg.justify-content-between.header-wrapper{
+    padding: 35px 15px;
+}
 .header-wrapper.show-menu .menu-list-items .close-icon  {
     background-image: url('../assets/images/dark-close-icon.png');
 }
@@ -32,9 +34,7 @@
 .navbar-collapse.justify-content-end.collapse .navbar-nav.nav-items-wrap{
     margin-top: 20px;
 }
-.navbar.navbar-expand-lg.justify-content-between.header-wrapper{
-    padding:35px 15px;
-}
+
 .main-header-container{
     background-image: linear-gradient(119deg, #0f1b3a, #090f23);
 }
@@ -65,13 +65,14 @@
 .navbar-nav .nav-link.list-link:hover, .btn.revolution-btn, .btn.login-btn{
     font-size: 30px;
 }
-.menu-list-items, .menu-header, .mobile-light-header-logo{
+.menu-list-items, .menu-header, .mobile-light-header-logo, .menu-list-items .close-icon{
     display: none;
 }
-.menu-list-items .close-icon{
+/* .menu-list-items .close-icon{
     width: 14px;
     height: 14px;
-}
+
+} */
 .header-wrapper .collapse-wrapper{
     position: fixed;
     top: 0;
@@ -96,6 +97,9 @@
 
 
 @media screen and (min-width: 1024px){
+    .navbar.navbar-expand-lg.justify-content-between.header-wrapper{
+        padding:35px 62px;
+    }
     .btn-wrapper{
         margin-left: 21px;
         margin-bottom: 0;
@@ -135,14 +139,13 @@
     }
     .btn.login-btn{
             margin-bottom: 13px;
-    }
-    /* .header-wrapper .menu-list-items, .header-wrapper.show-menu  .menu-list-items, .menu-header,.header-wrapper.show-menu .mobile-light-header-logo, .btn.login-btn{
+  }
+    .menu-list-items .close-icon, .btn.login-btn{
         display: block;
-    } */
+    }
     .menu-header, .mobile-light-header-logo{
         display: flex;
     }
-
     .header-wrapper .menu-list-items{
         position: absolute;
         left: 0;
@@ -155,6 +158,8 @@
         justify-content: center;
         overflow-x: hidden;
         overflow-y: auto;
-    
     }
+    .collapse {
+        z-index: 1;
+      }
 }
