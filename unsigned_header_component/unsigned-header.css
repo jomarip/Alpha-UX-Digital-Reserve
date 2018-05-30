@@ -59,7 +59,6 @@
     padding: 0 43px;
     line-height: 2;
     margin: 0;
-    
 }
 .nav-item .nav-link.list-link, .navbar-nav .nav-link.list-link:focus, 
 .navbar-nav .nav-link.list-link:hover, .btn.revolution-btn, .btn.login-btn{
@@ -68,11 +67,6 @@
 .menu-list-items, .menu-header, .mobile-light-header-logo, .menu-list-items .close-icon{
     display: none;
 }
-/* .menu-list-items .close-icon{
-    width: 14px;
-    height: 14px;
-
-} */
 .header-wrapper .collapse-wrapper{
     position: fixed;
     top: 0;
