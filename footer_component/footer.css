@@ -4,7 +4,7 @@
     background-color: #ffffff;
     box-shadow: 0 10px 64px 0 rgba(0, 0, 0, 0.47);
 }
-.footer-link, .copyright-text, a.footer-link:hover{
+.footer-link, .copyright-text,a.footer-link:hover{
     font-family: AvertaBold;
     font-size: 12px;
     line-height: 1.83;
