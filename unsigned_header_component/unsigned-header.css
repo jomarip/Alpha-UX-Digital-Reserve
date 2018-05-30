@@ -1,7 +1,7 @@
 *,*:focus{
     outline: none !important;
 }
-.navbar-toggler-icon.toggle-icon,.header-wrapper.show-menu .menu-list-items .close-icon {
+.navbar-toggler-icon.toggle-icon,.header-wrapper .menu-list-items .close-icon {
     background: url('../assets/images/unsigned-hamburger-menu.png') no-repeat;
     width: 14px;
     height: 14px;
@@ -68,11 +68,11 @@
 .menu-list-items, .menu-header, .mobile-light-header-logo, .menu-list-items .close-icon{
     display: none;
 }
-.menu-list-items .close-icon{
+/* .menu-list-items .close-icon{
     width: 14px;
     height: 14px;
 
-}
+} */
 .header-wrapper .collapse-wrapper{
     position: fixed;
     top: 0;
