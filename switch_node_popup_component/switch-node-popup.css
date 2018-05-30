@@ -106,4 +106,7 @@
     .modal-dialog.modal-dialog-centered.switch-node-popup-overlay{
         margin: 0;
     }
+    .switch-header-wrapper button{
+        display: none;
+    }
 }
