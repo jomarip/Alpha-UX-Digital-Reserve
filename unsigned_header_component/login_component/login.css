@@ -137,10 +137,19 @@
 .unsigned-login-wrapper .login-content form button:active:focus{
     box-shadow: none !important;
 }
+.unsigned-login-wrapper .login-content form input:-webkit-autofill,
+.unsigned-login-wrapper .login-content form input:-webkit-autofill:hover, 
+.unsigned-login-wrapper .login-content form input:-webkit-autofill:focus
+.unsigned-login-wrapper .login-content form input:-webkit-autofill{
+    color: #010101 !important;
+    background-image: none !important;
+    background-color: #fff !important;
+}
 
-@media (max-width: 720px) and (min-width: 320px){
+@media (max-width: 767px) and (min-width: 320px){
     .unsigned-login-wrapper{
-        width: 100vw
+        width: 100vw;
+        left: -107vw;
     }
     .unsigned-login-wrapper .login-content{
         padding: 30px;
@@ -149,6 +158,9 @@
         margin-top: 40px;
     }
     .unsigned-login-wrapper .login-content form{
-        margin-top: 30px;
+        margin-top: 50px;
+    }
+    .unsigned-login-wrapper .login-content form button{
+        padding: 15px;
     }
 }
