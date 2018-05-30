@@ -68,12 +68,6 @@
 .menu-list-items, .menu-header, .mobile-light-header-logo{
     display: none;
 }
-.header-wrapper.show-menu .menu-list-items{
-    position: absolute;
-    left: 0;
-    right: 0;
-    padding: 40px 30px;
-}
 .menu-list-items .close-icon{
     width: 14px;
     height: 14px;
@@ -94,13 +88,6 @@
 }
 .mobile-logo-wrapper{
     padding: 40px 30px;
-}
-.header-wrapper.show-menu .navbar-nav.nav-items-wrap {
-    height: 100vh;
-    justify-content: center;
-    overflow-x: hidden;
-    overflow-y: auto;
-   
 }
 .mobile-light-header-logo{
     width: 30px;
@@ -149,8 +136,25 @@
     .btn.login-btn{
             margin-bottom: 13px;
     }
-    .header-wrapper.show-menu .menu-list-items, .header-wrapper.show-menu  .menu-list-items, .menu-header,.header-wrapper.show-menu .mobile-light-header-logo, .btn.login-btn{
+    /* .header-wrapper .menu-list-items, .header-wrapper.show-menu  .menu-list-items, .menu-header,.header-wrapper.show-menu .mobile-light-header-logo, .btn.login-btn{
         display: block;
+    } */
+    .menu-header, .mobile-light-header-logo{
+        display: flex;
+    }
+
+    .header-wrapper .menu-list-items{
+        position: absolute;
+        left: 0;
+        right: 0;
+        padding: 40px 30px;
     }
     
+    .header-wrapper .navbar-nav.nav-items-wrap {
+        height: 100vh;
+        justify-content: center;
+        overflow-x: hidden;
+        overflow-y: auto;
+    
+    }
 }
