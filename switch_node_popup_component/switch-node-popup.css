@@ -1,6 +1,6 @@
 .switch-node-popop-innerlay{
     padding: 54px 20px 18px;
-    min-height: 100vh;
+    min-height: calc(100vh - 40px);
     border-radius: 6px;
     margin: 20px;
     opacity: 0.95;
@@ -101,6 +101,9 @@
     .node-instructions-wrap{
         padding-left: 17px;
     }
+    .modal-open .modal.switch-node-popup{
+        background-color: rgba(10,18,42,1);
+    }
 }
 @media screen and (max-width: 992px){
     .modal-dialog.modal-dialog-centered.switch-node-popup-overlay{
@@ -109,7 +112,10 @@
     .switch-header-wrapper button{
         display: none;
     }
-    .lite-full-switch-node-popup-overlay{
+    .switch-node-popup-overlay{
         max-width: 100%;
+    }
+    .modal-open .modal.switch-node-popup{
+        background-color: #0c142e;
     }
 }
