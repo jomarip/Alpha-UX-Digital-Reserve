@@ -1,0 +1,142 @@
+.lite-full-switch-node-popop-innerlay{
+    padding: 54px 20px 21px;
+    min-height: 100vh;
+    border-radius: 6px;
+    margin: 20px;
+    opacity: 0.95;
+    box-shadow: 0 0 19px 0 rgba(0, 0, 0, 0.5);
+}
+.modal-header.lite-full-switch-header-wrapper {
+    padding: 0;
+    border: none;
+    margin-bottom: 14px;
+}
+.lite-full-node-popup-header-wrapper h1{
+    font-size: 28px;
+    color: #0c152e;
+    font-family: AvertaRegular;
+}
+.modal-header.lite-full-switch-header-wrapper button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.lite-node-popup-close{
+    width: 14px;
+    height: auto;
+}
+.lite-full-content-block, .full-node-popup-content, .lite-node-popup-content,.lite-node-instruction-content, .full-node-instruction-content{
+    opacity: 0.5;
+    font-family: AvertaRegular;
+    font-size: 10px;
+    line-height: 1.8;
+    color: #010101;
+}
+.lite-info-wrapper,.full-node-info-wrapper{
+    border-radius: 4px;
+    background-color: #eeeeee;
+    border: solid 1px #3f9dfe;
+    padding: 41px 20px 20px;
+}
+.lite-node-popup-head,.full-node-popup-head{
+    font-size: 20px;
+    color: #3f9dfe;
+    font-family: AvertaRegular;
+    margin-bottom: 8px;
+}
+.full-node-popup-content, .lite-node-popup-content{
+    margin-bottom: 9px;
+}
+.lite-node-instructions-wrap, .full-node-instructions-wrap{
+    padding-left: 17PX;
+}
+.full-node-instruction-block img,.lite-node-instruction-block .checkList-icon,.hover-checkList-icon {
+    width: 18px;
+    height: auto;
+}
+.hover-checkList-icon{
+    display: none;
+}
+.lite-node-instruction-content, .full-node-instruction-content{
+    font-family: AvertaExtraBold;
+    margin-left: 18px;
+    opacity: unset;
+}
+.full-node-instruction-block,.lite-node-instruction-block{
+    margin-bottom: 20px;
+}
+.lite-node-popup-btn, .full-node-popup-btn{
+    padding: 17px 0;
+    margin-top: auto;
+    border: none;
+    cursor: pointer;
+    background-color: #3f9dfe;
+    font-size: 15px;
+    line-height: 1.47;
+    color: #fff;
+    border-radius: 3px; 
+    font-family: AvertaExtraBold;
+}
+
+.lite-full-content-block{
+    margin-bottom: 56px;
+}
+@media screen and (min-width: 1024px){
+    .lite-full-switch-node-popop-innerlay{
+        padding: 74px 60px;
+        min-height: auto;
+        margin: 0;
+    }
+    .modal-dialog.modal-dialog-centered.lite-full-switch-node-popup-overlay{
+        max-width: 908px;
+    }
+    .modal-header.lite-full-switch-header-wrapper {
+        margin-bottom: 17px;
+    }
+    .lite-full-content-block{
+        margin: 0 0 36px 0;
+        width: 55%;
+    }
+    .lite-info-wrapper, .full-node-info-wrapper{
+        padding: 41px 19px 21px;
+        width: 49%;
+    }
+    .full-node-popup-content, .lite-node-popup-content{
+        margin-bottom: 27px;
+    }
+    .lite-node-instructions-wrap, .full-node-instructions-wrap{
+        margin-bottom: 15px;
+    }
+    .lite-node-popup-head,.full-node-popup-head{
+        font-family: AvertaExtraBold;
+    }
+    .lite-info-wrapper:hover .hover-checkList-icon, .full-node-info-wrapper:hover .hover-checkList-icon{ 
+        display: block;
+    }
+    .lite-info-wrapper:hover .checkList-icon, .full-node-info-wrapper:hover .checkList-icon{
+        display: none;
+    }
+    .lite-info-wrapper:hover, .full-node-info-wrapper:hover{
+        background-color:#3f9dfe;
+    }
+    .lite-info-wrapper:hover .lite-node-popup-head,.lite-info-wrapper:hover .lite-node-popup-content,.lite-info-wrapper:hover 
+    .lite-node-instruction-content,.lite-info-wrapper:hover .lite-node-popup-btn, .full-node-info-wrapper:hover .full-node-popup-head,
+    .full-node-info-wrapper:hover .full-node-popup-content,.full-node-info-wrapper:hover .full-node-instruction-content{
+        color: #fff;
+    }
+    .lite-info-wrapper:hover .lite-node-popup-btn, .full-node-info-wrapper:hover .full-node-popup-btn{
+        color: #3f9dfe;
+        background-color: #fff;
+    }
+}
+@media screen and (max-width: 992px){
+    .lite-info-wrapper{
+        margin-bottom: 10px
+    }
+    .lite-node-instructions-wrap, .full-node-instructions-wrap{
+        margin-bottom: 33px;
+    }
+     .lite-full-switch-node-popup-overlay{
+        margin: 0;
+    }
+}

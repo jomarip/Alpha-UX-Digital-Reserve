@@ -23,7 +23,7 @@
 }
 .popup-close{
     width:14px;
-    height: 14;
+    height: auto;
 }
 .content-block,.lite-node-content, .instruction-content{
     opacity: 0.5;
@@ -108,5 +108,8 @@
     }
     .switch-header-wrapper button{
         display: none;
+    }
+    .lite-full-switch-node-popup-overlay{
+        max-width: 100%;
     }
 }
