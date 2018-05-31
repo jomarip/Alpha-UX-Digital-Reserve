@@ -123,7 +123,7 @@
 .unsigned-forgotpwd-wrapper .forgotpwd-content form .form-group input:focus + label,
 .join-signup-wrapper .signup-content form .form-group input:focus + label{
     left: 0;
-    top: 0px;
+    top: -6px;
     font-size: 10px;
 }
 .unsigned-login-wrapper .login-content form input[type="email"],
@@ -185,12 +185,9 @@
 .unsigned-login-wrapper .login-content form input:-webkit-autofill:hover,
 .unsigned-forgotpwd-wrapper .forgotpwd-content form input:-webkit-autofill:hover,
 .join-signup-wrapper .signup-content form input:-webkit-autofill:hover, 
-.unsigned-login-wrapper .login-content form input:-webkit-autofill:focus
-.unsigned-login-wrapper .login-content form input:-webkit-autofill,
-.unsigned-forgotpwd-wrapper .forgotpwd-content form input:-webkit-autofill:focus
-.unsigned-forgotpwd-wrapper .forgotpwd-content form input:-webkit-autofill,
-.join-signup-wrapper .signup-content form input:-webkit-autofill:focus
-.join-signup-wrapper .signup-content form input:-webkit-autofill{
+.unsigned-login-wrapper .login-content form input:-webkit-autofill:focus,
+.unsigned-forgotpwd-wrapper .forgotpwd-content form input:-webkit-autofill:focus,
+.join-signup-wrapper .signup-content form input:-webkit-autofill:focus{
     color: #010101 !important;
     background-image: none !important;
     background-color: #fff !important;
