@@ -17,11 +17,14 @@
 #loginSection.login-open .backdrop,
 #loginSection.login-open .unsigned-login-wrapper,
 #loginSection.forgotpwd-open .backdrop,
-#loginSection.forgotpwd-open .unsigned-forgotpwd-wrapper{
+#loginSection.forgotpwd-open .unsigned-forgotpwd-wrapper,
+#loginSection.signup-open .backdrop,
+#loginSection.signup-open .join-signup-wrapper{
     left: 0;
 }
 .unsigned-login-wrapper,
-.unsigned-forgotpwd-wrapper{
+.unsigned-forgotpwd-wrapper,
+.join-signup-wrapper{
     top: 0;
     left: -630px;
     bottom: 0;
@@ -41,26 +44,31 @@
     -webkit-transition: 0.3s all ease-in-out;
 }
 .unsigned-login-wrapper .login-content,
-.unsigned-forgotpwd-wrapper .forgotpwd-content{
+.unsigned-forgotpwd-wrapper .forgotpwd-content,
+.join-signup-wrapper .signup-content{
     padding: 50px 80px;
 }
 .unsigned-login-wrapper .login-content .login-header #dark-close-icon,
-.unsigned-forgotpwd-wrapper .forgotpwd-content .forgotpwd-header .darkpwd-close-icon{
+.unsigned-forgotpwd-wrapper .forgotpwd-content .forgotpwd-header .darkpwd-close-icon,
+.join-signup-wrapper .signup-content .signup-header .darksignup-close-icon{
     margin-top: 12px;
     cursor: pointer;
 }
 .unsigned-login-wrapper .login-content .login-text,
-.unsigned-forgotpwd-wrapper .forgotpwd-content .forgotpwd-text{
+.unsigned-forgotpwd-wrapper .forgotpwd-content .forgotpwd-text,
+.join-signup-wrapper .signup-content .signup-text{
     margin-top: 130px;
 }
 .unsigned-login-wrapper .login-content .login-text h4,
-.unsigned-forgotpwd-wrapper .forgotpwd-content .forgotpwd-text h4{
+.unsigned-forgotpwd-wrapper .forgotpwd-content .forgotpwd-text h4,
+.join-signup-wrapper .signup-content .signup-text h4{
     color: #0c152e;
     font-size: 28px;
     font-family: AvertaRegular;
 }
 .unsigned-login-wrapper .login-content .login-text p,
-.unsigned-forgotpwd-wrapper .forgotpwd-content .forgotpwd-text p{
+.unsigned-forgotpwd-wrapper .forgotpwd-content .forgotpwd-text p,
+.join-signup-wrapper .signup-content .signup-text p{
     color: #010101;
     opacity: 0.5;
     font-size: 10px;
@@ -69,15 +77,18 @@
     font-family: AvertaRegular;
 }
 .unsigned-login-wrapper .login-content form,
-.unsigned-forgotpwd-wrapper .forgotpwd-content form{
+.unsigned-forgotpwd-wrapper .forgotpwd-content form,
+.join-signup-wrapper .signup-content form{
     margin-top: 70px;
 }
 .unsigned-login-wrapper .login-content form .form-group,
-.unsigned-forgotpwd-wrapper .forgotpwd-content form .form-group{
+.unsigned-forgotpwd-wrapper .forgotpwd-content form .form-group,
+.join-signup-wrapper .signup-content form .form-group{
     position: relative;
 }
 .unsigned-login-wrapper .login-content form label,
-.unsigned-forgotpwd-wrapper .forgotpwd-content form label{
+.unsigned-forgotpwd-wrapper .forgotpwd-content form label,
+.join-signup-wrapper .signup-content form label{
     top: 50%;
     left: 0;
     color: #010101;
@@ -96,7 +107,8 @@
     -webkit-transition: 0.3s all ease-in-out;
 }
 .unsigned-login-wrapper .login-content form input,
-.unsigned-forgotpwd-wrapper .forgotpwd-content form input{
+.unsigned-forgotpwd-wrapper .forgotpwd-content form input,
+.join-signup-wrapper .signup-content form input{
     color: #010101;
     border: 0;
     padding: 0;
@@ -108,23 +120,27 @@
     border-bottom: solid 1px #a0a0a0;
 }
 .unsigned-login-wrapper .login-content form .form-group input:focus + label,
-.unsigned-forgotpwd-wrapper .forgotpwd-content form .form-group input:focus + label{
+.unsigned-forgotpwd-wrapper .forgotpwd-content form .form-group input:focus + label,
+.join-signup-wrapper .signup-content form .form-group input:focus + label{
     left: 0;
     top: 0px;
     font-size: 10px;
 }
 .unsigned-login-wrapper .login-content form input[type="email"],
-.unsigned-forgotpwd-wrapper .forgotpwd-content form input[type="email"]{
+.unsigned-forgotpwd-wrapper .forgotpwd-content form input[type="email"],
+.join-signup-wrapper .signup-content form input[type="text"]{
     margin-bottom: 50px;
 }
 .unsigned-login-wrapper .login-content form input:focus,
-.unsigned-forgotpwd-wrapper .forgotpwd-content form input:focus{
+.unsigned-forgotpwd-wrapper .forgotpwd-content form input:focus,
+.join-signup-wrapper .signup-content form input:focus{
     box-shadow: none;
     border-bottom: 1px solid #3f9dfe;
 
 }
 .unsigned-login-wrapper .login-content form .forgot-pwd,
-.unsigned-login-wrapper .login-content form .sign-up{
+.unsigned-login-wrapper .login-content form .sign-up,
+.join-signup-wrapper .signup-content form .sign-in{
     color: #3f9dfe;
     font-size: 12px;
     line-height: 1.5;
@@ -137,8 +153,12 @@
 .unsigned-login-wrapper .login-content form .sign-up{
     margin-top: 22px;
 }
+.join-signup-wrapper .signup-content form .sign-in{
+    margin-top: 55px;
+}
 .unsigned-login-wrapper .login-content form button,
-.unsigned-forgotpwd-wrapper .forgotpwd-content form button{
+.unsigned-forgotpwd-wrapper .forgotpwd-content form button,
+.join-signup-wrapper .signup-content form button{
     width: 100%;
     color: #ffffff;
     border: 0;
@@ -153,18 +173,24 @@
 }
 .unsigned-login-wrapper .login-content form button:focus,
 .unsigned-forgotpwd-wrapper .forgotpwd-content form button:focus,
+.join-signup-wrapper .signup-content form button:focus,
 .unsigned-login-wrapper .login-content form button:active:focus,
-.unsigned-forgotpwd-wrapper .forgotpwd-content form button:active:focus{
+.unsigned-forgotpwd-wrapper .forgotpwd-content form button:active:focus,
+.join-signup-wrapper .signup-content form button:active:focus{
     box-shadow: none !important;
 }
 .unsigned-login-wrapper .login-content form input:-webkit-autofill,
 .unsigned-forgotpwd-wrapper .forgotpwd-content form input:-webkit-autofill,
+.join-signup-wrapper .signup-content form input:-webkit-autofill,
 .unsigned-login-wrapper .login-content form input:-webkit-autofill:hover,
-.unsigned-forgotpwd-wrapper .forgotpwd-content form input:-webkit-autofill:hover, 
+.unsigned-forgotpwd-wrapper .forgotpwd-content form input:-webkit-autofill:hover,
+.join-signup-wrapper .signup-content form input:-webkit-autofill:hover, 
 .unsigned-login-wrapper .login-content form input:-webkit-autofill:focus
 .unsigned-login-wrapper .login-content form input:-webkit-autofill,
 .unsigned-forgotpwd-wrapper .forgotpwd-content form input:-webkit-autofill:focus
-.unsigned-forgotpwd-wrapper .forgotpwd-content form input:-webkit-autofill{
+.unsigned-forgotpwd-wrapper .forgotpwd-content form input:-webkit-autofill,
+.join-signup-wrapper .signup-content form input:-webkit-autofill:focus
+.join-signup-wrapper .signup-content form input:-webkit-autofill{
     color: #010101 !important;
     background-image: none !important;
     background-color: #fff !important;
@@ -172,20 +198,24 @@
 
 @media (max-width: 767px) and (min-width: 320px){
     .unsigned-login-wrapper,
-    .unsigned-forgotpwd-wrapper{
+    .unsigned-forgotpwd-wrapper,
+    .join-signup-wrapper{
         width: 100vw;
         left: -107vw;
     }
     .unsigned-login-wrapper .login-content,
-    .unsigned-forgotpwd-wrapper .forgotpwd-content{
+    .unsigned-forgotpwd-wrapper .forgotpwd-content,
+    .join-signup-wrapper .signup-content{
         padding: 30px;
     }
     .unsigned-login-wrapper .login-content .login-text,
-    .unsigned-forgotpwd-wrapper .forgotpwd-content .forgotpwd-text{
+    .unsigned-forgotpwd-wrapper .forgotpwd-content .forgotpwd-text,
+    .join-signup-wrapper .signup-content .signup-text{
         margin-top: 40px;
     }
     .unsigned-login-wrapper .login-content form,
-    .unsigned-forgotpwd-wrapper .forgotpwd-content form{
+    .unsigned-forgotpwd-wrapper .forgotpwd-content form,
+    .join-signup-wrapper .signup-content form{
         margin-top: 50px;
     }
 }

@@ -15,18 +15,18 @@
         </div>
         <form>
             <div class="form-group">
-                <input type="email" class="form-control" id="loginEmail">
-                <label for="loginEmail">Email address</label>
+                <input type="email" class="form-control" id="loginEmail" required>
+                <label for="loginEmail">Username</label>
             </div>
             <div class="form-group">
-                <input type="password" class="form-control" id="loginPwd">
+                <input type="password" class="form-control" id="loginPwd" required>
                 <label for="loginPwd">Password</label>
             </div>
             <div class="form-group">
                 <a href="javascript:void(0);" id="forgotPwd" class="d-block forgot-pwd">Forgot Password?</a>
                 <a href="javascript:void(0);" id="signUp" class="d-block sign-up">Not an existing user? Sign Up!</a>
             </div>
-            <button type="button" class="btn btn-primary d-block">Login</button>
+            <button type="submit" class="btn btn-primary d-block">Login</button>
         </form>
     </div>
 </div>
@@ -46,10 +46,40 @@
         </div>
         <form>
             <div class="form-group">
-                <input type="email" class="form-control" id="forgorpwdEmail">
-                <label for="forgorpwdEmail">Email address</label>
+                <input type="email" class="form-control" id="forgotpwdEmail" required>
+                <label for="forgotpwdEmail">Email ID</label>
             </div>
-            <button type="button" class="btn btn-primary d-block">Reset Password</button>
+            <button type="submit" class="btn btn-primary d-block">Reset Password</button>
+        </form>
+    </div>
+</div>
+<div class="join-signup-wrapper">
+    <div class="signup-content">
+        <div class="signup-header">
+            <img src="assets/images/light-home-logo.png" class="logo-icon darksignup-header-logo" alt="The Digital Reserve">
+            <img src="assets/images/light-close-icon.png" class="float-right darksignup-close-icon" alt="close">
+        </div>
+        <div class="signup-text">
+            <h4>
+                Create new wallet to get started!
+            </h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+            </p>
+        </div>
+        <form>
+            <div class="form-group">
+                <input type="text" class="form-control" id="signupUsername" required>
+                <label for="signupUsername">Full Name</label>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" id="signupPwd" required>
+                <label for="signupPwd">Enter Password</label>
+            </div>
+            <div class="form-group">
+                <a href="javascript:void(0);" id="signIn" class="d-block sign-in">Existing user? Sign In!</a>
+            </div>
+            <button type="submit" class="btn btn-primary d-block">Create new Wallet</button>
         </form>
     </div>
 </div>

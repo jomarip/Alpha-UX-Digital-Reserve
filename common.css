@@ -31,6 +31,10 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
+button:focus,
+button:focus:active{
+	box-shadow: none !important;
+}
 ol, ul {
 	list-style: none;
 }
