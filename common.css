@@ -71,3 +71,6 @@ table {
     font-family: AvertaUltraBold;
     src: url("assets/fonts/Averta-ExtraBold.otf") format("opentype");
 }
+button{
+	cursor: pointer;
+}
