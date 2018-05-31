@@ -132,7 +132,7 @@
         background-color: #fff;
     }
     .modal-open .modal.lite-full-node-block{
-        background-color: rgba(10,18,42,1);
+        background-color: rgba(10,18,42,0.7);
     }
 }
 @media screen and (max-width: 992px){
