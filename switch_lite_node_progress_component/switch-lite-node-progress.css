@@ -1,0 +1,23 @@
+.progress-sb-header-wrapper,.progress-wrapper{
+    width: 100%;
+}
+.sub-header{
+    font-family: AvertaRegular;
+    font-size: 28px;
+    color: #0c152e;
+    margin-bottom: 8px;
+}
+.progress-content{
+    font-size: 10px;
+    line-height: 1.8;
+    font-family: AvertaRegular;
+    color: #010101;
+}
+@media screen and (min-width: 1024px){
+    .progress-sb-header-wrapper,.progress-wrapper{
+        width : 100%;
+    }
+    .node-progress-header-wrapper{
+        padding: 40px 51px 42px;
+    }
+}
