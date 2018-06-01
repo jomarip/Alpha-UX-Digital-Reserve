@@ -1,4 +1,13 @@
-.progress-sb-header-wrapper,.progress-wrapper{
+.node-progress-overlay{
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0 10px 64px 0 rgba(0, 0, 0, 0.47);
+    margin: 20px;
+}
+.node-progress-header-wrapper{
+    padding: 25px;
+}
+.progress-header-wrapper,.progress-wrapper{
     width: 100%;
 }
 .sub-header{
@@ -12,12 +21,47 @@
     line-height: 1.8;
     font-family: AvertaRegular;
     color: #010101;
+    opacity: 0.5;
+}
+.progress-bar-loading,.progress-bar{
+    height: 14px;
+    border-radius: 10px;
+}
+.progress-bar-loading{
+    background-color: #3f9dfe;
+    width: 0;
+}
+.progress-bar{
+    background-color: #e5eaee;
+    width: 100%;
+}
+.modal-open .modal.progress-node-block {
+    overflow: hidden;
+}
+.progress-node-block{
+    top: unset;
 }
 @media screen and (min-width: 1024px){
-    .progress-sb-header-wrapper,.progress-wrapper{
-        width : 100%;
+   .node-progress-overlay{
+        margin: 0 74px 80px;
+        max-width: 100%;
+    }
+    .progress-header-wrapper,.progress-wrapper{
+        width : 45%;
     }
     .node-progress-header-wrapper{
         padding: 40px 51px 42px;
+    }
+    .node-progress-header-wrapper{
+        width: 100%;
+    }
+  
+    .progress-content{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 992px){
+    .progress-wrapper{
+        margin-top: 15px;
     }
 }

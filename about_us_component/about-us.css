@@ -1,0 +1,168 @@
+
+.about-us-sub-header-wrap{
+    padding:52px 30px 77px;
+}
+.team-details-wrapper, .about-us-sub-header-wrap{
+    background-image: linear-gradient(138deg, #0f1b3a, #090f23);
+
+}
+.about-us-header{
+    font-family: AvertaUltraBold;
+    font-size: 60px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.about-us-content{
+    font-family: AvertaRegular;
+    font-size: 13px;
+    line-height: 1.69;
+    color: #fff;
+    opacity: 0.5;
+}
+.about-mission-wrapper{
+    padding:70px 30px 0;
+}
+.about-us-subheader, .about-us-team-subheader{
+    font-family: AvertaExtraBold;
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+.about-us-context{
+    opacity: 0.5;
+    font-family: AvertaRegular;
+    font-size: 15px;
+    line-height: 1.47;
+    color: #010101;
+    margin-bottom: 54px;
+}
+.reputation-icons{
+    width: 32px;
+    height: auto;
+}
+.reputation-header, .member-name{
+    margin: 18px 0 7px;
+    font-family: AvertaExtraBold;
+    font-size: 14px;
+    line-height: 1.57;
+    color: #50a6ff;
+}
+.reputation-block, .member-designation{
+    font-family: AvertaRegular;
+    font-size: 12px;
+    line-height: 1.75;
+    color: #010101;
+}
+.reputation-block{
+    margin-bottom: 34px;
+}
+.mobile-dashboard-img{
+    width: 100%;
+}
+.approach-text-wrapper{
+    padding:19px 30px 77px;
+}
+.details-header-wrap{
+    margin-bottom: 57px;
+}
+.approach-info{
+    font-family: AvertaRegular;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #010101;
+    margin-bottom: 20px;
+}
+.team-details-wrapper{
+    padding: 70px 30px 49px;
+}
+.about-us-team-subheader{
+    color: #fff;
+}
+.profile-picture{
+    width: 185px;
+    height: 185px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+.member-name{
+    margin: 24px 0 7px;
+}
+.member-designation{
+    color: #fff;
+}
+.profile-details-block span, .profile-picture{
+    display: block;
+}
+.profile-info-wrap{
+    margin-bottom: 56px;
+}
+.about-us-sub-footer-block{
+    margin: 104px 0 49px;
+}
+.about-us-contact-btn, .about-us-join-resolution{
+    border-radius: 3px;
+    background-color: #3f9dfe;
+    padding: 17px 26px;
+    font-size: 15px;
+    font-family: AvertaRegular;
+    line-height: 1.47;
+    color: #fff;
+    border-color: transparent;
+    margin: 40px 0 0;
+}
+.desktop-dashboard-img {
+    width: 50%;
+    height: 50%;
+}
+@media screen and (min-width:1024px){
+    .details-header-wrap .about-us-content{
+        width: 58%;
+    }
+    .profile-info-container{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .profile-info-wrap{
+        width: 21%;
+    }
+    .profile-info-wrap {
+        margin-bottom: 63px;
+    }
+    .about-us-contact-btn{
+        margin-top: 37px;
+    }
+    .descktop-footer-text {
+        width: 60%;
+    }
+    .about-us-sub-footer-block{
+        margin: 61px 0 23px;
+    }
+    .approach-text-wrapper{
+        padding: 0;
+    }
+    .approach-container-block{
+        margin-bottom: -112px;
+        align-items: center;
+    }
+    .approach-text-wrapper{
+        padding-bottom: 82px;
+        padding-right: 77px;
+    }
+    .team-details-wrapper {
+        padding: 201px 77px 49px;
+    }
+    .about-mission-wrapper {
+        padding: 120px 77px 81px;
+    }
+    .reputation-wrap{
+        width: 17%;
+    }
+    .mission-sub-header-block .about-us-context,.about-us-sub-header-wrap .about-us-content{
+        width: 66%;
+    }
+    .about-us-sub-header-wrap{
+        padding:79px 77px 139px;
+    }
+    .about-us-header{
+       margin-bottom: 29px;
+    }
+}
