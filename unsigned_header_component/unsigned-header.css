@@ -127,13 +127,13 @@
 }
 @media screen and (max-width: 992px){
     .btn.login-btn, .btn.revolution-btn{
-            background: transparent;
-            padding: 0;
-            font-family: AvertaBold;
+        background: transparent;
+        padding: 0;
+        font-family: AvertaBold;
     }
     .btn.login-btn{
-            margin-bottom: 13px;
-  }
+        margin-bottom: 13px;
+    }
     .menu-list-items .close-icon, .btn.login-btn{
         display: block;
     }
@@ -146,7 +146,6 @@
         right: 0;
         padding: 40px 30px;
     }
-    
     .header-wrapper .navbar-nav.nav-items-wrap {
         height: 100vh;
         justify-content: center;
@@ -155,5 +154,5 @@
     }
     .collapse {
         z-index: 1;
-      }
+    }
 }
