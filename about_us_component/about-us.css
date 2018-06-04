@@ -54,9 +54,7 @@
 .reputation-block{
     margin-bottom: 34px;
 }
-.mobile-dashboard-img{
-    width: 100%;
-}
+
 .approach-text-wrapper{
     padding:19px 30px 77px;
 }
@@ -172,5 +170,15 @@
         right: 0;
         width: auto;
         bottom: -85px;
+    }
+}
+@media screen and  (max-width: 992px){
+    .mobile-dashboard-img{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1440px){
+    .desktop-dashboard-img{
+        width: 100%;
     }
 }
