@@ -4,7 +4,6 @@
 }
 .team-details-wrapper, .about-us-sub-header-wrap{
     background-image: linear-gradient(138deg, #0f1b3a, #090f23);
-
 }
 .about-us-header{
     font-family: AvertaUltraBold;
@@ -109,10 +108,7 @@
     border-color: transparent;
     margin: 40px 0 0;
 }
-.desktop-dashboard-img {
-    width: 50%;
-    height: 50%;
-}
+
 @media screen and (min-width:1024px){
     .details-header-wrap .about-us-content{
         width: 58%;
@@ -137,15 +133,20 @@
         margin: 61px 0 23px;
     }
     .approach-text-wrapper{
-        padding: 0;
+        width: 50%;
+        padding: 100px 77px 82px 0;
     }
     .approach-container-block{
-        margin-bottom: -112px;
         align-items: center;
+        align-items: center;
+        position: relative;
+        justify-content: flex-end;
     }
-    .approach-text-wrapper{
-        padding-bottom: 82px;
-        padding-right: 77px;
+    .dashboard-img{
+        position: absolute;
+        width: 50%;
+        left: 0;
+        height: 100%;
     }
     .team-details-wrapper {
         padding: 201px 77px 49px;
@@ -164,5 +165,12 @@
     }
     .about-us-header{
        margin-bottom: 29px;
+    }
+    .desktop-dashboard-img{
+        height: calc(100% + 85px);
+        position: absolute;
+        right: 0;
+        width: auto;
+        bottom: -85px;
     }
 }
