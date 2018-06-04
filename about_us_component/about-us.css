@@ -1,8 +1,11 @@
 
-.about-us-sub-header-wrap{
-    padding:52px 30px 77px;
+.nodes-image-wrapper{
+    padding: 131px 30px 77px;
 }
-.team-details-wrapper, .about-us-sub-header-wrap{
+.team-details-wrapper{
+    background-image: linear-gradient(172deg, #0f1b3a, #090f23);
+}
+.about-us-sub-header-wrap{
     background-image: linear-gradient(138deg, #0f1b3a, #090f23);
 }
 .about-us-header{
@@ -160,8 +163,8 @@
     .mission-sub-header-block .about-us-context,.about-us-sub-header-wrap .about-us-content{
         width: 66%;
     }
-    .about-us-sub-header-wrap{
-        padding:79px 77px 139px;
+    .nodes-image-wrapper{
+        padding:198px 77px 139px;
     }
     .about-us-header{
        margin-bottom: 29px;
