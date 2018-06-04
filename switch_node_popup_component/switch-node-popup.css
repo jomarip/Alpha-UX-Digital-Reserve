@@ -16,10 +16,12 @@
     border: none;
     cursor: pointer;
 }
+.node-popup-header-wrapper h1,.content-block,.lite-node-content, .instruction-content{
+    font-family: AvertaRegular;
+}
 .node-popup-header-wrapper h1{
     font-size: 28px;
     color: #0c152e;
-    font-family: AvertaRegular;
 }
 .popup-close{
     width:14px;
@@ -27,7 +29,6 @@
 }
 .content-block,.lite-node-content, .instruction-content{
     opacity: 0.5;
-    font-family: AvertaRegular;
     font-size: 10px;
     line-height: 1.8;
     color: #010101;
@@ -43,10 +44,13 @@
     background-color: #eeeeee;
     border: solid 1px #3f9dfe;
 }
+.lite-node-head, .instruction-content,
+.node-popup-btn,.cancel-btn {
+    font-family: AvertaExtraBold;
+}
 .lite-node-head{
     font-size: 20px;
     color: #3f9dfe;
-    font-family: AvertaExtraBold;
     margin-bottom: 8px;
 }
 .instruction-block img{
@@ -54,12 +58,10 @@
     height: 13px;
 }
 .instruction-content{
-    font-family: AvertaExtraBold;
     margin-left: 18px;
     opacity: unset;
 }
 .node-popup-btn,.cancel-btn{
-    font-family: AvertaExtraBold;
     border-radius: 3px;
     background-color: #3f9dfe;
     font-size: 15px;

@@ -20,14 +20,15 @@
     border: none;
     background-color: transparent;
 }
+.contact-header, .contact-info, .form-group input, .contact-us-popop-innerlay form .form-group label{
+    font-family: AvertaRegular;
+}
 .contact-header{
     font-size: 28px; 
     color: #0c152e;
-    font-family: AvertaRegular;
 }
 .contact-info{
     opacity: 0.5;
-    font-family: AvertaRegular;
     font-size: 10px;
     line-height: 1.8;
     color: #010101;
@@ -35,7 +36,6 @@
 .form-group input{
     font-size: 18px;
     color: #0c152e;
-    font-family: AvertaRegular;
     padding: 0;
     border: none;
     border-bottom: solid 1px #a0a0a0;
@@ -57,7 +57,6 @@
     line-height: 1.8;
     position: absolute;
     text-align: center;
-    font-family: AvertaRegular;
     transform: translateY(-50%);
     -o-transform: translateY(-50%);
     -moz-transform: translateY(-50%);

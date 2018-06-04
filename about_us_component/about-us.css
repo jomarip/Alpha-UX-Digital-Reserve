@@ -139,7 +139,6 @@
     }
     .approach-container-block{
         align-items: center;
-        align-items: center;
         position: relative;
         justify-content: flex-end;
     }
@@ -173,11 +172,6 @@
         right: 0;
         width: auto;
         bottom: -85px;
-    }
-}
-@media screen and  (max-width: 992px){
-    .mobile-dashboard-img{
-        width: 100%;
     }
 }
 @media screen and (min-width: 1440px){
