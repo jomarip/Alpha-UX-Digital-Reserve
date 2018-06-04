@@ -13,6 +13,7 @@
     position: fixed;
     /* opacity: 0.9; */
     box-shadow: 0 0 19px 0 rgba(0, 0, 0, 0.5);
+    font-family: AvertaRegular;
     background-color: #ffffff;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
@@ -34,7 +35,6 @@
 .share-details-wrapper .share-details-content .share-details-text h4{
     color: #0c152e;
     font-size: 28px;
-    font-family: AvertaRegular;
 }
 .share-details-wrapper .share-details-content .share-details-text p{
     color: #010101;
@@ -42,7 +42,6 @@
     font-size: 10px;
     margin-top: 15px;
     line-height: 1.8;
-    font-family: AvertaRegular;
 }
 .share-details-wrapper .share-details-content form{
     margin-top: 70px;
@@ -58,7 +57,6 @@
     font-size: 16px;
     line-height: 1.13;
     position: absolute;
-    font-family: AvertaRegular;
     transform: translateY(-50%);
     -o-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
@@ -76,7 +74,6 @@
     box-shadow: none;
     line-height: 40px;
     border-radius: 0;
-    font-family: AvertaRegular;
     border-bottom: solid 1px #a0a0a0;
 }
 .share-details-wrapper .share-details-content form input[type="number"],
@@ -105,7 +102,6 @@
     opacity: 0.5;
     position: absolute;
     font-size: 10px;
-    font-family: AvertaRegular;
     transform: translateY(-50%);
     -o-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
@@ -120,7 +116,6 @@
     margin-top: 55px;
     text-align: center;
     line-height: 1.47;
-    font-family: AvertaRegular;
     border-radius: 3px;
     background-color: #3f9dfe;
 }
@@ -136,7 +131,7 @@
     background-color: #fff !important;
 }
 
-@media (max-width: 767px) and (min-width: 320px){
+@media (min-width: 320px) and (max-width: 767px){
     .share-details-wrapper{
         width: 100vw;
         left: -107vw;
