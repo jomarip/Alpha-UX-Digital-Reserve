@@ -13,10 +13,13 @@
     border: none;
     margin-bottom: 14px;
 }
+.lite-full-node-popup-header-wrapper h1, .lite-full-content-block, .lite-node-popup-content,.lite-node-instruction-content,
+.lite-node-popup-head{
+    font-family: AvertaRegular;
+}
 .lite-full-node-popup-header-wrapper h1{
     font-size: 28px;
     color: #0c152e;
-    font-family: AvertaRegular;
 }
 .modal-header.lite-full-switch-header-wrapper button{
     background-color: transparent;
@@ -29,7 +32,6 @@
 }
 .lite-full-content-block, .lite-node-popup-content,.lite-node-instruction-content{
     opacity: 0.5;
-    font-family: AvertaRegular;
     font-size: 10px;
     line-height: 1.8;
     color: #010101;
@@ -44,7 +46,6 @@
 .lite-node-popup-head{
     font-size: 20px;
     color: #3f9dfe;
-    font-family: AvertaRegular;
     margin-bottom: 8px;
 }
 .full-node-popup-content{
@@ -60,8 +61,11 @@
 .hover-checkList-icon{
     display: none;
 }
-.lite-node-instruction-content{
+
+.lite-node-instruction-content, .lite-node-popup-btn{
     font-family: AvertaExtraBold;
+}
+.lite-node-instruction-content{
     margin-left: 18px;
     opacity: unset;
 }
@@ -78,7 +82,6 @@
     line-height: 1.47;
     color: #fff;
     border-radius: 3px; 
-    font-family: AvertaExtraBold;
 }
 
 .lite-full-content-block{

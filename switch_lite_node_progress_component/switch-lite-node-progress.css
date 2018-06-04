@@ -11,7 +11,6 @@
     width: 100%;
 }
 .sub-header{
-    font-family: AvertaRegular;
     font-size: 28px;
     color: #0c152e;
     margin-bottom: 8px;
@@ -19,9 +18,11 @@
 .progress-content{
     font-size: 10px;
     line-height: 1.8;
-    font-family: AvertaRegular;
     color: #010101;
     opacity: 0.5;
+}
+.sub-header, .progress-content{
+    font-family: AvertaRegular;
 }
 .progress-bar-loading,.progress-bar{
     height: 14px;
@@ -51,11 +52,8 @@
     }
     .node-progress-header-wrapper{
         padding: 40px 51px 42px;
-    }
-    .node-progress-header-wrapper{
         width: 100%;
-    }
-  
+    }  
     .progress-content{
         width: 80%;
     }
