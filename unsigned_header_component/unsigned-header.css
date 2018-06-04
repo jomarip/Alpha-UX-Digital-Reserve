@@ -34,10 +34,6 @@
 .navbar-collapse.justify-content-end.collapse .navbar-nav.nav-items-wrap{
     margin-top: 20px;
 }
-
-/* .main-header-container{
-    background-image: linear-gradient(119deg, #0f1b3a, #090f23);
-} */
 .btn.login-btn, .btn.revolution-btn, .menu-header{
     color: #fff;
     font-family: AvertaExtraBold;
@@ -69,17 +65,19 @@
 }
 .header-wrapper .collapse-wrapper{
     position: fixed;
-    top: 0;
     left: 0;
     right: 0;
     bottom: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
     background-color: #3f9dfe;
     transition: bottom 0.5s;
     display: block;
+    padding-top: 112px;
 }
 .header-wrapper.show-menu .collapse-wrapper{
     bottom: 0;
+    top: 0;
 }
 .mobile-logo-wrapper{
     padding: 40px 30px;
@@ -88,8 +86,6 @@
     width: 30px;
     height: auto;
 }
-
-
 @media screen and (min-width: 1024px){
     .navbar.navbar-expand-lg.justify-content-between.header-wrapper{
         padding:35px 62px;
@@ -144,10 +140,11 @@
         position: absolute;
         left: 0;
         right: 0;
+        top: 0;
         padding: 40px 30px;
     }
     .header-wrapper .navbar-nav.nav-items-wrap {
-        height: 100vh;
+        height: calc(100vh - 112px);
         justify-content: center;
         overflow-x: hidden;
         overflow-y: auto;
