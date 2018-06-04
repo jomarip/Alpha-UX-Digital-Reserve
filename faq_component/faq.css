@@ -1,0 +1,79 @@
+.faq-header{
+    font-family: AvertaUltraBold;
+    font-size: 60px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.faq-header-content{
+    opacity: 0.5;
+    font-family: AvertaRegular;
+    font-size: 13px;
+    line-height: 1.69;
+    color: #fff;
+}
+.faq-sub-links{
+    background-color: #f7f7f7;
+    padding: 46px 30px;
+}
+.faq-link,.faq-link:hover{
+    font-size: 12px;
+    font-family: AvertaBold;
+    line-height: 1.83;
+    color: #7d7d7d;
+    padding: 0;
+}
+.active.faq-link{
+    color: #3f9dfe;
+}
+.faq-footer-wrapper{
+    background-image: linear-gradient(139deg, #0f1b3a, #090f23);
+    padding: 56px 30px 33px;
+}
+.faq-sub-footer-heading {
+    font-family: AvertaExtraBold;    
+    line-height: 1.57;
+    font-size: 14px;
+    color: #50a6ff;
+    margin-bottom: 18px;
+}
+.faq-desktop-footer-content, .faq-mobile-footer-content{
+    opacity: 0.5;
+    font-family: AvertaRegular;
+    font-size: 12px;
+    line-height: 1.83;
+    color: #fff;
+}
+.faq-contact-button{
+    padding: 17px 58px;
+    border-radius: 3px;
+    background-color: #3f9dfe;
+    font-family: AvertaExtraBold;
+    font-size: 15px;
+    line-height: 1.47;
+    color: #fff;
+    margin: 40px 0 49px;
+    border: none;
+}
+.faq-nav-block .nav-item.show .nav-link, .faq-nav-block .nav-link.active{
+    border:none;
+    background-color: transparent;
+    color: #3f9dfe;
+}
+.faq-nav-block,.faq-nav-block .nav-link:focus, .faq-nav-block .nav-link:hover, .faq-nav-block  .nav-link{
+    border: none;
+    border-radius: 0;
+}
+@media screen and (min-width:1024px){
+    .faq-sub-link-item{
+        padding-right: 20px;    
+    }
+    .faq-sub-links{
+        padding: 46px 77px;
+    }
+    .faq-header-content{
+        width: 56%;
+    }
+    .faq-header{
+        margin-bottom: 29px;
+    }
+}
