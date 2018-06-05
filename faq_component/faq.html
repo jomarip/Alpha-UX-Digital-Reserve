@@ -1,7 +1,10 @@
-<link rel="stylesheet" href="faq_component/asked_faq_component/asked-faq.css">
+<link rel="stylesheet" href="faq_component/recent_faq_component/recent-faq.css">
+<link rel="stylesheet" href="faq_component/faq_wallet_component/faq-wallet.css">
 <div class="faq-main-header">
     <div class="faq-main-header-container">
+
         <!-- add header component -->
+
         <div class="faq-header-wrapper nodes-image-wrapper">
             <span class="node-image"></span>
             <h1 class="faq-header">FAQ</h1>
@@ -11,20 +14,125 @@
     <div class="faq-sub-links ">
         <ul class="faq-nav-block navbar-nav d-flex flex-row justify-content-between justify-content-lg-start nav nav-tabs" role="tablist">
             <li class="nav-item faq-sub-link-item active">
-                <a class="nav-link active show faq-link" href="#most-faq" data-toggle="tab">Most Asked</a>
+                <a class="nav-link active faq-link" href="#most-faq" role="tab" data-toggle="tab">Most Asked</a>
             </li>
             <li class="nav-item faq-sub-link-item">
-                <a class="nav-link faq-link" href="#most-faq" data-toggle="tab">Account</a>
+                <a class="nav-link faq-link" href="#faq-account" role="tab" data-toggle="tab">Account</a>
             </li>
             <li class="nav-item faq-sub-link-item">
-                <a class="nav-link faq-link" href="#">Wallet</a>
+                <a class="nav-link faq-link" href="#faq-wallet" role="tab" data-toggle="tab">Wallet</a>
             </li>
             <li class="nav-item faq-sub-link-item"> 
-                <a class="nav-link faq-link"  href="#most-faq" data-toggle="tab">Minting</a>
+                <a class="nav-link faq-link"  href="#faq-minting" role="tab" data-toggle="tab">Minting</a>
             </li>
         </ul>
     </div>
-    <div id="faq-sub-links-content-wrappper"></div>
+    <div id="faq-sub-links-content-wrappper" class= "tab-content">
+
+        <!-- add most asked faq  -->
+
+        <div class="faq-sublinks-container tab-pane fade show in active" role="tabpanel"  id="most-faq">
+            <div class="faq-sub-link-content-wrapper">
+                <h1 class="faq-sub-link-header">What is Digital Reserve?</h1>
+                <p class="faq-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.<span class="more-text">read more…</span> </p>
+            </div>
+            <div class="faq-sub-link-content-wrapper">
+                <h1 class="faq-sub-link-header">How do i add money to my wallet?</h1>
+                <p class="faq-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. <span class="more-text">read more…</span></p>
+            </div>
+            <div class="faq-sub-link-content-wrapper">
+                <h1 class="faq-sub-link-header">How do i improve my reputation?</h1>
+                <p class="faq-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. <span class="more-text">read more…</span></p>
+            </div>
+            <div class="faq-sub-link-content-wrapper">
+                <h1 class="faq-sub-link-header">How can i increase my borrow limit?</h1>
+                <p class="faq-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. <span class="more-text">read more…</span></p>
+            </div>
+            <div class="faq-sub-link-content-wrapper">
+                <h1 class="faq-sub-link-header">How to mint?</h1>
+                <p class="faq-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. <span class="more-text">read more…</span></p>
+            </div>
+        </div>
+
+        <!-- account details comes here -->
+
+        <div class="faq-sublinks-container  tab-pane fade faq-account-wrap" role="tabpanel"  id="faq-account">
+            <h1 class="faq-sublink-header">Account Details</h1>
+            <div class="faq-sub-link-content-wrapper">
+                <h1 class="faq-sub-link-header">What is Digital Reserve?</h1>
+                <p class="faq-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.<span class="more-text">read more…</span> </p>
+            </div>
+            <div class="faq-sub-link-content-wrapper">
+                <h1 class="faq-sub-link-header">How do i add money to my wallet?</h1>
+                <p class="faq-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. <span class="more-text">read more…</span></p>
+            </div>
+            <div class="faq-sub-link-content-wrapper">
+                <h1 class="faq-sub-link-header">How do i improve my reputation?</h1>
+                <p class="faq-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. <span class="more-text">read more…</span></p>
+            </div>
+            <div class="faq-sub-link-content-wrapper">
+                <h1 class="faq-sub-link-header">How can i increase my borrow limit?</h1>
+                <p class="faq-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. <span class="more-text">read more…</span></p>
+            </div>
+            <div class="faq-sub-link-content-wrapper">
+                <h1 class="faq-sub-link-header">How to mint?</h1>
+                <p class="faq-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. <span class="more-text">read more…</span></p>
+            </div>
+        </div>
+
+         <!-- add wallet details -->
+
+         <div class="faq-sublinks-container  tab-pane fade faq-wallet-wrap" role="tabpanel"  id="faq-wallet">
+            <h1 class="faq-sublink-header">Wallet Details</h1>
+            <div class="faq-sub-link-content-wrapper">
+                <h1 class="faq-sub-link-header">What is Digital Reserve?</h1>
+                <p class="faq-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.<span class="more-text">read more…</span> </p>
+            </div>
+            <div class="faq-sub-link-content-wrapper">
+                <h1 class="faq-sub-link-header">How do i add money to my wallet?</h1>
+                <p class="faq-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. <span class="more-text">read more…</span></p>
+            </div>
+            <div class="faq-sub-link-content-wrapper">
+                <h1 class="faq-sub-link-header">How do i improve my reputation?</h1>
+                <p class="faq-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. <span class="more-text">read more…</span></p>
+            </div>
+            <div class="faq-sub-link-content-wrapper">
+                <h1 class="faq-sub-link-header">How can i increase my borrow limit?</h1>
+                <p class="faq-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. <span class="more-text">read more…</span></p>
+            </div>
+            <div class="faq-sub-link-content-wrapper">
+                <h1 class="faq-sub-link-header">How to mint?</h1>
+                <p class="faq-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. <span class="more-text">read more…</span></p>
+            </div>
+        </div>
+
+         <!-- add minting details -->
+
+         <div class="faq-sublinks-container  tab-pane fade faq-minting-wrap" role="tabpanel"  id="faq-minting">
+            <h1 class="faq-sublink-header">Minting Details</h1>
+            <div class="faq-sub-link-content-wrapper">
+                <h1 class="faq-sub-link-header">What is Digital Reserve?</h1>
+                <p class="faq-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.<span class="more-text">read more…</span></p>
+            </div>
+            <div class="faq-sub-link-content-wrapper">
+                <h1 class="faq-sub-link-header">How do i add money to my wallet?</h1>
+                <p class="faq-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. <span class="more-text">read more…</span></p>
+            </div>
+            <div class="faq-sub-link-content-wrapper">
+                <h1 class="faq-sub-link-header">How do i improve my reputation?</h1>
+                <p class="faq-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. <span class="more-text">read more…</span></p>
+            </div>
+            <div class="faq-sub-link-content-wrapper">
+                <h1 class="faq-sub-link-header">How can i increase my borrow limit?</h1>
+                <p class="faq-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. <span class="more-text">read more…</span></p>
+            </div>
+            <div class="faq-sub-link-content-wrapper">
+                <h1 class="faq-sub-link-header">How to mint?</h1>
+                <p class="faq-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. <span class="more-text">read more…</span></p>
+            </div>
+        </div>
+
+    </div>
     <div class="faq-footer-wrapper">
         <div class="faq-sub-footer">
             <div class="faq-sub-footer-wrapper d-flex align-items-center flex-column">
@@ -37,4 +145,3 @@
         <!-- add footer component -->
     </div>
 </div>
-<script src="faq_component/faq.js"></script>
