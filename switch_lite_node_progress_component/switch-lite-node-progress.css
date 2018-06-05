@@ -3,6 +3,7 @@
     background-color: #fff;
     box-shadow: 0 10px 64px 0 rgba(0, 0, 0, 0.47);
     margin: 20px;
+    max-width: 100%;
 }
 .node-progress-header-wrapper{
     padding: 25px;
@@ -45,7 +46,6 @@
 @media screen and (min-width: 1024px){
    .node-progress-overlay{
         margin: 0 74px 80px;
-        max-width: 100%;
     }
     .progress-header-wrapper,.progress-wrapper{
         width : 45%;
