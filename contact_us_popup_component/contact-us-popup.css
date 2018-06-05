@@ -104,6 +104,9 @@ input[type=number]::-webkit-outer-spin-button {
     margin-bottom: 40px;
 }
 @media screen and (min-width: 1024px){
+    .contact-us-popup-overlay{
+        overflow: hidden;
+    }
     .contact-us-popop-innerlay{
         padding: 51px 79px 108px;
     }
