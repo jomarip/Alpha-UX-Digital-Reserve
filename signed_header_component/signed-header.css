@@ -1,0 +1,112 @@
+.signed-logo-icon{
+    width: 218px;
+    height: auto;
+}
+.user-profile-pic{
+    display: block;
+    width: 31px;
+    height: 31px;
+    background-color: #010101;
+    opacity: 0.5;
+}
+.signed-menu-list-items{
+    display: none;
+}
+#signed-main-header .navbar-expand-lg .navbar-nav .nav-link,.signed-list-link, .logout-btn,.signed-header-wrapper{
+    padding: 0;
+}
+.signed-header-wrapper{
+    padding: 35px 30px;
+}
+.navbar-toggler-icon.signed-toggle-icon, .menu-close-icon {
+    background: url('../assets/images/signed-hamburger-menu.png') no-repeat;
+    width: 14px;
+    height: 14px;
+    background-size: 14px 14px;
+}
+.menu-close-icon{
+    background: url('../assets/images/dark-close-icon.png') no-repeat;
+    background-size: 14px 14px;
+    cursor: pointer;
+}
+#signed-main-header .signed-header-wrapper .signed-nav-items-wrap .signed-list-link {
+    font-family: AvertaRegular;
+    font-size: 12px;
+    color: #2c2c2c;
+    margin-right: 42px;
+    padding: 7px 0 7px 0;
+    display: block;
+}
+.signed-list-link:last-child{
+    padding-left: 0;
+}
+.signed-list-link.active{
+    font-family: AvertaBold;
+    color: #3f9dfe;
+    border-bottom: 2px solid #3f9dfe;
+}
+.signed-collapse-wrapper{
+    bottom: 0;
+    top: 0;
+}
+.signed-menu-header{
+    color: #fff;
+    font-family: AvertaExtraBold;
+    font-size: 20px;
+    margin-left: 11px;
+}
+.logout-btn{
+    border: none;
+    background-color: transparent;
+    font-family: AvertaRegular;
+}
+@media screen and (min-width: 1024px){
+    .signed-header-wrapper{
+        padding: 39px 61px;
+    }
+}
+@media screen and (max-width: 992px){
+    .signed-collapse-wrapper{
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        background-color: #3f9dfe;
+        transition: bottom 0.5s;
+        height: 100vh;
+    }
+    .signed-nav-items-wrap{
+        height: calc(100vh);
+        justify-content: center;
+        overflow-x: hidden;
+        overflow-y: auto;
+    } 
+    .signed-menu-list-items{
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        padding: 40px 30px;
+    }
+    .signed-mobile-light-header-logo{
+        width: 30px;
+        height: auto;
+    }
+    .signed-nav-items-wrap{
+        padding: 0 30px;
+    }
+    #signed-main-header .signed-header-wrapper .signed-nav-items-wrap .signed-list-link, .logout-btn{
+        font-size: 38px;
+        line-height: 2;
+        color: #fff;
+    }
+    #signed-main-header .signed-header-wrapper .signed-nav-items-wrap .signed-list-link.active{
+        font-family: AvertaBold;
+    }
+    .menu-close-icon{
+        display: block;
+    }
+}
