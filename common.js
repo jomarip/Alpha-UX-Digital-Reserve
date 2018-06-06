@@ -17,7 +17,6 @@ $(document).ready(function() {
     else{
         // alert('fail');
     }
-
     $(document).on('click', '.toggle-icon', function(){
         $('.header-wrapper').toggleClass('show-menu');
     })
