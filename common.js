@@ -7,6 +7,7 @@ $(document).ready(function() {
     $('#contact-us-popup-container').load('contact_us_popup_component/contact-us-popup.html');
     $('#about-us-conatiner').load('about_us_component/about-us.html')
     $('#home-container').load('home_component/home.html')
+    $('#faq-container').load('faq_component/faq.html')
     // $('#main_container').load('about_us_component/about-us.html');
     var location_href = window.location.href;
     var result = location_href.substring(location_href.lastIndexOf('/')+1);

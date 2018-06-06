@@ -1,30 +1,164 @@
-<div class="footer-main-header">
-    <div class="faq-header-wrapper">
-        <h1 class="faq-header">FAQ</h1>
-        <p class="far-header-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
+<link rel="stylesheet" href="faq_component/recent_faq_component/recent-faq.css">
+<link rel="stylesheet" href="faq_component/faq_wallet_component/faq-wallet.css">
+<div class="faq-main-header">
+    <div class="faq-main-header-container">
+
+        <!-- add header component -->
+
+        <div class="faq-header-wrapper nodes-image-wrapper">
+            <span class="node-image"></span>
+            <h1 class="faq-header">FAQ</h1>
+            <p class="faq-header-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
+        </div>
     </div>
-    <div class="faq-sub-links">
-        <ul class="navbar-nav ">
-            <li class="nav-item active">
-                <a class="nav-link active faq-link" href="#">Most Asked <span class="sr-only">(current)</span></a>
+    <div class="faq-sub-links ">
+        <ul class="faq-nav-block navbar-nav d-flex flex-row justify-content-between justify-content-lg-start nav nav-tabs" role="tablist">
+            <li class="nav-item faq-sub-link-item active">
+                <a class="nav-link active faq-link" href="#most-faq" role="tab" data-toggle="tab">Most Asked</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link faq-link" href="#">Account</a>
+            <li class="nav-item faq-sub-link-item">
+                <a class="nav-link faq-link" href="#faq-account" role="tab" data-toggle="tab">Account</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link faq-link" href="#">Wallet</a>
+            <li class="nav-item faq-sub-link-item">
+                <a class="nav-link faq-link" href="#faq-wallet" role="tab" data-toggle="tab">Wallet</a>
             </li>
-            <li class="nav-item"> 
-                <a class="nav-link faq-link" href="#">Minting</a>
+            <li class="nav-item faq-sub-link-item"> 
+                <a class="nav-link faq-link"  href="#faq-minting" role="tab" data-toggle="tab">Minting</a>
             </li>
         </ul>
     </div>
-    <div class="faq-sub-footer">
-        <div class="faq-sub-footer-wrapper">
-            <h1 class="faq-sub-footer-heading">Not able to find what you are looking for?</h1>
-            <p class="faq-desktop-footer-content d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent liberoPraesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. </p>
-            <p class="faq-mobile-footer-content d-block d-lg-none">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. </p>
-            <button class="faq-contact-button"></button>
+    <div id="faq-sub-links-content-wrappper" class= "tab-content">
+
+        <!-- add most asked faq  -->
+
+        <div class="faq-sublinks-container tab-pane fade show in active" role="tabpanel"  id="most-faq">
+            <div class="faq-sub-link-content-wrapper">
+                <h1 class="faq-sub-link-header">What is Digital Reserve?</h1>
+                <p class="faq-info collapse" id="faq-collapseSummary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum </p>
+                <a class="collapsed faq-subcontent-collapse" data-toggle="collapse" href="#faq-collapseSummary" aria-expanded="false" aria-controls="collapseSummary"></a>
+            </div>
+            <div class="faq-sub-link-content-wrapper">
+                <h1 class="faq-sub-link-header">How do i add money to my wallet?</h1>
+                <p class="faq-info collapse" id="faq-collapseSummary1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum </p>
+                <a class="collapsed faq-subcontent-collapse" data-toggle="collapse" href="#faq-collapseSummary1" aria-expanded="false" aria-controls="collapseSummary"></a>
+            </div>
+            <div class="faq-sub-link-content-wrapper">
+                <h1 class="faq-sub-link-header">How do i improve my reputation?</h1>
+                <p class="faq-info collapse" id="faq-collapseSummary2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum </p>
+                <a class="collapsed faq-subcontent-collapse" data-toggle="collapse" href="#faq-collapseSummary2" aria-expanded="false" aria-controls="collapseSummary"></a>
+            </div>
+            <div class="faq-sub-link-content-wrapper">
+                <h1 class="faq-sub-link-header">How can i increase my borrow limit?</h1>
+                <p class="faq-info collapse" id="faq-collapseSummary3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum </p>
+                <a class="collapsed faq-subcontent-collapse" data-toggle="collapse" href="#faq-collapseSummary3" aria-expanded="false" aria-controls="collapseSummary"></a>
+            </div>
+            <div class="faq-sub-link-content-wrapper">
+                <h1 class="faq-sub-link-header">How to mint?</h1>
+                <p class="faq-info collapse" id="faq-collapseSummary4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum </p>
+                <a class="collapsed faq-subcontent-collapse" data-toggle="collapse" href="#faq-collapseSummary4" aria-expanded="false" aria-controls="collapseSummary"></a>
+            </div>
         </div>
+
+        <!-- account details comes here -->
+
+        <div class="faq-sublinks-container  tab-pane fade faq-account-wrap" role="tabpanel"  id="faq-account">
+            <div class="faq-sub-link-content-wrapper">
+                <h1 class="faq-sub-link-header">What is Digital Reserve?</h1>
+                <p class="faq-info collapse" id="account-collapseSummary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum </p>
+                <a class="collapsed faq-subcontent-collapse" data-toggle="collapse" href="#account-collapseSummary" aria-expanded="false" aria-controls="collapseSummary"></a>
+            </div>
+            <div class="faq-sub-link-content-wrapper">
+                <h1 class="faq-sub-link-header">How do i add money to my wallet?</h1>
+                <p class="faq-info collapse" id="account-collapseSummary1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum </p>
+                <a class="collapsed faq-subcontent-collapse" data-toggle="collapse" href="#account-collapseSummary1" aria-expanded="false" aria-controls="collapseSummary"></a>
+            </div>
+            <div class="faq-sub-link-content-wrapper">
+                <h1 class="faq-sub-link-header">How do i improve my reputation?</h1>
+                <p class="faq-info collapse" id="account-collapseSummary2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum </p>
+                <a class="collapsed faq-subcontent-collapse" data-toggle="collapse" href="#account-collapseSummary2" aria-expanded="false" aria-controls="collapseSummary"></a>
+            </div>
+            <div class="faq-sub-link-content-wrapper">
+                <h1 class="faq-sub-link-header">How can i increase my borrow limit?</h1>
+                <p class="faq-info collapse" id="collapseSummary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum </p>
+                <a class="collapsed faq-subcontent-collapse" data-toggle="collapse" href="#account-collapseSummary3" aria-expanded="false" aria-controls="collapseSummary"></a>
+            </div>
+            <div class="faq-sub-link-content-wrapper">
+                <h1 class="faq-sub-link-header">How to mint?</h1>
+                <p class="faq-info collapse" id="collapseSummary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum </p>
+                <a class="collapsed faq-subcontent-collapse" data-toggle="collapse" href="#account-collapseSummary4" aria-expanded="false" aria-controls="collapseSummary"></a>
+            </div>
+        </div>
+
+         <!-- add wallet details -->
+
+         <div class="faq-sublinks-container  tab-pane fade faq-wallet-wrap" role="tabpanel"  id="faq-wallet">
+            <div class="faq-sub-link-content-wrapper">
+                <h1 class="faq-sub-link-header">What is Digital Reserve?</h1>
+                <p class="faq-info collapse" id="wallet-collapseSummary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum </p>
+                <a class="collapsed faq-subcontent-collapse" data-toggle="collapse" href="#wallet-collapseSummary" aria-expanded="false" aria-controls="collapseSummary"></a>
+            </div>
+            <div class="faq-sub-link-content-wrapper">
+                <h1 class="faq-sub-link-header">How do i add money to my wallet?</h1>
+                <p class="faq-info collapse" id="wallet-collapseSummary1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum </p>
+                <a class="collapsed faq-subcontent-collapse" data-toggle="collapse" href="#wallet-collapseSummary1" aria-expanded="false" aria-controls="collapseSummary"></a>
+            </div>
+            <div class="faq-sub-link-content-wrapper">
+                <h1 class="faq-sub-link-header">How do i improve my reputation?</h1>
+                <p class="faq-info collapse" id="wallet-collapseSummary2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum </p>
+                <a class="collapsed faq-subcontent-collapse" data-toggle="collapse" href="#wallet-collapseSummary2" aria-expanded="false" aria-controls="collapseSummary"></a>
+            </div>
+            <div class="faq-sub-link-content-wrapper">
+                <h1 class="faq-sub-link-header">How can i increase my borrow limit?</h1>
+                <p class="faq-info collapse" id="wallet-collapseSummary3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum </p>
+                <a class="collapsed faq-subcontent-collapse" data-toggle="collapse" href="#wallet-collapseSummary3" aria-expanded="false" aria-controls="collapseSummary"></a>
+            </div>
+            <div class="faq-sub-link-content-wrapper">
+                <h1 class="faq-sub-link-header">How to mint?</h1>
+                <p class="faq-info collapse" id="wallet-collapseSummary4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum </p>
+                <a class="collapsed faq-subcontent-collapse" data-toggle="collapse" href="#wallet-collapseSummary4" aria-expanded="false" aria-controls="collapseSummary"></a>
+            </div>
+        </div>
+
+         <!-- add minting details -->
+
+         <div class="faq-sublinks-container  tab-pane fade faq-minting-wrap" role="tabpanel"  id="faq-minting">
+            <div class="faq-sub-link-content-wrapper">
+                <h1 class="faq-sub-link-header">What is Digital Reserve?</h1>
+                <p class="faq-info collapse" id="minting-collapseSummary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum </p>
+                <a class="collapsed faq-subcontent-collapse" data-toggle="collapse" href="#minting-collapseSummary" aria-expanded="false" aria-controls="collapseSummary"></a>
+            </div>
+            <div class="faq-sub-link-content-wrapper">
+                <h1 class="faq-sub-link-header">How do i add money to my wallet?</h1>
+                <p class="faq-info collapse" id="minting-collapseSummary1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum </p>
+                <a class="collapsed faq-subcontent-collapse" data-toggle="collapse" href="#minting-collapseSummary1" aria-expanded="false" aria-controls="collapseSummary"></a>
+            </div>
+            <div class="faq-sub-link-content-wrapper">
+                <h1 class="faq-sub-link-header">How do i improve my reputation?</h1>
+                <p class="faq-info collapse" id="minting-collapseSummary2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum </p>
+                <a class="collapsed faq-subcontent-collapse" data-toggle="collapse" href="#minting-collapseSummary2" aria-expanded="false" aria-controls="collapseSummary"></a>
+            </div>
+            <div class="faq-sub-link-content-wrapper">
+                <h1 class="faq-sub-link-header">How can i increase my borrow limit?</h1>
+                <p class="faq-info collapse" id="minting-collapseSummary3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum </p>
+                <a class="collapsed faq-subcontent-collapse" data-toggle="collapse" href="#minting-collapseSummary3" aria-expanded="false" aria-controls="collapseSummary"></a>
+            </div>
+            <div class="faq-sub-link-content-wrapper">
+                <h1 class="faq-sub-link-header">How to mint?</h1>
+                <p class="faq-info collapse" id="minting-collapseSummary4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum </p>
+                <a class="collapsed faq-subcontent-collapse" data-toggle="collapse" href="#minting-collapseSummary4" aria-expanded="false" aria-controls="collapseSummary"></a>
+            </div>
+        </div>
+
+    </div>
+    <div class="faq-footer-wrapper">
+        <div class="faq-sub-footer">
+            <div class="faq-sub-footer-wrapper d-flex align-items-center flex-column">
+                <h1 class="faq-sub-footer-heading text-center">Not able to find what you are looking for?</h1>
+                <p class="faq-desktop-footer-content text-center d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent liberoPraesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. </p>
+                <p class="faq-mobile-footer-content text-center d-block d-lg-none">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. </p>
+                <button class="faq-contact-button" data-target="#contact-us-modal" data-toggle="modal">Contact Us</button>
+            </div>
+        </div>
+        <!-- add footer component -->
     </div>
 </div>
