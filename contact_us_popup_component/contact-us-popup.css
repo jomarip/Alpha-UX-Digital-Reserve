@@ -3,6 +3,8 @@
     max-width: 100%;
     max-height: 100vh;
     margin: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 .contact-us-popop-innerlay{
     min-height: 100vh;
