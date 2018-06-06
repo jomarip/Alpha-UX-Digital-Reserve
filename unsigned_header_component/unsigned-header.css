@@ -101,10 +101,10 @@
     .navbar-collapse.justify-content-end.collapse .navbar-nav.nav-items-wrap{
         margin: 0;
     }
-    .navbar-nav .active >.nav-link.list-link{
+    /* .navbar-nav .active >.nav-link.list-link{
         color: #3f9dfe;
         border-bottom: 2px solid #3f9dfe;
-    }
+    } */
     .btn.login-btn, .btn.revolution-btn{
         background-color: #060606;
         color: #50a6ff;
