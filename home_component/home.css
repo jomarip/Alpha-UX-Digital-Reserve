@@ -34,6 +34,7 @@
     font-family: AvertaRegular;
 }
 .home-text-wrapper .JoinRevoltion-wrapper{
+    display: flex;
     margin-top: 55px;
 }
 .home-text-wrapper .JoinRevoltion-wrapper a{
@@ -44,10 +45,12 @@
     text-align: center;
     line-height: 1.47;
     font-family: AvertaExtraBold;
-    margin-right: 10px;
     border-radius: 3px;
     background-color: #3f9dfe;
     text-decoration: none;
+}
+.home-text-wrapper .JoinRevoltion-wrapper a:not(:last-child){
+    margin-right: 10px;
 }
 .home-text-wrapper{
     padding:19px 0px 77px;
@@ -75,16 +78,234 @@
     right: 0;
     position: absolute;
 }
-
 .digital-reserve-wrapper{
+    padding: 132px 77px;
+    position: relative;
+}
+.digital-reserve-wrapper::before {
+    top: 20%;
+    right: 0;
+    width: 55%;
+    height: 565px;
+    content: "";
+    display: block;
+    position: absolute;
+    background: url('../assets/images/more-digitalr.png') no-repeat;
+}
+.digital-reserve-wrapper::after {
+    right: 0;
+    width: 100%;
+    bottom: 0;
+    height: 830px;
+    content: "";
+    display: block;
+	position:  absolute;
     background: url('../assets/images/digital-reserve-bg.png') no-repeat;
-    background-position: bottom right;
-    background-size: contain;
 }
 .more-digitalr-wrapper{
-    background: url('../assets/images/more-digitalr.png') no-repeat;
-    background-position: bottom right;
-    background-size: contain;
+    width: 40%;
+    z-index: 1;
+    position: relative;
+}
+.more-digitalr-wrapper .more-digitalr-heading{
+    
+}
+.more-digitalr-heading .more-digitalr-subheader,
+.whats-tdr-heading{
+    color: #0b142d;
+    font-size: 40px;
+    font-family: AvertaExtraBold;
+}
+.more-digitalr-heading .more-digitalr-context{
+    color: #010101;
+    opacity: 0.5;
+    font-size: 15px;
+    margin-top: 15px;
+    line-height: 1.47;
+    font-family: AvertaRegular;
+}
+.more-digitalr-wrapper .more-digitalr-list{
+    margin-top: 55px;
+}
+.more-digitalr-list > ul > li:not(:last-child){
+    margin-bottom: 40px;
+}
+.more-digitalr-list > ul > li > h4{
+    color: #50a6ff;
+    font-size: 15px;
+    line-height: 1.47;
+    font-family: AvertaExtraBold;
+}
+.more-digitalr-list > ul > li > p{
+    color: #010101;
+    margin-top: 6px;
+    font-size: 15px;
+    line-height: 1.47;
+    font-family: AvertaRegular;
+}
+.more-digitalr-knowmore{
+    color: #ffffff;
+    padding: 18px 55px;
+    display: inline-block;
+    font-size: 15px;
+    margin-top: 80px;
+    text-align: center;
+    line-height: 1.47;
+    font-family: AvertaExtraBold;
+    border-radius: 3px;
+    text-decoration: none;
+    background-color: #3f9dfe;
+}
+.more-digitalr-knowmore:hover,
+.more-digitalr-knowmore:focus,
+.more-digitalr-knowmore:active{
+    text-decoration: none;
+}
+.whats-digitalr-wrapper{
+    margin-top: 225px;
+    position: relative;
+    padding-left: 50%; 
+    z-index: 2;
+}
+.whats-digitalr-wrapper .whats-tdr-video-wrapper{
+    top: 50%;
+    left: -48px;
+    width: 50%;
+    height: 391px;
+    position: absolute;
+    transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+.whats-digitalr-wrapper .whats-tdr-video-wrapper img{
+    width: 100%;
+    height: 391px;
+    object-fit: contain;
+}
+.whats-digitalr-wrapper .whats-tdr-content-wrapper p{
+    color: #010101;
+    margin: 15px 0 0px 0;
+    opacity: 0.8;
+    font-size: 15px;
+    line-height: 1.6;
+    font-family: AvertaRegular;
+}
+.whats-digitalr-wrapper .whats-tdr-content-wrapper a{
+    margin-top: 20px;
+}
+.tdr-working-wrapper{
+    padding: 130px 77px;
+    background-image: linear-gradient(112deg, #0f1b3a, #090f23);
+}
+.tdr-working-wrapper .tdr-working-heading{
+    text-align: center;
+}
+.tdr-working-heading > h1{
+    color: #ffffff;
+    font-size: 40px;
+    font-family: AvertaExtraBold;
+    margin-bottom: 25px;
+}
+.tdr-working-heading > p{
+    color: #ffffff;
+    opacity: 0.5;
+    font-size: 15px;
+    max-width: 895px;
+    line-height: 1.47;
+    font-family: AvertaRegular;
+    margin: 0 auto 55px auto;
+}
+.tdr-working-heading > .tdr-working-options{
+    margin-bottom: 100px;
+}
+.tdr-working-heading > .tdr-working-options > ul  li.active a{ 
+    background-color: #3f9dfe;
+}
+.tdr-working-heading > .tdr-working-options > ul  li a{ 
+    color: #ffffff;
+    width: 150px;
+    border: 2px solid #3f9dfe;
+    padding: 18px 0;
+    display: inline-block;
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.47;
+    font-family: AvertaExtraBold;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+.tdr-working-heading > .tdr-working-options > ul  li a:hover{
+    background-color: #3f9dfe;
+ }
+.tdr-working-heading > .tdr-working-options > ul li:first-child a{
+    border-radius: 3px 0 0 3px;
+} 
+.tdr-working-heading > .tdr-working-options > ul li:last-child a{
+    border-radius: 0 3px 3px 0;
+} 
+.tdr-working-list{
+
+}
+.tdr-working-list .tdr-working-list-index{
+    margin-bottom: 55px;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
+    padding-bottom: 20px;
+}
+.tdr-working-list .tdr-working-list-index ul{
+    justify-content: space-between;
+}
+.tdr-working-list-index ul > .tdr-working-list-section,
+.tdr-working-list-contents .reputation-wrap > span {
+    color: #50a6ff;
+    font-size: 14px;
+    line-height: 1.57;
+    font-family: AvertaExtraBold;
+
+}
+.tdr-working-list-contents .reputation-icons{
+    width: 32px;
+    height: auto;
+}
+
+.tdr-working-list-contents .reputation-header{
+    margin: 18px 0 7px;
+    font-family: AvertaExtraBold;
+    font-size: 14px;
+    line-height: 1.57;
+    color: #50a6ff;
+}
+.tdr-working-list-contents .reputation-block{
+    font-family: AvertaRegular;
+    font-size: 12px;
+    line-height: 1.75;
+    color: #fff;
+}
+.tdr-working-list .tdr-working-join{
+    margin-top: 130px;
+    text-align: center;
+}
+.tdr-working-join > p{
+    color: #ffffff;
+    margin: 0 auto 35px auto;
+    opacity: 0.5;
+    font-size: 15px;
+    max-width: 895px;
+    text-align: center;
+    line-height: 1.47;
+    font-family: AvertaRegular;
+}
+.tdr-working-join > a{
+    margin: 0;
+}
+@media screen and (min-width: 1024px){
+    .tdr-working-list-contents .reputation-wrap,
+    .tdr-working-list-index ul > .tdr-working-list-section {
+        width: 17%;
+    }
 }
 @media screen and (max-width: 992px){
     .home-container-block{
@@ -93,10 +314,49 @@
     .home-container-block .homedashboard-img{
         width: 100%;
         height: auto;
-        position: static;
+        position: relative;
+        left: 0;
     }
     .mobile-homedashboard-img{
         width: 100%;
+    }
+    .digital-reserve-wrapper{
+        padding: 65px 30px;
+    }
+    .more-digitalr-wrapper{
+        width: 100%;
+    }
+    .digital-reserve-wrapper::before{
+        display: none;
+    }
+    .whats-digitalr-wrapper{
+        margin-top: 110px;
+        padding-left: 0;
+    }
+    .whats-digitalr-wrapper .whats-tdr-video-wrapper{
+        position: static;
+        width: 100%;
+        transform: none;
+        height: auto;
+    }
+    .whats-digitalr-wrapper .whats-tdr-video-wrapper img{
+        height: auto;
+    }
+    .tdr-working-wrapper{
+        padding: 65px 30px;
+    }
+    .tdr-working-list .tdr-working-join{
+        margin-top: 95px;
+    }
+    .tdr-working-join > p{
+        font-size: 12px;
+    }
+    .tdr-working-list-contents .reputation-wrap > span{
+        margin-bottom: 35px;
+    }
+    .about-us-reputation-wrapper{
+        border-left: 1px dashed rgba(255, 255, 255, 0.3);
+        padding-left: 20px;
     }
 }
 @media (min-width: 992px) and (max-width: 1275px){
@@ -105,5 +365,32 @@
     }
     .desktop-homedashboard-img{
         width: 139%;
+    }
+    .home-text-wrapper .JoinRevoltion-wrapper a{
+        flex: none;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .home-text-wrapper .JoinRevoltion-wrapper a{
+        padding: 18px 21px;
+    }
+}
+@media (min-width: 320px) and (max-width: 991px){
+    .home-sub-header-wrap.nodes-image-wrapper{
+        padding: 130px 30px 0;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+    .home-context{
+        font-size: 13px;
+    }
+    .home-subheader{
+        font-size: 45px;
+    }
+    .home-text-wrapper .JoinRevoltion-wrapper a{
+        flex: 1;
+        padding: 18px 0;
+        font-size: 12px;
     }
 }
