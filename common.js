@@ -5,6 +5,7 @@ $(document).ready(function() {
     $('#switch-node-popup-container').load('switch_node_popup_component/switch-node-popup.html');
     $('#lite-full-node-popup-container').load('lite_full_switch_node_popup_component/lite-full-switch-node-popup.html');
     $('#contact-us-popup-container').load('contact_us_popup_component/contact-us-popup.html');
+    $('#home-container').load('home_component/home.html')
 
     // $('#main_container').load('about_us_component/about-us.html');
     var location_href = window.location.href;

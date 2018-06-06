@@ -1,0 +1,109 @@
+.home-subheader{
+    color: #ffffff;
+    font-size: 60px;
+    line-height: 70px;
+    font-family: AvertaUltraBold;
+}
+.home-subheader > span{
+    z-index: 0;    
+    position: relative;
+    background-color: #409dfe;
+} 
+/* .home-subheader > span::after{
+    top: 50%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 50px;
+    z-index: -1;
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #3f9dfe;
+    transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+} */
+.home-context{
+    color: #ffffff;
+    opacity: 0.5;
+    font-size: 15px;
+    margin-top: 20px;
+    line-height: 1.47;
+    font-family: AvertaRegular;
+}
+.home-text-wrapper .JoinRevoltion-wrapper{
+    margin-top: 55px;
+}
+.home-text-wrapper .JoinRevoltion-wrapper a{
+    color: #ffffff;
+    padding: 18px 25px;
+    display: inline-block;
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.47;
+    font-family: AvertaExtraBold;
+    margin-right: 10px;
+    border-radius: 3px;
+    background-color: #3f9dfe;
+    text-decoration: none;
+}
+.home-text-wrapper{
+    padding:19px 0px 77px;
+}
+.home-container-block{
+    z-index: 1;
+    position: relative;
+    padding-right: 50%;
+}
+.homedashboard-img{
+    top: 28px;
+    width: 50%;
+    right: -77px;
+    height: 633px;
+    z-index: 1;
+    position: absolute;
+}
+.home-sub-header-wrap .about-us-content{
+    width: 66%;
+}
+.home-sub-header-wrap.nodes-image-wrapper{
+    padding:198px 77px 195px;
+}
+.desktop-homedashboard-img{
+    right: 0;
+    position: absolute;
+}
+
+.digital-reserve-wrapper{
+    background: url('../assets/images/digital-reserve-bg.png') no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+}
+.more-digitalr-wrapper{
+    background: url('../assets/images/more-digitalr.png') no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+}
+@media screen and (max-width: 992px){
+    .home-container-block{
+        padding: 0;
+    }
+    .home-container-block .homedashboard-img{
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+    .mobile-homedashboard-img{
+        width: 100%;
+    }
+}
+@media (min-width: 992px) and (max-width: 1275px){
+    .home-text-wrapper {
+        padding: 19px 0px 0;
+    }
+    .desktop-homedashboard-img{
+        width: 139%;
+    }
+}
