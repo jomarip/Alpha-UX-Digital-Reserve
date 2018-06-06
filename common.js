@@ -29,10 +29,10 @@ $(document).ready(function() {
             $('#home-container').load('home_component/home.html')
         }
         else if( attt_value == "AboutUs"){
-            $('#about-us-conatiner').load('about_us_component/about-us.html')
+            $('#about-us-conatiner').load('about_us_component/about-us.html');
         }
         else if(attt_value == "FAQ"){
-            $('#faq-container').load('faq_component/faq.html')
+            $('#faq-container').load('faq_component/faq.html');
         }
         else{
             // $('#home-container').load('home_component/home.html')

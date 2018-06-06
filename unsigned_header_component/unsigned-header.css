@@ -24,7 +24,7 @@
 .nav-item .nav-link.list-link, .navbar-nav .nav-link.list-link:focus, 
 .navbar-nav .nav-link.list-link:hover{
     font-family: AvertaBold;
-    /* color: #fff; */
+    color: #fff;
     padding: 0 43px;
 }
 .navbar-brand.header-text-wrap, .navbar-toggler{
