@@ -5,8 +5,7 @@ $(document).ready(function() {
     $('#switch-node-popup-container').load('switch_node_popup_component/switch-node-popup.html');
     $('#lite-full-node-popup-container').load('lite_full_switch_node_popup_component/lite-full-switch-node-popup.html');
     $('#contact-us-popup-container').load('contact_us_popup_component/contact-us-popup.html');
-    $('#about-us-conatiner').load('about_us_component/about-us.html')
-    $('#faq-container').load('faq_component/faq.html')
+
     // $('#main_container').load('about_us_component/about-us.html');
     var location_href = window.location.href;
     var result = location_href.substring(location_href.lastIndexOf('/')+1);
@@ -22,5 +21,19 @@ $(document).ready(function() {
     })
     $(document).on('click', '.close-icon', function(){
         $('.header-wrapper').removeClass('show-menu',500);
+    })
+    $(document).on('click', '.list-link', function(){
+        var attt_value = $(this).attr('data-attr');
+        alert(attt_value);
+        if( attt_value == "AboutUs"){
+            alert('sucess')
+            $('#about-us-conatiner').load('about_us_component/about-us.html')
+        }
+        else if(attt_value == "FAQ"){
+            $('#faq-container').load('faq_component/faq.html')
+        }
+        else{
+            alert('fail');
+        }
     })
 });
