@@ -41,22 +41,21 @@
     border-bottom: solid 1px #a0a0a0;
     border-radius: 0;
     -webkit-appearance: none;
+    padding-bottom: 17px;
 }
 .contact-btn-wrap{
     width: 100%;
-}
-.contact-us-popop-innerlay form .form-group input:focus + label{
-    top: -6px;
 }
 .contact-us-popop-innerlay form .form-group label{
     left: 50%;
     top: 50%;
     color: #010101;
     opacity: 0.5;
-    font-size: 10px;
-    line-height: 1.8;
+    font-size: 16px;
+    line-height: 1.13;
     position: absolute;
     text-align: center;
+    padding-bottom: 17px;
     transform: translateY(-50%);
     -o-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
@@ -66,6 +65,10 @@
     -moz-transition: 0.3s all ease-in-out;
     -webkit-transition: 0.3s all ease-in-out;
     transform: translate(-50%);
+}
+.contact-us-popop-innerlay form .form-group .form-control.field-focus + label{
+    top: -15px;
+    font-size: 10px;
 }
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
@@ -141,5 +144,10 @@ input[type=number]::-webkit-outer-spin-button {
     }
     .form-group {
         width: 100%;
+    }
+    .contact-us-popop-innerlay form .form-group label{
+        text-align: left;
+        left: 0;
+        transform: translate(0);
     }
 }

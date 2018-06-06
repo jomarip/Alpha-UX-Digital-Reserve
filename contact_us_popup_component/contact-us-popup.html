@@ -26,7 +26,7 @@
                             <label for="contact-email">Email</label>
                         </div>
                         <div class="form-group mobile-number-block d-flex align-items-center justify-content-start justify-lg-content-center justify-content-sm-start justify-content-md-start">
-                            <input type="number" class="form-control"  required>
+                            <input type="number" class="form-control"  required onkeydown:"javascript: return event.keyCode == 69 || event.keyCode == 190 || event.keyCode == 189 ? false : true">
                             <label for="contact-number">Mobile Number</label>
                         </div>
                         <div class="form-group form-block d-flex align-items-center justify-content-start justify-lg-content-center justify-content-sm-start justify-content-md-start">
@@ -42,3 +42,4 @@
         </div>
     </div>
 </div>
+<script src="contact_us_popup_component/contact-us-popup.js"></script>
