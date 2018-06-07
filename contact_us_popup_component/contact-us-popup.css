@@ -97,6 +97,7 @@ input[type=number]::-webkit-outer-spin-button {
     width: 50%;
     line-height: 1.47;
     color: #fff;
+    border: none;
 }
 .contact-us-popop-innerlay{
     padding: 40px 20px;

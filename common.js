@@ -24,11 +24,11 @@ $(document).ready(function() {
         $('.header-wrapper').removeClass('show-menu',500);
     })
     $(document).on('click', '.signed-toggle-icon', function(){
-        $('.signed-collapse-wrapper').toggleClass('show-signed-menu');
+        $('.signed-header-wrapper').toggleClass('show-signed-menu');
     })
     $(document).on('click', '.menu-close-icon', function(){
-        $('.signed-collapse-wrapper').removeClass('show-signed-menu');
-        $('.signed-collapse-wrapper').removeClass('show');
+        $('.signed-header-wrapper').removeClass('show-signed-menu');
+        // $('.signed-collapse-wrapper').removeClass('show');
 
     })
     // $(document).on('click', '.list-link', function(){

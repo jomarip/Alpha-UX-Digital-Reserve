@@ -9,9 +9,6 @@
     background-color: #010101;
     opacity: 0.5;
 }
-.signed-collapse-wrapper .signed-menu-list-items{
-    display: none;
-}
 #signed-main-header .navbar-expand-lg .navbar-nav .nav-link,.signed-list-link, .logout-btn,.signed-header-wrapper{
     padding: 0;
 }
@@ -45,11 +42,6 @@
     color: #3f9dfe;
     border-bottom: 2px solid #3f9dfe;
 }
-.signed-collapse-wrapper{
-    bottom: 100%;
-    top: 0;
-    transition: bottom 0.5s;
-}
 .signed-menu-header{
     color: #fff;
     font-family: AvertaExtraBold;
@@ -67,11 +59,14 @@
     }
 }
 @media screen and (max-width: 992px){
-    .show-signed-menu.show.signed-collapse-wrapper{
+    .show-signed-menu .signed-collapse-wrapper{
+        bottom: 0;
+    }
+    .signed-collapse-wrapper{
         position: fixed;
         left: 0;
         right: 0;
-        bottom: 0;
+        bottom: 100%;
         overflow-x: hidden;
         overflow-y: auto;
         background-color: #3f9dfe;
@@ -85,7 +80,6 @@
         overflow-y: auto;
     } 
     .signed-menu-list-items{
-        display: block;
         position: absolute;
         left: 0;
         right: 0;
