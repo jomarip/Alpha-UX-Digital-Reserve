@@ -160,6 +160,7 @@
 .more-digitalr-knowmore:focus,
 .more-digitalr-knowmore:active{
     text-decoration: none;
+    color: #fff;
 }
 .whats-digitalr-wrapper{
     margin-top: 225px;

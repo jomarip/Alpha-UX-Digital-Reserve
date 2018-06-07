@@ -45,6 +45,8 @@
     -webkit-appearance: none;
     padding-bottom: 17px;
     text-align: center;
+    z-index: 1;
+    background-color: transparent;
 }
 .contact-btn-wrap{
     width: 100%;
@@ -68,10 +70,16 @@
     -moz-transition: 0.3s all ease-in-out;
     -webkit-transition: 0.3s all ease-in-out;
     transform: translate(-50%);
+    z-index: 0;
 }
+.contact-us-popop-innerlay form .form-group .form-control.field-focus {
+    border-bottom: 1px solid #3f9dfe;
+}
+
 .contact-us-popop-innerlay form .form-group .form-control.field-focus + label{
     top: -15px;
     font-size: 10px;
+   
 }
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 

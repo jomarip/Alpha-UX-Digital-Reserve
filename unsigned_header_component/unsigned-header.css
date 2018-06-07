@@ -72,11 +72,7 @@
     transition: bottom 0.5s;
     display: block;
 }
-.header-wrapper.show-menu .collapse-wrapper{
-    bottom: 0;
-    top: 0;
-    padding-top: 112px;
-}
+
 .mobile-logo-wrapper{
     padding: 40px 30px;
 }
@@ -99,10 +95,6 @@
     .navbar-collapse.justify-content-end.collapse .navbar-nav.nav-items-wrap{
         margin: 0;
     }
-    /* .navbar-nav .active >.nav-link.list-link{
-        color: #3f9dfe;
-        border-bottom: 2px solid #3f9dfe;
-    } */
     .btn.login-btn, .btn.revolution-btn{
         background-color: #060606;
         color: #50a6ff;
@@ -149,5 +141,10 @@
     }
     .collapse {
         z-index: 1;
+    }
+    .header-wrapper.show-menu .collapse-wrapper{
+        bottom: 0;
+        top: 0;
+        padding-top: 112px;
     }
 }
