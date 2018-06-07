@@ -1,6 +1,3 @@
-*,*:focus{
-    outline: none !important;
-}
 .navbar-toggler-icon.toggle-icon,.header-wrapper .menu-list-items .close-icon {
     background: url('../assets/images/unsigned-hamburger-menu.png') no-repeat;
     width: 14px;

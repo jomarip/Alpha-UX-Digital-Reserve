@@ -79,7 +79,8 @@ button{
 	cursor: pointer;
 }
 .main-header-container{
-	position: relative;
+    position: relative;
+    z-index: 9;
 }
 #main-header{
 	left: 0;
