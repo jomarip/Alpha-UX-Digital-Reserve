@@ -102,6 +102,11 @@
     border-radius: 0;
     border-bottom: solid 1px #a0a0a0;
 }
+.unsigned-login-wrapper .login-content form .form-group input.field-focus + label{
+    left: 0;
+    top: -6px;
+    font-size: 10px;
+}
 .unsigned-login-wrapper .login-content form .form-group input:focus + label,
 .unsigned-forgotpwd-wrapper .forgotpwd-content form .form-group input:focus + label,
 .join-signup-wrapper .signup-content form .form-group input:focus + label{
