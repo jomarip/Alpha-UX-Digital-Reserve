@@ -28,6 +28,9 @@
     -moz-transition: 0.3s all ease-in-out;
     -webkit-transition: 0.3s all ease-in-out;
 }
+.unsigned-login-wrapper{
+    opacity: 0.96;
+}
 .unsigned-login-wrapper .login-content,
 .unsigned-forgotpwd-wrapper .forgotpwd-content,
 .join-signup-wrapper .signup-content{
@@ -59,7 +62,6 @@
     margin-top: 15px;
     line-height: 1.8;
 }
-.unsigned-login-wrapper .login-content form,
 .unsigned-forgotpwd-wrapper .forgotpwd-content form,
 .join-signup-wrapper .signup-content form{
     margin-top: 70px;
@@ -137,7 +139,7 @@
 .join-signup-wrapper .signup-content form .sign-in{
     margin-top: 55px;
 }
-.unsigned-login-wrapper .login-content form button,
+.unsigned-login-wrapper .login-content form .file-btn-wrap .file-btn,
 .unsigned-forgotpwd-wrapper .forgotpwd-content form button,
 .join-signup-wrapper .signup-content form button{
     width: 100%;
@@ -150,6 +152,11 @@
     line-height: 1.47;
     border-radius: 3px;
     background-color: #3f9dfe;
+}
+.unsigned-login-wrapper .login-content form .file-btn-wrap .file-btn{
+    opacity: 1;
+    cursor: pointer;
+    font-family: AvertaExtraBold;
 }
 .unsigned-login-wrapper .login-content form button:focus,
 .unsigned-forgotpwd-wrapper .forgotpwd-content form button:focus,
@@ -173,6 +180,12 @@
     background-color: #fff !important;
 }
 
+.file-btn-wrap{
+    position: relative;
+}
+.unsigned-login-wrapper .login-content form{
+    margin-top: 139px;
+}
 @media (min-width: 320px) and (max-width: 767px){
     .backdrop{
         display: none;
@@ -198,4 +211,5 @@
     .join-signup-wrapper .signup-content form{
         margin-top: 50px;
     }
+    
 }
