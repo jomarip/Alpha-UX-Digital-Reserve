@@ -31,7 +31,7 @@ $(document).ready(function() {
      
 });
 $(document).ready(function($) {
-    $(".login-content  input").focus(function(){
+    $(".updated-value-block input").focus(function(){
       $(this).addClass("field-focus");
    
      }).blur(function(){
