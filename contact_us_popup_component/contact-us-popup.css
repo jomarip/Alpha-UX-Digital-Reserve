@@ -1,5 +1,4 @@
 .contact-us-popup-overlay{
-    opacity: 0.9;
     max-width: 100%;
     max-height: 100vh;
     margin: 0;
@@ -15,15 +14,14 @@
 }
 .contact-us-popup-wrapper, .contact-popup-close{
     padding: 0;
+    border: none;
+    background-color: transparent;
 }
 .contact-us-logo{
     width: 218px;
     height: auto;
 }
-.contact-popup-close, .contact-us-popup-wrapper{
-    border: none;
-    background-color: transparent;
-}
+
 .contact-header, .contact-info, .form-group input, .contact-us-popop-innerlay form .form-group label{
     font-family: AvertaRegular;
 }
@@ -37,8 +35,8 @@
     line-height: 1.8;
     color: #010101;
 }
-.form-group input{
-    font-size: 18px;
+.contact-us-popop-innerlay form  .form-group input{
+    font-size: 48px;
     color: #0c152e;
     padding: 0;
     border: none;
@@ -46,6 +44,7 @@
     border-radius: 0;
     -webkit-appearance: none;
     padding-bottom: 17px;
+    text-align: center;
 }
 .contact-btn-wrap{
     width: 100%;
@@ -87,6 +86,7 @@ input[type=number]::-webkit-outer-spin-button {
 .contact-us-popop-innerlay form .form-group input:focus{
     box-shadow: none;
     border-bottom: 1px solid #3f9dfe;
+    
 }
 .contact-form-submit{
     padding: 17px;
@@ -98,6 +98,7 @@ input[type=number]::-webkit-outer-spin-button {
     line-height: 1.47;
     color: #fff;
     border: none;
+    
 }
 .contact-us-popop-innerlay{
     padding: 40px 20px;
@@ -112,6 +113,9 @@ input[type=number]::-webkit-outer-spin-button {
     margin-bottom: 40px;
 }
 @media screen and (min-width: 1024px){
+    .contact-us-popup-overlay{
+        opacity: 0.9;
+    }
     .contact-us-popop-innerlay{
         padding: 51px 79px 108px;
     }
@@ -138,6 +142,9 @@ input[type=number]::-webkit-outer-spin-button {
     }
     .contact-us-popop-innerlay form .form-group label{
         text-align: center;
+    }
+    .contact-form-submit {
+        width: 100%;
     }
 }
 @media screen and (max-width:992px){

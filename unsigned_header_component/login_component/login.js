@@ -28,4 +28,23 @@ $(document).ready(function() {
     $('.darkpwd-close-icon, .backdrop').on('click', () =>{
         $('#loginSection').removeClass('forgotpwd-open');
     })
+     
 });
+$(document).ready(function($) {
+    $(".login-content  input").focus(function(){
+      $(this).addClass("field-focus");
+   
+     }).blur(function(){
+      $(this).removeClass("field-focus");
+      
+      tmpval = $(this).val();
+      if(tmpval == '') {
+        if( $(this).hasClass('field-focus')){
+            $(this).removeClass('field-focus');
+        }
+      }
+       else {
+          $(this).addClass('field-focus');
+      }
+     });
+   }); 
