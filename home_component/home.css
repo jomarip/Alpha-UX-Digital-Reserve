@@ -344,7 +344,7 @@
         margin-top: 60px;
     }
     .more-digitalr-knowmore {
-        padding: 18px 26px;
+        padding: 18px 56px;
     }
     .digital-reserve-wrapper:after {
         background-position: right;
@@ -388,8 +388,18 @@
         margin-bottom: 35px;
     }
     .about-us-reputation-wrapper{
-        border-left: 1px dashed rgba(255, 255, 255, 0.3);
+        /* border-left: 1px dashed rgba(255, 255, 255, 0.3); */
         padding-left: 20px;
+        position: relative;
+    }
+    .about-us-reputation-wrapper::after{
+        top: 6px;
+        content: "";
+        position: absolute;
+        height: calc(100% - 44px);
+        width: 1px;
+        border-left: 1px dashed rgba(255, 255, 255, 0.3);
+        left: 0;
     }
 }
 @media (min-width: 992px) and (max-width: 1275px){
