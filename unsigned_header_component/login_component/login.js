@@ -3,12 +3,7 @@ $(document).ready(function() {
     //Sign-in page functionality
     $('#dark-close-icon, .backdrop').on('click', () =>{
         if($('body').hasClass('overflow-hidden')){
-            if(screen.width >= 992){
-                $('body').removeClass('overflow-hidden');
-                console.log(screen.width, '>= 992');
-            }else{
-                
-            }
+            $('body').removeClass('overflow-hidden');
         }else{
             console.log('has');
         };
@@ -30,16 +25,10 @@ $(document).ready(function() {
     //Sign-up page functionality
     $('.darksignup-close-icon, .backdrop').on('click', () =>{
         if($('body').hasClass('overflow-hidden')){
-            if(screen.width >= 992){
-                $('body').removeClass('overflow-hidden');
-                console.log(screen.width, '>= 992');
-            }else{
-                
-            }
+            $('body').removeClass('overflow-hidden');
         }else{
             console.log('has');
         };
-        // $('body').removeClass('overflow-hidden');
         $('#loginSection').removeClass('signup-open');
     })
 
@@ -51,14 +40,9 @@ $(document).ready(function() {
     //Forgot-pwd page functionality
     $('.darkpwd-close-icon, .backdrop').on('click', () =>{
         if($('body').hasClass('overflow-hidden')){
-            if(screen.width >= 992){
-                $('body').removeClass('overflow-hidden');
-                console.log(screen.width, '>= 992');
-            }else{
-                
-            }
+            $('body').removeClass('overflow-hidden');
         }else{
-            console.log('has');
+            console.log('dont have');
         };
         $('#loginSection').removeClass('forgotpwd-open');
     })
