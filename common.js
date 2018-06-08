@@ -40,8 +40,11 @@ $(document).ready(function() {
         $('#home-container').show();
         $('#about-us-conatiner').hide();
         $('#faq-container').hide();
+
     })
     $(document).on('click', '.navigation-link', function(){
+        $('.header-wrapper').removeClass('show-menu');
+        $('body').removeClass('overflow-hidden-menu');
         var attt_value = $(this).attr('data-attr');
          if( attt_value == "AboutUs"){
             $('#about-us-conatiner').show();
