@@ -21,9 +21,11 @@ $(document).ready(function() {
     }
     $(document).on('click', '.toggle-icon', function(){
         $('.header-wrapper').toggleClass('show-menu');
+        $('body').addClass('overflow-hidden');
     })
     $(document).on('click', '.close-icon', function(){
-        $('.header-wrapper').removeClass('show-menu',500);
+        $('.header-wrapper').removeClass('show-menu');
+        $('body').removeClass('overflow-hidden');
     })
     $(document).on('click', '.signed-toggle-icon', function(){
         $('.signed-header-wrapper').toggleClass('show-signed-menu');
