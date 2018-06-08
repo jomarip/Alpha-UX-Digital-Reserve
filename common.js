@@ -34,6 +34,8 @@ $(document).ready(function() {
         $('.signed-header-wrapper').removeClass('show-signed-menu');
         // $('.signed-collapse-wrapper').removeClass('show');
     })
+    $('#about-us-conatiner').hide();
+    $('#faq-container').hide();
     $(document).on('click', '.home-navigation', function(){
         $('#home-container').show();
         $('#about-us-conatiner').hide();
