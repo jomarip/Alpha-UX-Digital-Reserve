@@ -10,15 +10,14 @@ $(document).ready(function() {
     $('#mint-denarii-contanier').load('mint_danarii_component/mint-danarii.html')
     $('#home-container').load('home_component/home.html');
     $('#about-us-conatiner').load('about_us_component/about-us.html');
+    $('#send-denarii-conatainer').load('send_denarii_component/send-denarii.html')
     $('#faq-container').load('faq_component/faq.html');
-    var location_href = window.location.href;
-    var result = location_href.substring(location_href.lastIndexOf('/')+1);
-    if(result == 'about-us'){
-    //    alert("sucess");
-    }
-    else{
-        // alert('fail');
-    }
+    // var location_href = window.location.href;
+    // var result = location_href.substring(location_href.lastIndexOf('/')+1);
+    // if(result == 'about-us'){
+    // }
+    // else{
+    // }
     $(document).on('click', '.toggle-icon', function(){
         $('.header-wrapper').toggleClass('show-menu');
         $('body').addClass('overflow-hidden-menu');
@@ -56,7 +55,7 @@ $(document).ready(function() {
             $('#about-us-conatiner').hide();
             $('#home-container').hide();
         }
-        else if(attt_value == "home"){
+        else if(attt_value == "Home"){
             $('#home-container').show();
             $('#about-us-conatiner').hide();
             $('#faq-container').hide();
