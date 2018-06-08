@@ -1,4 +1,4 @@
-.navbar-toggler-icon.toggle-icon,.header-wrapper .menu-list-items .close-icon {
+.navbar-toggler-icon.toggle-icon {
     background: url('../assets/images/unsigned-hamburger-menu.png') no-repeat;
     width: 14px;
     height: 14px;
@@ -7,8 +7,9 @@
 .navbar.navbar-expand-lg.justify-content-between.header-wrapper{
     padding: 35px 30px;
 }
-.header-wrapper.show-menu .menu-list-items .close-icon  {
-    background-image: url('../assets/images/dark-close-icon.png');
+.header-wrapper .menu-list-items .close-icon  {
+    width: 14px;
+    height: auto;
 }
 .navbar-toggler:not(:disabled):not(.disabled){
     border: none;
