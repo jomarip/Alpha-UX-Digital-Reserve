@@ -284,7 +284,6 @@
 }
 .tdr-working-list-contents .reputation-block{
     color: #fff;
-    opacity: 0.4;
     font-size: 12px;
     line-height: 1.75;
     font-family: AvertaRegular;
@@ -313,24 +312,36 @@
     }
 }
 @media screen and (max-width: 991px){
-    .more-digitalr-wrapper .more-digitalr-list{
-        width: 100%;
+    .home-text-wrapper {
+        padding: 19px 0px 7px;
     }
     .home-container-block{
         padding: 0;
     }
     .home-container-block .homedashboard-img{
-        width: 100%;
-        height: auto;
-        position: relative;
+        top: 45px;
         left: 0;
+        width: auto;
+        height: auto;
+        margin: 0 -30px;
+        position: relative;
     }
     .mobile-homedashboard-img{
         width: 100%;
     }
     .digital-reserve-wrapper{
-        padding: 65px 30px;
+        padding: 108px 30px 65px;
     }
+    .more-digitalr-heading .more-digitalr-context{
+        margin-top: 22px;
+    }
+    .more-digitalr-wrapper .more-digitalr-list{
+        width: 100%;
+        margin-top: 60px;
+    }
+    .digital-reserve-wrapper:after {
+        background-position: right;
+    }    
     .more-digitalr-wrapper{
         width: 100%;
     }
