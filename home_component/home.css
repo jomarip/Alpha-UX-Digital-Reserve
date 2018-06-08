@@ -80,7 +80,7 @@
     position: absolute;
 }
 .digital-reserve-wrapper{
-    padding: 132px 77px;
+    padding: 132px 77px 190px;
     position: relative;
 }
 .digital-reserve-wrapper::before {
@@ -103,6 +103,7 @@
     display: block;
 	position:  absolute;
     background: url('../assets/images/digital-reserve-bg.png') no-repeat;
+    background-position: bottom right;
 }
 .more-digitalr-wrapper{
     width: 50%;
@@ -111,6 +112,9 @@
 }
 .more-digitalr-wrapper .more-digitalr-heading{
     
+}
+#faq-container + .main-footer-container {
+    padding-bottom: 36px;
 }
 .more-digitalr-heading .more-digitalr-subheader,
 .whats-tdr-heading{
@@ -168,14 +172,14 @@
 .whats-digitalr-wrapper{
     margin-top: 225px;
     position: relative;
-    padding-left: 50%; 
+    padding-left: 46%; 
     z-index: 2;
 }
 .whats-digitalr-wrapper .whats-tdr-video-wrapper{
     top: 50%;
     left: -48px;
     width: 50%;
-    height: 391px;
+    height: 400px;
     position: absolute;
     transform: translateY(-50%);
     -o-transform: translateY(-50%);
@@ -196,7 +200,7 @@
     font-family: AvertaRegular;
 }
 .whats-digitalr-wrapper .whats-tdr-content-wrapper a{
-    margin-top: 20px;
+    margin-top: 45px;
 }
 .tdr-working-wrapper{
     padding: 130px 77px;
@@ -339,6 +343,9 @@
         width: 100%;
         margin-top: 60px;
     }
+    .more-digitalr-knowmore {
+        padding: 18px 26px;
+    }
     .digital-reserve-wrapper:after {
         background-position: right;
     }    
@@ -360,15 +367,22 @@
     }
     .whats-digitalr-wrapper .whats-tdr-video-wrapper img{
         height: auto;
+        margin-bottom: 60px;
+    }
+    .whats-digitalr-wrapper .whats-tdr-content-wrapper a {
+        margin-top: 33px;
     }
     .tdr-working-wrapper{
-        padding: 65px 30px;
+        padding: 65px 30px 50px;
     }
     .tdr-working-list .tdr-working-join{
         margin-top: 95px;
     }
     .tdr-working-join > p{
         font-size: 12px;
+    }
+    .tdr-working-list-contents{
+        padding-left: 25px;
     }
     .tdr-working-list-contents .reputation-wrap > span{
         margin-bottom: 35px;
@@ -396,7 +410,7 @@
 }
 @media (min-width: 320px) and (max-width: 991px){
     .home-sub-header-wrap.nodes-image-wrapper{
-        padding: 130px 30px 0;
+        padding: 100px 30px 0;
         max-height: none;
     }
 }
