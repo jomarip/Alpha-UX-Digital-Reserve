@@ -1,0 +1,33 @@
+.dashboard-main-container {
+    padding: 0 5px;
+}
+.dashboard-component-main-wrapper{
+    border-radius: 6px;
+    background-color: #ffffff;
+    border: solid 1px #c3c3c3;
+    padding: 28px 0 0;
+    margin-bottom: 15px;
+}
+.dashboard-wallet-label{
+    font-size: 10px;
+    color: #878fa4;
+    text-transform: capitalize;
+    font-family: AvertaBold;
+}
+h4.dashboard-detail-heading{
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #878fa4;
+    font-family: AvertaExtraBold;
+}
+a:hover{
+    text-decoration: none;
+}
+@media screen and (min-width: 992px){
+    .dashboard-right-container{
+        flex: 1;
+    }
+    .dashboard-left-container{
+        flex: 2;
+    }
+}
