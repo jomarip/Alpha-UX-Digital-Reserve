@@ -54,7 +54,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+.overflow-hidden{
+    overflow: hidden;
+}
 /* 400 */
 @font-face {
     font-family: AvertaRegular;
