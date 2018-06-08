@@ -6,8 +6,9 @@ $(document).ready(function() {
     $('#lite-full-node-popup-container').load('lite_full_switch_node_popup_component/lite-full-switch-node-popup.html');
     $('#contact-us-popup-container').load('contact_us_popup_component/contact-us-popup.html');
     // $('#signed-header-container').load('signed_header_component/signed-header.html')
-    $('#home-container').load('home_component/home.html')
     $('#borrow-denarii-modal-1').load('borrow_denarii_component/borrow-denarii.html')
+    $('#mint-denarii-contanier').load('mint_danarii_component/mint-danarii.html')
+    $('#home-container').load('home_component/home.html');
     // $('#faq-container').load('faq_component/faq.html');
     // $('#main_container').load('about_us_component/about-us.html');
     var location_href = window.location.href;
@@ -43,7 +44,7 @@ $(document).ready(function() {
     //         $('#faq-container').load('faq_component/faq.html');
     //     }
     //     else{
-
+    //         $('#home-container').load('home_component/home.html');
     //     }
     // })
 });
