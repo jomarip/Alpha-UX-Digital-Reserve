@@ -61,7 +61,7 @@
     padding-right: 50%;
 }
 .homedashboard-img{
-    top: 25px;
+    top: 29px;
     width: 50%;
     right: -77px;
     height: 633px;
@@ -73,6 +73,7 @@
 }
 .home-sub-header-wrap.nodes-image-wrapper{
     padding:198px 77px 195px;
+    max-height: 806px;
 }
 .desktop-homedashboard-img{
     right: 0;
@@ -83,7 +84,7 @@
     position: relative;
 }
 .digital-reserve-wrapper::before {
-    top: 20%;
+    top: 10%;
     right: 0;
     width: 55%;
     height: 565px;
@@ -91,6 +92,7 @@
     display: block;
     position: absolute;
     background: url('../assets/images/more-digitalr.png') no-repeat;
+    background-size: contain;
 }
 .digital-reserve-wrapper::after {
     right: 0;
@@ -103,7 +105,7 @@
     background: url('../assets/images/digital-reserve-bg.png') no-repeat;
 }
 .more-digitalr-wrapper{
-    width: 40%;
+    width: 50%;
     z-index: 1;
     position: relative;
 }
@@ -126,6 +128,7 @@
 }
 .more-digitalr-wrapper .more-digitalr-list{
     margin-top: 55px;
+    width: 85%;
 }
 .more-digitalr-list > ul > li:not(:last-child){
     margin-bottom: 40px;
@@ -160,6 +163,7 @@
 .more-digitalr-knowmore:focus,
 .more-digitalr-knowmore:active{
     text-decoration: none;
+    color: #fff;
 }
 .whats-digitalr-wrapper{
     margin-top: 225px;
@@ -180,7 +184,7 @@
 }
 .whats-digitalr-wrapper .whats-tdr-video-wrapper img{
     width: 100%;
-    height: 391px;
+    /* height: 391px; */
     object-fit: contain;
 }
 .whats-digitalr-wrapper .whats-tdr-content-wrapper p{
@@ -268,7 +272,7 @@
 }
 .tdr-working-list-contents .reputation-icons{
     width: 32px;
-    height: auto;
+    height: 32px;
 }
 
 .tdr-working-list-contents .reputation-header{
@@ -279,10 +283,10 @@
     color: #50a6ff;
 }
 .tdr-working-list-contents .reputation-block{
-    font-family: AvertaRegular;
+    color: #fff;
     font-size: 12px;
     line-height: 1.75;
-    color: #fff;
+    font-family: AvertaRegular;
 }
 .tdr-working-list .tdr-working-join{
     margin-top: 130px;
@@ -304,25 +308,40 @@
 @media screen and (min-width: 1024px){
     .tdr-working-list-contents .reputation-wrap,
     .tdr-working-list-index ul > .tdr-working-list-section {
-        width: 17%;
+        width: 22%;
     }
 }
-@media screen and (max-width: 992px){
+@media screen and (max-width: 991px){
+    .home-text-wrapper {
+        padding: 19px 0px 7px;
+    }
     .home-container-block{
         padding: 0;
     }
     .home-container-block .homedashboard-img{
-        width: 100%;
-        height: auto;
-        position: relative;
+        top: 45px;
         left: 0;
+        width: auto;
+        height: auto;
+        margin: 0 -30px;
+        position: relative;
     }
     .mobile-homedashboard-img{
         width: 100%;
     }
     .digital-reserve-wrapper{
-        padding: 65px 30px;
+        padding: 108px 30px 65px;
     }
+    .more-digitalr-heading .more-digitalr-context{
+        margin-top: 22px;
+    }
+    .more-digitalr-wrapper .more-digitalr-list{
+        width: 100%;
+        margin-top: 60px;
+    }
+    .digital-reserve-wrapper:after {
+        background-position: right;
+    }    
     .more-digitalr-wrapper{
         width: 100%;
     }
@@ -378,6 +397,7 @@
 @media (min-width: 320px) and (max-width: 991px){
     .home-sub-header-wrap.nodes-image-wrapper{
         padding: 130px 30px 0;
+        max-height: none;
     }
 }
 

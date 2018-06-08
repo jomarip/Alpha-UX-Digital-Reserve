@@ -4,10 +4,20 @@ $(document).ready(function() {
 
     //Join Sidebar
     $('.revolution-btn').on('click', () => {
+        if($('body').hasClass('overflow-hidden')){
+            console.log('has');
+        }else{
+            $('body').addClass('overflow-hidden');
+        };
         $('#loginSection').addClass('signup-open');
     });
     //Login Sidebar
     $('.login-btn').on('click', () => {
+        if($('body').hasClass('overflow-hidden')){
+            console.log('has');
+        }else{
+            $('body').addClass('overflow-hidden');
+        }
         $('#loginSection').addClass('login-open');
     })
     //Shared Details Sidebar

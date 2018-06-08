@@ -6,22 +6,25 @@ $(document).ready(function() {
     $('#lite-full-node-popup-container').load('lite_full_switch_node_popup_component/lite-full-switch-node-popup.html');
     $('#contact-us-popup-container').load('contact_us_popup_component/contact-us-popup.html');
     // $('#signed-header-container').load('signed_header_component/signed-header.html')
-    $('#home-container').load('home_component/home.html')
-    // $('#faq-container').load('faq_component/faq.html');
-    // $('#main_container').load('about_us_component/about-us.html');
-    var location_href = window.location.href;
-    var result = location_href.substring(location_href.lastIndexOf('/')+1);
-    if(result == 'about-us'){
-    //    alert("sucess");
-    }
-    else{
-        // alert('fail');
-    }
+    $('#borrow-denarii-modal-1').load('borrow_denarii_component/borrow-denarii.html')
+    $('#mint-denarii-contanier').load('mint_danarii_component/mint-danarii.html')
+    $('#home-container').load('home_component/home.html');
+    $('#about-us-conatiner').load('about_us_component/about-us.html');
+    $('#send-denarii-conatainer').load('send_denarii_component/send-denarii.html')
+    $('#faq-container').load('faq_component/faq.html');
+    // var location_href = window.location.href;
+    // var result = location_href.substring(location_href.lastIndexOf('/')+1);
+    // if(result == 'about-us'){
+    // }
+    // else{
+    // }
     $(document).on('click', '.toggle-icon', function(){
         $('.header-wrapper').toggleClass('show-menu');
+        $('body').addClass('overflow-hidden-menu');
     })
     $(document).on('click', '.close-icon', function(){
-        $('.header-wrapper').removeClass('show-menu',500);
+        $('.header-wrapper').removeClass('show-menu');
+        $('body').removeClass('overflow-hidden-menu');
     })
     $(document).on('click', '.signed-toggle-icon', function(){
         $('.signed-header-wrapper').toggleClass('show-signed-menu');
@@ -29,18 +32,36 @@ $(document).ready(function() {
     $(document).on('click', '.menu-close-icon', function(){
         $('.signed-header-wrapper').removeClass('show-signed-menu');
         // $('.signed-collapse-wrapper').removeClass('show');
+    })
+    $('#about-us-conatiner').hide();
+    $('#faq-container').hide();
+    $(document).on('click', '.home-navigation', function(){
+        $('#home-container').show();
+        $('#about-us-conatiner').hide();
+        $('#faq-container').hide();
 
     })
-    // $(document).on('click', '.list-link', function(){
-    //     var attt_value = $(this).attr('data-attr');
-    //      if( attt_value == "AboutUs"){
-    //         $('#about-us-conatiner').load('about_us_component/about-us.html');
-    //     }
-    //     else if(attt_value == "FAQ"){
-    //         $('#faq-container').load('faq_component/faq.html');
-    //     }
-    //     else{
-
-    //     }
-    // })
+    $(document).on('click', '.navigation-link', function(){
+        $('.header-wrapper').removeClass('show-menu');
+        $('body').removeClass('overflow-hidden-menu');
+        var attt_value = $(this).attr('data-attr');
+         if( attt_value == "AboutUs"){
+            $('#about-us-conatiner').show();
+            $('#home-container').hide();
+            $('#faq-container').hide();
+        }
+        else if(attt_value == "FAQ"){ 
+            $('#faq-container').show();
+            $('#about-us-conatiner').hide();
+            $('#home-container').hide();
+        }
+        else if(attt_value == "Home"){
+            $('#home-container').show();
+            $('#about-us-conatiner').hide();
+            $('#faq-container').hide();
+        }
+        else{
+            $('#home-container').show();
+        }
+    })
 });

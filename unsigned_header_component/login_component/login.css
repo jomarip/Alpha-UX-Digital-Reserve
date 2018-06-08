@@ -5,6 +5,7 @@
 #loginSection.signup-open .backdrop,
 #loginSection.signup-open .join-signup-wrapper{
     left: 0;
+    opacity: 0.96;
 }
 .unsigned-login-wrapper,
 .unsigned-forgotpwd-wrapper,
@@ -89,6 +90,7 @@
     -o-transition: 0.3s all ease-in-out;
     -moz-transition: 0.3s all ease-in-out;
     -webkit-transition: 0.3s all ease-in-out;
+    z-index: 0;
 }
 .unsigned-login-wrapper .login-content form input,
 .unsigned-forgotpwd-wrapper .forgotpwd-content form input,
@@ -101,6 +103,14 @@
     line-height: 40px;
     border-radius: 0;
     border-bottom: solid 1px #a0a0a0;
+    z-index: 1;
+    background-color: transparent;
+}
+.unsigned-login-wrapper .login-content form .form-group input.field-focus + label, 
+.join-signup-wrapper .signup-content form input.field-focus + label{
+    left: 0;
+    top: -6px;
+    font-size: 10px;
 }
 .unsigned-login-wrapper .login-content form .form-group input:focus + label,
 .unsigned-forgotpwd-wrapper .forgotpwd-content form .form-group input:focus + label,
