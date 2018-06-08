@@ -33,7 +33,6 @@ $(document).ready(function() {
     $(document).on('click', '.menu-close-icon', function(){
         $('.signed-header-wrapper').removeClass('show-signed-menu');
         // $('.signed-collapse-wrapper').removeClass('show');
-
     })
     $(document).on('click', '.home-navigation', function(){
         $('#home-container').show();
