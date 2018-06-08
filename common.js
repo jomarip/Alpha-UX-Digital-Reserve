@@ -9,8 +9,8 @@ $(document).ready(function() {
     $('#borrow-denarii-modal-1').load('borrow_denarii_component/borrow-denarii.html')
     $('#mint-denarii-contanier').load('mint_danarii_component/mint-danarii.html')
     $('#home-container').load('home_component/home.html');
-    // $('#faq-container').load('faq_component/faq.html');
-    // $('#main_container').load('about_us_component/about-us.html');
+    $('#about-us-conatiner').load('about_us_component/about-us.html');
+    $('#faq-container').load('faq_component/faq.html');
     var location_href = window.location.href;
     var result = location_href.substring(location_href.lastIndexOf('/')+1);
     if(result == 'about-us'){
@@ -35,16 +35,30 @@ $(document).ready(function() {
         // $('.signed-collapse-wrapper').removeClass('show');
 
     })
-    // $(document).on('click', '.list-link', function(){
-    //     var attt_value = $(this).attr('data-attr');
-    //      if( attt_value == "AboutUs"){
-    //         $('#about-us-conatiner').load('about_us_component/about-us.html');
-    //     }
-    //     else if(attt_value == "FAQ"){
-    //         $('#faq-container').load('faq_component/faq.html');
-    //     }
-    //     else{
-    //         $('#home-container').load('home_component/home.html');
-    //     }
-    // })
+    $(document).on('click', '.home-navigation', function(){
+        $('#home-container').show();
+        $('#about-us-conatiner').hide();
+        $('#faq-container').hide();
+    })
+    $(document).on('click', '.navigation-link', function(){
+        var attt_value = $(this).attr('data-attr');
+         if( attt_value == "AboutUs"){
+            $('#about-us-conatiner').show();
+            $('#home-container').hide();
+            $('#faq-container').hide();
+        }
+        else if(attt_value == "FAQ"){ 
+            $('#faq-container').show();
+            $('#about-us-conatiner').hide();
+            $('#home-container').hide();
+        }
+        else if(attt_value == "home"){
+            $('#home-container').show();
+            $('#about-us-conatiner').hide();
+            $('#faq-container').hide();
+        }
+        else{
+            $('#home-container').show();
+        }
+    })
 });
