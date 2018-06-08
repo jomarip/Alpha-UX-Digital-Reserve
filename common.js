@@ -8,6 +8,7 @@ $(document).ready(function() {
     // $('#signed-header-container').load('signed_header_component/signed-header.html')
     $('#home-container').load('home_component/home.html')
     $('#borrow-denarii-modal-1').load('borrow_denarii_component/borrow-denarii.html')
+    $('#mint-denarii-contanier').load('mint_danarii_component/mint-danarii.html')
     // $('#faq-container').load('faq_component/faq.html');
     // $('#main_container').load('about_us_component/about-us.html');
     var location_href = window.location.href;
