@@ -12,6 +12,7 @@ $(document).ready(function() {
     $('#about-us-conatiner').load('about_us_component/about-us.html');
     $('#send-denarii-conatainer').load('send_denarii_component/send-denarii.html')
     $('#faq-container').load('faq_component/faq.html');
+    // $('#lend-denarii-container').load('lend_denarii_component/lend-denarii.html')
     // var location_href = window.location.href;
     // var result = location_href.substring(location_href.lastIndexOf('/')+1);
     // if(result == 'about-us'){
