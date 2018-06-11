@@ -126,5 +126,6 @@ button{
 @media screen and (max-width:991px){
     .overflow-hidden-menu{
         overflow: hidden;
+        position: fixed;
     }
 }
