@@ -24,7 +24,10 @@ li.nav-item.filter-item{
 }
 li.nav-item.filter-item .dashboard-detail-heading{
     padding: 0;
+    -webkit-appearance: none;
     direction: rtl;
+    border: none;
+    background: transparent;
 }
 
 @media screen and (min-width: 992px){

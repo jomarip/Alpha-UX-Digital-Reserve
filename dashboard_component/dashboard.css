@@ -67,6 +67,9 @@ a:hover{
     #wallet-page .favourites_component,#wallet-page .all_denarii_component{
         display: block;
     }
+    #wallet_all_transactions_component{
+        height: 100%;
+    }
 }
 @media screen and (min-width: 992px) and (max-height: 767px){
     div.favourites_component,div.all_denarii_component{

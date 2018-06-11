@@ -6,6 +6,7 @@ $(document).ready(function() {
     $('#dashboard_recent_transactions_component').load('dashboard_recent_transactions_component/dashboard-recent-transactions.html');
     $('#dashboard_minting_component').load('dashboard_minting_component/dashboard-minting.html');
     $('#dashboard_overview_component').load('dashboard_overview_component/dashboard-overview.html');
+    $('#wallet_all_transactions_component').load('wallet_all_transactions_component/wallet-all-transactions.html');
     
     $(document).on('click', '.signed-toggle-icon', function(){
         $('.signed-header-wrapper').toggleClass('show-signed-menu');

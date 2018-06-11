@@ -26,6 +26,7 @@
         <link rel="stylesheet" href="dashboard_recent_transactions_component/dashboard-recent-transactions.css">
         <link rel="stylesheet" href="dashboard_minting_component/dashboard-minting.css">
         <link rel="stylesheet" href="dashboard_overview_component/dashboard-overview.css">
+        <link rel="stylesheet" href="wallet_all_transactions_component/wallet-all-transactions.css">
     </head>
     <body>
         <div class="container-fluid main-header-container d-lg-flex flex-lg-column" id="main-container">
@@ -35,6 +36,7 @@
                 <!-- signed-header comes here -->
             </div>
 
+            <!-- dashboard page -->
             <div class="dashboard-main-container d-lg-flex justify-content-lg-between flex-lg-row-reverse" style="display: none!important" id="dashboard-page">
                 <div class="dashboard-right-container" id="dashboard-right-container">
                     <div id="dashboard_detail_component" class="detail_component"></div>
@@ -50,13 +52,14 @@
                 </div>
             </div>
 
+             <!-- wallet page -->
             <div class="dashboard-main-container d-lg-flex justify-content-lg-between flex-lg-row-reverse" id="wallet-page">
                 <div class="dashboard-right-container" id="wallet-right-container">
                     <div id="wallet_detail_component" class="detail_component"></div>
                     <div id="wallet_favourites_component" class="favourites_component"></div>
                     <div id="wallet_all_denarii_component" class="all_denarii_component"></div>
                 </div>
-                <div class="wallet-left-container d-lg-flex flex-lg-column" id="wallet-left-container">
+                <div class="dashboard-left-container d-lg-flex flex-lg-column" id="wallet-left-container">
                     <div id="wallet_all_transactions_component"></div>                   
                 </div>
             </div>
