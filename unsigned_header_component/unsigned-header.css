@@ -132,7 +132,7 @@
         left: 0;
         right: 0;
         top: 0; */
-        padding: 40px 30px 100px;
+        padding: 40px 30px 0;
     }
     .header-wrapper .navbar-nav.nav-items-wrap {
         height: 100vh;
@@ -146,5 +146,10 @@
     .header-wrapper.show-menu .collapse-wrapper{
         bottom: 0;
         top: 0;
+    }
+    .inner-list-menu{
+        min-height: calc(100vh - 100px);
+        flex-direction: column;
+        justify-content: center;
     }
 }
