@@ -7,9 +7,10 @@
 .navbar.navbar-expand-lg.justify-content-between.header-wrapper{
     padding: 35px 30px;
 }
-.header-wrapper .menu-list-items .close-icon  {
-    width: 14px;
+.header-wrapper .menu-list-items .close-icon{
+    width: calc(34px - 6px);
     height: auto;
+    padding: 7px;
 }
 .navbar-toggler:not(:disabled):not(.disabled){
     border: none;
