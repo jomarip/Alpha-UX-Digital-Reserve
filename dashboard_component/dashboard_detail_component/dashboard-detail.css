@@ -1,4 +1,4 @@
-h4.dashboard-detail-heading,.dashboard-wallet-bal-wrap{
+.dashboard-detail-heading,.dashboard-wallet-bal-wrap{
     padding: 0 30px 28px 20px;
 }
 .dashboard-wallet-bal-wrap{
@@ -38,4 +38,27 @@ h4.dashboard-detail-heading,.dashboard-wallet-bal-wrap{
 }
 .dashboard-details-info-item.reputation-info .dashboard-details-info-value{
     color: #93c65c;
+}
+@media screen and (min-width: 992px){
+    div.detail_component{
+        height: calc(40% - 10px);
+        margin-bottom: 10px;
+    }
+    div.detail_component .dashboard-component-main-wrapper{
+        max-height: 100%;
+        overflow: auto;
+        overflow-x: hidden;
+    }
+    .dashboard-details-info-wrap{
+        flex: 1;
+    }
+}
+@media screen and (min-width: 1024px) and (min-height: 769px){
+    div.detail_component{
+        height: 360px;
+    }
+    div.detail_component .dashboard-component-main-wrapper{
+        max-height: 360px;
+        height: 100%;
+    }
 }

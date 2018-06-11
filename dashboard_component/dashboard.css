@@ -14,7 +14,7 @@
     text-transform: capitalize;
     font-family: AvertaBold;
 }
-h4.dashboard-detail-heading{
+.dashboard-detail-heading{
     font-size: 10px;
     text-transform: uppercase;
     color: #878fa4;
@@ -23,11 +23,59 @@ h4.dashboard-detail-heading{
 a:hover{
     text-decoration: none;
 }
+#wallet-page .favourites_component,#wallet-page .all_denarii_component{
+    display: none;
+}
 @media screen and (min-width: 992px){
-    .dashboard-right-container{
-        flex: 1;
+    .dashboard-main-container{
+        position: relative;
+        z-index: 10;
+        padding: 0 30px 50px;
+    }
+    div#dashboard_recent_transactions_component{
+        flex: 2;
+        margin-right: 10px;
     }
     .dashboard-left-container{
-        flex: 2;
+        width: 70%;
+        margin-right: 10px;
+    }
+    .dashboard-right-container{
+        width: 30%;
+    }
+    .dashboard-main-container,#dashboard-inner-left-container,
+    div#dashboard_recent_transactions_component,div#dashboard_minting_component {
+        flex: 1;
+    }
+    div#main-container{
+        height: 100vh;
+        overflow: hidden;  
+        position: relative;
+    }
+    .half-background-layer {
+        position: absolute;
+        background-color: #f5f6fa;
+        bottom: 0;
+        height: 50%;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+    .dashboard-component-main-wrapper{
+        margin-bottom: 10px;
+    }
+    #wallet-page .favourites_component,#wallet-page .all_denarii_component{
+        display: block;
+    }
+}
+@media screen and (min-width: 992px) and (max-height: 767px){
+    div.favourites_component,div.all_denarii_component{
+        height: calc(30% - 5px);
+        margin-bottom: 10px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .dashboard-main-container{
+        padding: 0 45px 50px;
     }
 }

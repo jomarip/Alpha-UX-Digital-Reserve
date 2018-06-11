@@ -12,6 +12,28 @@
     height: auto;
     margin-bottom: 8px;
 }
-/* .dashboard-favourites-profile-wrap a:nth-child(-n+4){
-    display: flex!important;
-} */
+@media screen and (min-width: 992px) and (max-height: 767px){
+    .dashboard-component-main-wrapper.dashboard-favourites-main-wrapper{
+        max-height: 100%;
+        overflow: auto;
+        overflow-x: hidden;
+    }   
+}
+@media screen and (min-width: 1024px){
+    .dashboard-component-main-wrapper.dashboard-favourites-main-wrapper{
+        padding: 30px 20px 27px;
+    }
+    .dashboard-favourites-profile-wrap{
+        overflow: auto;
+        overflow-y: hidden;
+        padding-bottom: 10px;
+    }
+    .dashboard-favourites-profile-wrap a:not(:nth-child(-n+4)){
+        display: -webkit-box!important;
+        display: -ms-flexbox!important;
+        display: flex!important;
+    }  
+    .dashboard-favourites-profile-wrap a {
+        margin: 0 2px;
+    }
+}
