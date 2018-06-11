@@ -13,7 +13,11 @@
     padding: 0;
 }
 .signed-header-wrapper{
-    padding: 35px 30px;
+    padding: 35px 15px;
+}
+.navbar-toggler, .signed-header-text-wrap{	
+    padding: 0;	
+    margin: 0;	
 }
 .navbar-toggler-icon.signed-toggle-icon, .menu-close-icon {
     background: url('../assets/images/signed-hamburger-menu.png') no-repeat;

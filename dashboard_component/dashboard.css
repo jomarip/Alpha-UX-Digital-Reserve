@@ -27,9 +27,6 @@ a:hover{
 a.canvasjs-chart-credit{
     display: none;
 }
-.canvasjs-chart-container{
-    /* height: 100%; */
-}
 
 @media screen and (min-width: 992px){
     .dashboard-main-container{

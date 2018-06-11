@@ -73,7 +73,7 @@
     z-index: 0;
 }
 .contact-us-popop-innerlay form .form-group .form-control.field-focus {
-    border-bottom: 1px solid #3f9dfe;
+    border-bottom: 2px solid #3f9dfe;
 }
 
 .contact-us-popop-innerlay form .form-group .form-control.field-focus + label{
