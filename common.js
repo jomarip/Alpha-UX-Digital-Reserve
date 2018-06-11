@@ -6,14 +6,9 @@ $(document).ready(function() {
     $('#lite-full-node-popup-container').load('lite_full_switch_node_popup_component/lite-full-switch-node-popup.html');
     $('#contact-us-popup-container').load('contact_us_popup_component/contact-us-popup.html');
     // $('#signed-header-container').load('signed_header_component/signed-header.html')
-    $('#borrow-denarii-modal-1').load('borrow_denarii_component/borrow-denarii.html')
-    $('#mint-denarii-contanier').load('mint_danarii_component/mint-danarii.html')
     $('#home-container').load('home_component/home.html');
     $('#about-us-conatiner').load('about_us_component/about-us.html');
-    $('#send-denarii-conatainer').load('send_denarii_component/send-denarii.html')
     $('#faq-container').load('faq_component/faq.html');
-    $('#lend-denarii-container').load('lend_denarii_component/lend-denarii.html')
-    $('#request-denarii-container').load('request_denarii_component/request-denarii.html')
    //header mobile menu
     $(document).on('click', '.toggle-icon', function(){
         $('.header-wrapper').toggleClass('show-menu');
