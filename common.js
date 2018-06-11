@@ -14,10 +14,12 @@ $(document).ready(function() {
     $('#faq-container').load('faq_component/faq.html');
     $('#lend-denarii-container').load('lend_denarii_component/lend-denarii.html')
     $('#request-denarii-container').load('request_denarii_component/request-denarii.html')
-   
+   //header mobile menu
     $(document).on('click', '.toggle-icon', function(){
         $('.header-wrapper').toggleClass('show-menu');
-        $('body').addClass('overflow-hidden-menu');
+        setTimeout(function() {
+                $('body').addClass('overflow-hidden');
+            },0.7);
     })
     $(document).on('click', '.close-icon', function(){
         $('.header-wrapper').removeClass('show-menu');
@@ -28,7 +30,6 @@ $(document).ready(function() {
     })
     $(document).on('click', '.menu-close-icon', function(){
         $('.signed-header-wrapper').removeClass('show-signed-menu');
-        // $('.signed-collapse-wrapper').removeClass('show');
     })
     $('#about-us-conatiner').hide();
     $('#faq-container').hide();
