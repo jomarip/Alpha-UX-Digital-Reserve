@@ -21,7 +21,6 @@
     width: 218px;
     height: auto;
 }
-
 .contact-header, .contact-info, .form-group input, .contact-us-popop-innerlay form .form-group label{
     font-family: AvertaRegular;
 }
@@ -73,13 +72,11 @@
     z-index: 0;
 }
 .contact-us-popop-innerlay form .form-group .form-control.field-focus {
-    border-bottom: 1px solid #3f9dfe;
+    border-bottom: 2px solid #3f9dfe;
 }
-
 .contact-us-popop-innerlay form .form-group .form-control.field-focus + label{
     top: -15px;
     font-size: 10px;
-   
 }
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
