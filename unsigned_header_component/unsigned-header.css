@@ -128,15 +128,15 @@
         display: flex;
     }
     .header-wrapper .menu-list-items{
-        position: absolute;
+        /* position: absolute;
         left: 0;
         right: 0;
-        top: 0;
-        padding: 40px 30px;
+        top: 0; */
+        padding: 40px 30px 100px;
     }
     .header-wrapper .navbar-nav.nav-items-wrap {
-        height: calc(100vh - 200px);
-        justify-content: center;
+        height: 100vh;
+        /* justify-content: center; */
         overflow-x: hidden;
         overflow-y: auto;
     }
@@ -146,6 +146,5 @@
     .header-wrapper.show-menu .collapse-wrapper{
         bottom: 0;
         top: 0;
-        padding-top: 112px;
     }
 }
