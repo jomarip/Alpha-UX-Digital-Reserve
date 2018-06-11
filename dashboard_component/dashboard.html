@@ -25,26 +25,42 @@
         <link rel="stylesheet" href="dashboard_all_denarii_component/dashboard-all-denarii.css">
         <link rel="stylesheet" href="dashboard_recent_transactions_component/dashboard-recent-transactions.css">
         <link rel="stylesheet" href="dashboard_minting_component/dashboard-minting.css">
+        <link rel="stylesheet" href="dashboard_overview_component/dashboard-overview.css">
     </head>
     <body>
-        <div class="container-fluid main-header-container" id="main-container">
+        <div class="container-fluid main-header-container d-lg-flex flex-lg-column" id="main-container">
             <!-- all content comes here -->
 
             <div id="signed-header-container">
                 <!-- signed-header comes here -->
             </div>
 
-            <div class="dashboard-main-container d-lg-flex justify-content-lg-between flex-lg-row-reverse">
+            <div class="dashboard-main-container d-lg-flex justify-content-lg-between flex-lg-row-reverse" style="display: none!important" id="dashboard-page">
                 <div class="dashboard-right-container" id="dashboard-right-container">
-                    <div id="dashboard_detail_component"></div>
-                    <div id="dashboard_favourites_component"></div>
-                    <div id="dashboard_all_denarii_component"></div>
+                    <div id="dashboard_detail_component" class="detail_component"></div>
+                    <div id="dashboard_favourites_component" class="favourites_component"></div>
+                    <div id="dashboard_all_denarii_component" class="all_denarii_component"></div>
                 </div>
-                <div class="dashboard-left-container" id="dashboard-left-container">
-                    <div id="dashboard_recent_transactions_component"></div> 
-                    <div id="dashboard_minting_component"></div>                    
+                <div class="dashboard-left-container d-lg-flex flex-lg-column" id="dashboard-left-container">
+                    <div id="dashboard_overview_component"></div> 
+                    <div id="dashboard-inner-left-container" class="d-lg-flex">
+                        <div id="dashboard_recent_transactions_component"></div> 
+                        <div id="dashboard_minting_component"></div>  
+                    </div>                  
                 </div>
             </div>
+
+            <div class="dashboard-main-container d-lg-flex justify-content-lg-between flex-lg-row-reverse" id="wallet-page">
+                <div class="dashboard-right-container" id="wallet-right-container">
+                    <div id="wallet_detail_component" class="detail_component"></div>
+                    <div id="wallet_favourites_component" class="favourites_component"></div>
+                    <div id="wallet_all_denarii_component" class="all_denarii_component"></div>
+                </div>
+                <div class="wallet-left-container d-lg-flex flex-lg-column" id="wallet-left-container">
+                    <div id="wallet_all_transactions_component"></div>                   
+                </div>
+            </div>
+            <div class="half-background-layer"></div>
         </div>
 
 
