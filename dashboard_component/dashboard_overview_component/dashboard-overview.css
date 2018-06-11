@@ -29,15 +29,45 @@ li.nav-item.filter-item .dashboard-detail-heading{
     border: none;
     background: transparent;
 }
-
+.tab-content{
+    flex: 1;
+    overflow: auto;
+}
+.tab-content>.tab-pane {
+    opacity: 0;
+    visibility: visible;
+    height: 0;
+    overflow: hidden;
+    display: block;
+}
+.tab-content>.active {
+    opacity: 1;
+    visibility: visible;
+}
+.tab-content>.tab-pane.active,#your-overview-chart-container,
+div#network-chart-container{
+    min-height: 200px;
+}
+.tab-content>.tab-pane{
+    position: relative;
+}
+span.hide-canvas-text{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    height: 11px;
+    width: 70px;
+}
 @media screen and (min-width: 992px){
     div#dashboard_overview_component{
         display: block;
         flex: 1;
-        max-height: 40%;
+        max-height: 50%;
     }
     .dashboard-component-main-wrapper.dashboard-overview-main-wrapper{
         height: calc(100% - 10px);
+        overflow: hidden;
     }
 }
 @media screen and (min-width: 1024px) and (min-height: 769px){

@@ -126,13 +126,5 @@ button{
 @media screen and (max-width:991px){
     .overflow-hidden-menu{
         overflow: hidden;
-        position: fixed;
     }
-}
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    margin: 0; 
 }

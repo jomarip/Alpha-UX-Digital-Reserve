@@ -13,11 +13,7 @@
     padding: 0;
 }
 .signed-header-wrapper{
-    padding: 35px 15px;
-}
-.navbar-toggler, .signed-header-text-wrap{
-    padding: 0;
-    margin: 0;
+    padding: 35px 30px;
 }
 .navbar-toggler-icon.signed-toggle-icon, .menu-close-icon {
     background: url('../assets/images/signed-hamburger-menu.png') no-repeat;
@@ -41,7 +37,11 @@
 .signed-list-link:last-child{
     padding-left: 0;
 }
-
+.signed-list-link.active{
+    font-family: AvertaBold;
+    color: #3f9dfe;
+    border-bottom: 2px solid #3f9dfe;
+}
 .signed-menu-header{
     color: #fff;
     font-family: AvertaExtraBold;
@@ -56,11 +56,6 @@
 @media screen and (min-width: 1024px){
     .signed-header-wrapper{
         padding: 39px 61px;
-    }
-    #signed-main-header .signed-header-wrapper .signed-nav-items-wrap .signed-list-link.active{
-        font-family: AvertaBold;
-        color: #3f9dfe;
-        border-bottom: 2px solid #3f9dfe;
     }
 }
 @media screen and (max-width: 992px){

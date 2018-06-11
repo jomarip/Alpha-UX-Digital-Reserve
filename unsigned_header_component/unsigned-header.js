@@ -7,9 +7,7 @@ $(document).ready(function() {
         if($('body').hasClass('overflow-hidden')){
             console.log('has');
         }else{
-            setTimeout(function() {
-                $('body').addClass('overflow-hidden');
-            },0.7);
+            $('body').addClass('overflow-hidden');
         };
         $('#loginSection').addClass('signup-open');
     });
@@ -18,9 +16,7 @@ $(document).ready(function() {
         if($('body').hasClass('overflow-hidden')){
             console.log('has');
         }else{
-            setTimeout(function() {
-                $('body').addClass('overflow-hidden');
-            },0.7);
+            $('body').addClass('overflow-hidden');
         }
         $('#loginSection').addClass('login-open');
     })

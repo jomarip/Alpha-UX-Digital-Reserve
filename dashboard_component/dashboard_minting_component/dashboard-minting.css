@@ -35,12 +35,47 @@
 .minting-progress-status,.dashboard-mint-value {
     margin-bottom: 5px;
 }
+
+.progress{
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    height: 100%;
+    background: transparent;
+    justify-content: center;
+  }
+  .barOverflow{ /* Wraps the rotating .bar */
+    position: relative;
+    overflow: hidden; /* Comment this line to understand the trick */
+    width: 90px;
+    height: 45px;
+      border-radius: 90px 90px 0 0;
+    -moz-border-radius: 90px 90px 0 0;
+    -webkit-border-radius: 90px 90px 0 0;
+    border: 5px solid red;
+    border-bottom: none;
+    
+  }
+  .bar{
+    position:absolute;
+    top:45px;
+    width: inherit;
+    height: inherit;
+    border-radius: 0 0 45px 45px;
+    box-sizing: border-box;
+    border: 5px solid currentColor; /* Use currentColor... */
+    color:green; /* ...to ease the control over colors in jQuery */
+    border-top:0;
+    /* since we're rotating a half circle we need to translate to transform origin */
+    transform-origin: 50% top;
+    -webkit-transform-origin: 50% top;
+  }
 @media screen and (min-width: 992px){
     .minting-progress-wrap{
         flex: 1;
     }
 }
-@media screen and (min-width: 992px) and (max-height: 767px){
+@media screen and (min-width: 992px) and (max-height: 768px){
     .dashboard-component-main-wrapper.dashboard-minting-main-wrapper{
         max-height: 100%;
         overflow: auto;

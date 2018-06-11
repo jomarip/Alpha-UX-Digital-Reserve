@@ -6,15 +6,21 @@ $(document).ready(function() {
     $('#lite-full-node-popup-container').load('lite_full_switch_node_popup_component/lite-full-switch-node-popup.html');
     $('#contact-us-popup-container').load('contact_us_popup_component/contact-us-popup.html');
     // $('#signed-header-container').load('signed_header_component/signed-header.html')
+    $('#borrow-denarii-modal-1').load('borrow_denarii_component/borrow-denarii.html')
+    $('#mint-denarii-contanier').load('mint_danarii_component/mint-danarii.html')
     $('#home-container').load('home_component/home.html');
     $('#about-us-conatiner').load('about_us_component/about-us.html');
+    $('#send-denarii-conatainer').load('send_denarii_component/send-denarii.html')
     $('#faq-container').load('faq_component/faq.html');
-   //header mobile menu
+    // var location_href = window.location.href;
+    // var result = location_href.substring(location_href.lastIndexOf('/')+1);
+    // if(result == 'about-us'){
+    // }
+    // else{
+    // }
     $(document).on('click', '.toggle-icon', function(){
         $('.header-wrapper').toggleClass('show-menu');
-        setTimeout(function() {
-                $('body').addClass('overflow-hidden');
-            },0.7);
+        $('body').addClass('overflow-hidden-menu');
     })
     $(document).on('click', '.close-icon', function(){
         $('.header-wrapper').removeClass('show-menu');
@@ -25,6 +31,7 @@ $(document).ready(function() {
     })
     $(document).on('click', '.menu-close-icon', function(){
         $('.signed-header-wrapper').removeClass('show-signed-menu');
+        // $('.signed-collapse-wrapper').removeClass('show');
     })
     $('#about-us-conatiner').hide();
     $('#faq-container').hide();
