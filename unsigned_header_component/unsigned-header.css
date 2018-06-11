@@ -147,8 +147,10 @@
         bottom: 0;
         top: 0;
     }
+    .mobile-menubar-overlay{
+        flex: 1;
+    }
     .inner-list-menu{
-        min-height: calc(100vh - 100px);
         flex-direction: column;
         justify-content: center;
     }
