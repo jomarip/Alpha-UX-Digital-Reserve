@@ -7,6 +7,12 @@ $(document).ready(function() {
     $('#dashboard_minting_component').load('dashboard_minting_component/dashboard-minting.html');
     $('#dashboard_overview_component').load('dashboard_overview_component/dashboard-overview.html');
     $('#wallet_all_transactions_component').load('wallet_all_transactions_component/wallet-all-transactions.html');
+    $('#send-denarii-conatainer').load('../send_denarii_component/send-denarii.html')
+    $('#lend-denarii-container').load('../lend_denarii_component/lend-denarii.html')
+    $('#request-denarii-container').load('../request_denarii_component/request-denarii.html')
+    $('#borrow-denarii-modal-1').load('../borrow_denarii_component/borrow-denarii.html')
+    $('#mint-denarii-contanier').load('../mint_danarii_component/mint-danarii.html')
+
     
     $(document).on('click', '.signed-toggle-icon', function(){
         $('.signed-header-wrapper').toggleClass('show-signed-menu');
