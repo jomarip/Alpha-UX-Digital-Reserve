@@ -23,12 +23,12 @@ $(document).ready(function() {
     
     $('#wallet-page').hide();
     $(document).on('click', '.signed-list-link', function(){
-        var attt_value = $(this).attr('data-attr');
+        var attr_value = $(this).attr('data-attr');
         $(this).addClass('signin-active');
         $(this).parents('.nav-item').siblings('.nav-item').find('.nav-link').removeClass('signin-active');
-        if( attt_value == "Dashboard"){
+        if( attr_value == "Dashboard"){
             $('#dashboard-page').addClass('active');
-            $('#wallet-page').attr("style", "display: none !important");
+            $('#wallet-page').removeClass('active');
             $('#dashboard_detail_component').load('dashboard_detail_component/dashboard-detail.html');
             $('#dashboard_favourites_component').load('dashboard_favourites_component/dashboard-favourites.html');
             $('#dashboard_all_denarii_component').load('dashboard_all_denarii_component/dashboard-all-denarii.html');
@@ -36,7 +36,7 @@ $(document).ready(function() {
             $('#dashboard_minting_component').load('dashboard_minting_component/dashboard-minting.html');
             $('#dashboard_overview_component').load('dashboard_overview_component/dashboard-overview.html');
         }  
-        else if( attt_value == "Wallet"){
+        else if( attr_value == "Wallet"){
             $('#dashboard-page').removeClass('active');
             $('#wallet-page').addClass('active');
             $('#wallet_all_transactions_component').load('wallet_all_transactions_component/wallet-all-transactions.html');
@@ -44,15 +44,70 @@ $(document).ready(function() {
             $('#wallet_favourites_component').load('dashboard_favourites_component/dashboard-favourites.html');
             $('#wallet_all_denarii_component').load('dashboard_all_denarii_component/dashboard-all-denarii.html');
         }
+        else if( attr_value == "Mint"){
+            $(document).on('click','.mint-denarii-close', function(){
+                $('.nav-item').each(function(){
+                    if($(this).find('a').attr('data-attr')=="Dashboard"){
+                        $(this).find('a').addClass('signin-active');
+                        $('#dashboard-page').addClass('active');
+                        $('#wallet-page').removeClass('active');
+                    }
+                    else{
+                        $(this).find('a').removeClass('signin-active');
+                    }
+                });
+                
+            })
+        }
         else{
             $('#dashboard-page').addClass('active');
             $('#wallet-page').removeClass('active');
         }
     });
-    $(document).on('click', 'a[data-target="#send-denarii-modal"]', function(){
-        alert('asdfgbhj');
-        alert($(this).find('.dashboard-wallet-label').value());
+    $(document).on('click', '.dashboard-favourites-profile-wrap a', function(){
+        var name = $(this).find('.dashboard-wallet-label').text();
+        $('.send-denarii-container input').each(function(){
+            $('.user-name-value').val(name);
+            tmpval = $(this).val();
+                if(tmpval == '') {
+                    if( $(this).hasClass('field-focus')){
+                        $(this).removeClass('field-focus');
+                    }
+                }
+            else {
+                $(this).addClass('field-focus');
+            }
+        })
+        
     })
+    $(document).on('click', '.signed-balance-navigation', function(){
+        $('#dashboard-page').removeClass('active');
+        $('#wallet-page').addClass('active');
+        $('.nav-item').each(function(){
+            if($(this).find('a').attr('data-attr')=="Wallet"){
+                $(this).find('a').addClass('signin-active');
+            }
+            else{
+                $(this).find('a').removeClass('signin-active')
+            }
+        });
+        $('#wallet_all_transactions_component').load('wallet_all_transactions_component/wallet-all-transactions.html');
+        $('#wallet_detail_component').load('dashboard_detail_component/dashboard-detail.html');
+        $('#wallet_favourites_component').load('dashboard_favourites_component/dashboard-favourites.html');
+        $('#wallet_all_denarii_component').load('dashboard_all_denarii_component/dashboard-all-denarii.html');
+
+    });
+
+    $(document).on('click', '.clear-value', function (e) {
+        var clearVal = $('input').val('');
+        $('form input').each(function(){
+            if( $(this).hasClass('field-focus')){
+                $(this).removeClass('field-focus');
+            }
+            else {
+            }
+        })
+    });
 });
 
 

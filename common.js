@@ -47,6 +47,18 @@ $(document).ready(function() {
             $('#about-us-conatiner').hide();
             $('#home-container').hide();
         }
+        else if(attt_value == "ContactUs"){
+            $(document).on('click', '.contact-popup-close', function(){
+                $('.nav-item').each(function(){
+                    if($(this).find('a').attr('data-attr')=="Home"){
+                        $('#home-container').show();
+                        $('#about-us-conatiner').hide();
+                        $('#faq-container').hide(); 
+                    }
+                })
+            })
+           
+        }
         else if(attt_value == "Home"){
             $('#home-container').show();
             $('#about-us-conatiner').hide();
@@ -56,4 +68,5 @@ $(document).ready(function() {
             $('#home-container').show();
         }
     })
+
 });
