@@ -31,6 +31,9 @@ a.canvasjs-chart-credit, #wallet-page #wallet_detail_component .signed-balance-n
 .dashboard-main-container.active{
     display:block!important;
 }
+div#main-container{
+    background-color: #fff;
+}
 @media screen and (min-width: 992px){
     .dashboard-main-container{
         position: relative;

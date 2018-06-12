@@ -32,6 +32,7 @@ li.nav-item.filter-item .dashboard-detail-heading{
 .tab-content{
     flex: 1;
     overflow: auto;
+    background-color: #fff;
 }
 .tab-content>.tab-pane {
     opacity: 0;

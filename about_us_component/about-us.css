@@ -2,9 +2,6 @@
 .nodes-image-wrapper{
     padding: 131px 30px 77px;
 }
-.team-details-wrapper{
-    background-image: linear-gradient(172deg, #0f1b3a, #090f23);
-}
 .about-us-sub-header-wrap{
     background-image: linear-gradient(138deg, #0f1b3a, #090f23);
 }
@@ -23,6 +20,7 @@
 }
 .about-mission-wrapper{
     padding:70px 30px 0;
+    background-color: #fff;
 }
 .about-us-subheader, .about-us-team-subheader{
     font-family: AvertaExtraBold;
@@ -141,6 +139,7 @@
         align-items: center;
         position: relative;
         justify-content: flex-end;
+        background-color: #fff;
     }
     .dashboard-img{
         position: absolute;
