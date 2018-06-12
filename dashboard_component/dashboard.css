@@ -97,3 +97,15 @@ a.canvasjs-chart-credit, #wallet-page #wallet_detail_component .signed-balance-n
     appearance: none;	
     margin: 0; 	
 }
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="date"]::-webkit-inner-spin-button{
+    display: none;  
+    visibility: hidden;
+}
+::-webkit-datetime-edit-year-field:not([aria-valuenow]),
+::-webkit-datetime-edit-month-field:not([aria-valuenow]),
+::-webkit-datetime-edit-day-field:not([aria-valuenow]) {
+    color: transparent;
+}
+input::-webkit-datetime-edit{ color: transparent; }
