@@ -41,7 +41,7 @@
 }
 @media screen and (min-width: 992px){
     div.detail_component{
-        height: calc(40% - 10px);
+        height: calc(50% - 10px);
         margin-bottom: 10px;
     }
     div.detail_component .dashboard-component-main-wrapper{

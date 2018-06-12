@@ -4,17 +4,16 @@ $(document).ready(function() {
     $('#footer-container').load('footer_component/footer.html');
     $('#switch-node-popup-container').load('switch_node_popup_component/switch-node-popup.html');
     $('#lite-full-node-popup-container').load('lite_full_switch_node_popup_component/lite-full-switch-node-popup.html');
-    $('#contact-us-popup-container').load('contact_us_popup_component/contact-us-popup.html');
-    // $('#signed-header-container').load('signed_header_component/signed-header.html')
+    $('#contact-us-popup-container').load('contact_us_popup_component/contact-us-popup.html');  
     $('#home-container').load('home_component/home.html');
     $('#about-us-conatiner').load('about_us_component/about-us.html');
     $('#faq-container').load('faq_component/faq.html');
-   //header mobile menu
+    
     $(document).on('click', '.toggle-icon', function(){
         $('.header-wrapper').toggleClass('show-menu');
         setTimeout(function() {
-                $('body').addClass('overflow-hidden');
-            },0.7);
+            $('body').addClass('overflow-hidden-menu');
+        },0.7);
     })
     $(document).on('click', '.close-icon', function(){
         $('.header-wrapper').removeClass('show-menu');

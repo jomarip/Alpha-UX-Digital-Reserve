@@ -8,8 +8,8 @@ $(document).ready(function() {
             console.log('has');
         }else{
             setTimeout(function() {
-                $('body').addClass('overflow-hidden');
-            },0.7);
+            $('body').addClass('overflow-hidden');
+        },0.7);
         };
         $('#loginSection').addClass('signup-open');
     });
@@ -19,8 +19,8 @@ $(document).ready(function() {
             console.log('has');
         }else{
             setTimeout(function() {
-                $('body').addClass('overflow-hidden');
-            },0.7);
+            $('body').addClass('overflow-hidden');
+        },0.7);
         }
         $('#loginSection').addClass('login-open');
     })
