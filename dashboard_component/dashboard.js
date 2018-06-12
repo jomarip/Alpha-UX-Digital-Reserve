@@ -28,7 +28,7 @@ $(document).ready(function() {
         $(this).parents('.nav-item').siblings('.nav-item').find('.nav-link').removeClass('signin-active');
         if( attr_value == "Dashboard"){
             $('#dashboard-page').addClass('active');
-            $('#wallet-page').removeClass('active');
+            $('#wallet-page,#learn-page').removeClass('active');
             $('#dashboard_detail_component').load('dashboard_detail_component/dashboard-detail.html');
             $('#dashboard_favourites_component').load('dashboard_favourites_component/dashboard-favourites.html');
             $('#dashboard_all_denarii_component').load('dashboard_all_denarii_component/dashboard-all-denarii.html');
@@ -37,7 +37,7 @@ $(document).ready(function() {
             $('#dashboard_overview_component').load('dashboard_overview_component/dashboard-overview.html');
         }  
         else if( attr_value == "Wallet"){
-            $('#dashboard-page').removeClass('active');
+            $('#dashboard-page,#learn-page').removeClass('active');
             $('#wallet-page').addClass('active');
             $('#wallet_all_transactions_component').load('wallet_all_transactions_component/wallet-all-transactions.html');
             $('#wallet_detail_component').load('dashboard_detail_component/dashboard-detail.html');
@@ -59,9 +59,22 @@ $(document).ready(function() {
                 
             })
         }
+
+        else if( attr_value == "Learn"){
+            $('#learn-page').addClass('active');
+            $('#dashboard-page,#wallet-page').removeClass('active');
+            $('#learn_component').load('learn_component/learn.html');
+            $('#learn_detail_component').load('dashboard_detail_component/dashboard-detail.html');
+            $('#learn_reward_component').load('learn_component/learn_reward_component/learn-reward.html');
+            $('#learn_quiz_component').load('learn_component/learn_quiz_component/learn-quiz.html');
+
+        }
         else{
             $('#dashboard-page').addClass('active');
             $('#wallet-page').removeClass('active');
+        }
+        if($(window).width()<768){
+            $(this).parents('.signed-header-wrapper').removeClass('show-signed-menu');
         }
     });
     $(document).on('click', '.dashboard-favourites-profile-wrap a', function(){

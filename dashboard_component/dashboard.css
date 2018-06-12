@@ -24,10 +24,13 @@ a:hover{
     text-decoration: none;
 }
 #wallet-page .favourites_component,#wallet-page .all_denarii_component,
-a.canvasjs-chart-credit, #wallet-page #wallet_detail_component .signed-balance-navigation {
+a.canvasjs-chart-credit, #wallet-page #wallet_detail_component .signed-balance-navigation,
+#learn_reward_component {
     display: none;
 }
-
+.dashboard-main-container.active{
+    display:block!important;
+}
 @media screen and (min-width: 992px){
     .dashboard-main-container{
         position: relative;
@@ -66,23 +69,43 @@ a.canvasjs-chart-credit, #wallet-page #wallet_detail_component .signed-balance-n
     .dashboard-component-main-wrapper{
         margin-bottom: 10px;
     }
-    #wallet-page .favourites_component,#wallet-page .all_denarii_component{
+    #wallet-page .favourites_component,#wallet-page .all_denarii_component,
+    #learn_reward_component{
         display: block;
     }
     #wallet_all_transactions_component{
         height: 100%;
     }
+    .dashboard-main-container.active{
+        display:flex!important;
+    }
+    #learn-page div.detail_component{
+        height: 50%;
+        flex: 1;
+    }
 }
 .dashboard-main-container{
     display:none!important;
-}
-.dashboard-main-container.active{
-    display:flex!important;
 }
 @media screen and (min-width: 992px) and (max-height: 768px){
     div.favourites_component,div.all_denarii_component{
         height: calc(25% - 5px);
         margin-bottom: 10px;
+    }
+}
+@media screen and (min-width: 1200px){
+    #learn-page div.detail_component{
+        height: calc(50% - 5px);
+    }
+}
+@media screen and (min-width: 1300px){
+    #learn-page div.detail_component{
+        height: 360px;
+    }
+}
+@media screen and (min-width: 1024px) and (min-height: 1024px){
+    #learn-page div.detail_component{
+        height: 360px;
     }
 }
 @media screen and (min-width: 1200px){
