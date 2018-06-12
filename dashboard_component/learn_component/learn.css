@@ -36,7 +36,7 @@ p.learn-list-description,h4.learn-item-heading{
         margin: 0 5px 0 0;
     }
 }
-@media screen and (min-width: 1024px) and (min-height: 1024px){
+@media screen and (min-width: 992px) and (min-height: 769px){
     .dashboard-component-main-wrapper.learn-component-main-wrapper{
         max-height: 730px;
     }
