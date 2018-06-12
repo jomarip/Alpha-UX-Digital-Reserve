@@ -94,7 +94,7 @@ $(document).ready(function() {
         
     })
     $(document).on('click', '.signed-balance-navigation', function(){
-        $('#dashboard-page').removeClass('active');
+        $('#dashboard-page,#learn-page').removeClass('active');
         $('#wallet-page').addClass('active');
         $('.nav-item').each(function(){
             if($(this).find('a').attr('data-attr')=="Wallet"){
