@@ -24,7 +24,7 @@ a:hover{
     text-decoration: none;
 }
 #wallet-page .favourites_component,#wallet-page .all_denarii_component,
-a.canvasjs-chart-credit{
+a.canvasjs-chart-credit, #wallet-page #wallet_detail_component .signed-balance-navigation {
     display: none;
 }
 
@@ -73,6 +73,12 @@ a.canvasjs-chart-credit{
         height: 100%;
     }
 }
+.dashboard-main-container{
+    display:none!important;
+}
+.dashboard-main-container.active{
+    display:flex!important;
+}
 @media screen and (min-width: 992px) and (max-height: 768px){
     div.favourites_component,div.all_denarii_component{
         height: calc(25% - 5px);
@@ -84,3 +90,22 @@ a.canvasjs-chart-credit{
         padding: 0 45px 50px;
     }
 }
+-input[type=number]::-webkit-inner-spin-button, 	
+-input[type=number]::-webkit-outer-spin-button { 	
+    -webkit-appearance: none;	
+    -moz-appearance: none;	
+    appearance: none;	
+    margin: 0; 	
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="date"]::-webkit-inner-spin-button{
+    display: none;  
+    visibility: hidden;
+}
+::-webkit-datetime-edit-year-field:not([aria-valuenow]),
+::-webkit-datetime-edit-month-field:not([aria-valuenow]),
+::-webkit-datetime-edit-day-field:not([aria-valuenow]) {
+    color: transparent;
+}
+input::-webkit-datetime-edit{ color: transparent; }
