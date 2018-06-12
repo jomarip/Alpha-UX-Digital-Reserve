@@ -57,7 +57,7 @@
     .signed-header-wrapper{
         padding: 39px 61px;
     }
-    #signed-main-header .signed-header-wrapper .signed-nav-items-wrap .signed-list-link.active{
+    #signed-main-header .signed-header-wrapper .signed-nav-items-wrap .signed-list-link.signin-active{
         font-family: AvertaBold;
         color: #3f9dfe;
         border-bottom: 2px solid #3f9dfe;
