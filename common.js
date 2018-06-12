@@ -8,6 +8,7 @@ $(document).ready(function() {
     $('#home-container').load('home_component/home.html');
     $('#about-us-conatiner').load('about_us_component/about-us.html');
     $('#faq-container').load('faq_component/faq.html');
+    $('#keystore-file-container').load('keystore_file_modal_component/keystore-file.html')
     
     $(document).on('click', '.toggle-icon', function(){
         $('.header-wrapper').toggleClass('show-menu');
