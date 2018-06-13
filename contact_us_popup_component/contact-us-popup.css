@@ -36,7 +36,7 @@
     color: #010101;
 }
 .contact-us-popop-innerlay form  .form-group input{
-    font-size: 48px;
+    font-size: 34px;
     color: #0c152e;
     padding: 0;
     border: none;
@@ -94,8 +94,6 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .contact-us-popop-innerlay form .form-group input:focus{
     box-shadow: none;
-
-    
 }
 .contact-form-submit{
     padding: 17px;
