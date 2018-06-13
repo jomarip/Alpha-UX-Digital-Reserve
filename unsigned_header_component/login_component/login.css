@@ -164,10 +164,13 @@
     border-radius: 3px;
     background-color: #3f9dfe;
 }
+.join-signup-wrapper .signup-content form button, .unsigned-login-wrapper .login-content form .file-btn-wrap .file-btn{
+    font-family: AvertaExtraBold;
+}
 .unsigned-login-wrapper .login-content form .file-btn-wrap .file-btn{
     opacity: 1;
     cursor: pointer;
-    font-family: AvertaExtraBold;
+    
 }
 .unsigned-login-wrapper .login-content form button:focus,
 .unsigned-forgotpwd-wrapper .forgotpwd-content form button:focus,
