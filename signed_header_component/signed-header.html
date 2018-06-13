@@ -11,7 +11,7 @@
             <div class="navbar-collapse justify-content-center align-items-center signed-collapse-wrapper" id="signed-menu-bar">
                 
                 <ul class="navbar-nav signed-nav-items-wrap d-flex align-items-start align-items-lg-center">
-                    <li class="d-block d-lg-none">
+                    <li class="d-block d-lg-none signed-mobile-logo-wrapper">
                         <div class="signed-menu-list-items d-flex d-lg-none justify-content-between align-items-center">
                             <div class="d-flex flex-sm-row align-items-center">
                                 <img src="../assets/images/collapsable-menu-icon.png" class="signed-mobile-light-header-logo">
@@ -20,23 +20,26 @@
                             <span class="menu-close-icon"></span>
                         </div>
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link signed-list-link signin-active" href="#" data-attr="Dashboard">Dashboard</a>
-                    </li>
-                    <li class="nav-item" >
-                        <a class="nav-link signed-list-link" href="#"  data-attr="Wallet">Wallet</a>
-                    </li>
-                    <li class="nav-item" >
-                        <a class="nav-link signed-list-link" href="#"  data-attr="Mint" data-target="#mint-denarii-modal" data-toggle="modal">Mint</a>
-                    </li>
-                    <li class="nav-item"> 
-                        <a class="nav-link signed-list-link" href="#" data-attr="Learn">Learn</a>
-                    </li>
-                    <li>
-                        <div class="logout-btn-wrapper d-block d-lg-none ">
-                            <button class="btn logout-btn"> Logout</button>
-                        </div>
-                    </li>
+                    <ul class="signed-menu-items d-flex flex-column flex-lg-row d-flex align-items-start align-items-lg-center justify-content-center">
+                        <li class="nav-item ">
+                            <a class="nav-link signed-list-link signin-active" href="#" data-attr="Dashboard">Dashboard</a>
+                        </li>
+                        <li class="nav-item" >
+                            <a class="nav-link signed-list-link" href="#"  data-attr="Wallet">Wallet</a>
+                        </li>
+                        <li class="nav-item" >
+                            <a class="nav-link signed-list-link" href="#"  data-attr="Mint" data-target="#mint-denarii-modal" data-toggle="modal">Mint</a>
+                        </li>
+                        <li class="nav-item"> 
+                            <a class="nav-link signed-list-link" href="#" data-attr="Learn">Learn</a>
+                        </li>
+                        <li>
+                            <div class="logout-btn-wrapper d-block d-lg-none ">
+                                <button class="btn logout-btn"> Logout</button>
+                            </div>
+                        </li>
+                    </ul>
+                    
                 </ul>
             </div>  
             <div class="user-profile-pic d-none d-lg-block">

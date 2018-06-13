@@ -83,17 +83,23 @@
         z-index: 1000;
     }
     .signed-nav-items-wrap{
-        height: calc(100vh);
+        height: 100vh;
         justify-content: center;
         overflow-x: hidden;
         overflow-y: auto;
     } 
+    .signed-mobile-logo-wrapper{
+        width: 100%;
+    }
+    .signed-menu-items{
+        flex: 1;
+    }
     .signed-menu-list-items{
-        position: absolute;
+        /* position: absolute;
         left: 0;
         right: 0;
-        top: 0;
-        padding: 40px 30px;
+        top: 0; */
+        padding: 40px 0 0;
     }
     .signed-mobile-light-header-logo{
         width: 30px;
