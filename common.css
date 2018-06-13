@@ -85,6 +85,7 @@ button{
     position: relative;
     z-index: 9;
 }
+
 #main-header{
 	left: 0;
 	width: 100%;
@@ -128,6 +129,9 @@ button{
     .overflow-hidden-menu{
         overflow: hidden;
         position: fixed;
+    }
+    .main-header-container{
+        padding-bottom: 10px;
     }
 }
 -input[type=number]::-webkit-inner-spin-button, 	

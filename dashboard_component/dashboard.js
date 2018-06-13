@@ -15,10 +15,12 @@ $(document).ready(function() {
     
     $(document).on('click', '.signed-toggle-icon', function(){
         $('.signed-header-wrapper').toggleClass('show-signed-menu');
+        $('body').addClass('overflow-hidden-menu');
     });
 
     $(document).on('click', '.menu-close-icon', function(){
         $('.signed-header-wrapper').removeClass('show-signed-menu');
+        $('body').removeClass('overflow-hidden-menu');
     });
     
     $('#wallet-page').hide();
@@ -112,6 +114,10 @@ $(document).ready(function() {
     });
 
     $(document).on('click', '.clear-value', function (e) {
+        if($('body').hasClass('modal-open')){
+            $('body').removeClass('overflow-hidden-menu');
+        }
+       
         var clearVal = $('input').val('');
         $('form input').each(function(){
             if( $(this).hasClass('field-focus')){
@@ -120,7 +126,16 @@ $(document).ready(function() {
             else {
             }
         })
+       
     });
+    $(document).on('click', '.modal-overflow', function(){
+        if($('body').hasClass('.modal-open')){
+            $('body').addClass('overflow-hidden-menu');
+        }
+        else{
+            
+        }
+    })
 });
 
 

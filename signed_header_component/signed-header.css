@@ -115,4 +115,7 @@
     .menu-close-icon{
         display: block;
     }
+    #signed-main-header .signed-header-wrapper .signed-nav-items-wrap .signed-list-link.signin-active{
+        font-family: AvertaExtraBold;
+    }
 }
