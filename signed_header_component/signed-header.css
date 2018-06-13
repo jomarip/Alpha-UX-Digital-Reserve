@@ -66,6 +66,9 @@
         color: #3f9dfe;
         border-bottom: 2px solid #3f9dfe;
     }
+    .signed-menu-list-items{
+        display: none;
+    }
 }
 @media screen and (max-width: 992px){
     .show-signed-menu .signed-collapse-wrapper{
@@ -84,7 +87,7 @@
     }
     .signed-nav-items-wrap{
         height: 100vh;
-        justify-content: center;
+        /* justify-content: center; */
         overflow-x: hidden;
         overflow-y: auto;
     } 
@@ -92,7 +95,7 @@
         width: 100%;
     }
     .signed-menu-items{
-        flex: 1;
+        height: calc(100vh - 71px);
     }
     .signed-menu-list-items{
         /* position: absolute;
