@@ -2,17 +2,10 @@
 #shareDetailsSection.share-details-open .share-details-wrapper{
     left: 0;
 }
+
 .share-details-wrapper{
-    top: 0;
-    left: -630px;
-    bottom: 0;
-    z-index: 2;
-    width: 600px;
-    height: 100vh;
-    overflow: auto;
-    position: fixed;
+    /* position: static; */
     /* opacity: 0.9; */
-    box-shadow: 0 0 19px 0 rgba(0, 0, 0, 0.5);
     font-family: AvertaRegular;
     background-color: #ffffff;
     -webkit-backdrop-filter: blur(10px);
@@ -21,6 +14,7 @@
     -o-transition: 0.3s all ease-in-out;
     -moz-transition: 0.3s all ease-in-out;
     -webkit-transition: 0.3s all ease-in-out;
+    height: 100vh;
 }
 .share-details-wrapper .share-details-content{
     padding: 50px 80px;
@@ -130,6 +124,11 @@
     background-image: none !important;
     background-color: #fff !important;
 }
+.logo-icon.darkshare-details-header-logo{
+    width: 218px;
+    height: auto;
+
+}
 
 @media (min-width: 320px) and (max-width: 767px){
     .share-details-wrapper{
@@ -138,6 +137,7 @@
     }
     .share-details-wrapper .share-details-content{
         padding: 30px;
+        height: 100vh;
     }
     .share-details-wrapper .share-details-content .share-details-text{
         margin-top: 40px;

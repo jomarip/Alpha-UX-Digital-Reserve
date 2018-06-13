@@ -85,7 +85,6 @@ button{
     position: relative;
     z-index: 9;
 }
-
 #main-header{
 	left: 0;
 	width: 100%;
@@ -125,6 +124,9 @@ button{
     /* background-image: linear-gradient(112deg, #0f1b3a, #090f23); */
     margin: 0;
 }  
+.overflow-hidden-menu-popup{
+    overflow: hidden;
+}
 @media screen and (max-width:991px){
     .overflow-hidden-menu{
         overflow: hidden;
