@@ -20,12 +20,7 @@ $(document).ready(function() {
         $('.header-wrapper').removeClass('show-menu');
         $('body').removeClass('overflow-hidden-menu');
     })
-    $(document).on('click', '.signed-toggle-icon', function(){
-        $('.signed-header-wrapper').toggleClass('show-signed-menu');
-    })
-    $(document).on('click', '.menu-close-icon', function(){
-        $('.signed-header-wrapper').removeClass('show-signed-menu');
-    })
+
     $('#about-us-conatiner').hide();
     $('#faq-container').hide();
     $(document).on('click', '.home-navigation', function(){
