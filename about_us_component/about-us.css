@@ -1,6 +1,6 @@
 
 .nodes-image-wrapper{
-    padding: 131px 30px 77px;
+    padding: 120px 30px 77px;
 }
 .about-us-sub-header-wrap{
     background-image: linear-gradient(138deg, #0f1b3a, #090f23);
@@ -101,16 +101,20 @@
     background-color: #3f9dfe;
     padding: 17px 26px;
     font-size: 15px;
-    font-family: AvertaRegular;
+    font-family: AvertaExtraBold;
     line-height: 1.47;
     color: #fff;
     border-color: transparent;
     margin: 40px 0 0;
 }
+.approach-container-block{
+    background-color: #fff;
+}
+
 
 @media screen and (min-width:1024px){
     .details-header-wrap .about-us-content{
-        width: 58%;
+        width: 72%;
     }
     .profile-info-container{
         flex-wrap: wrap;
@@ -133,13 +137,13 @@
     }
     .approach-text-wrapper{
         width: 50%;
-        padding: 100px 77px 82px 0;
+        padding: 59px 77px 82px 0;
     }
     .approach-container-block{
         align-items: center;
         position: relative;
         justify-content: flex-end;
-        background-color: #fff;
+      
     }
     .dashboard-img{
         position: absolute;
@@ -157,10 +161,10 @@
         width: 17%;
     }
     .mission-sub-header-block .about-us-context,.about-us-sub-header-wrap .about-us-content{
-        width: 86%;
+        width: 65%;
     }
     .nodes-image-wrapper{
-        padding:198px 77px 139px;
+        padding:170px 77px 139px;
     }
     .about-us-header{
        margin-bottom: 29px;
@@ -176,6 +180,12 @@
         font-size: 15px;
         line-height: 1.47;
     }
+    .about-us-context{
+        margin-bottom: 37px;
+    }
+    .about-us-contact-btn, .about-us-join-resolution{
+        padding: 17px 58px;
+    }
 }
 @media screen and (min-width: 1440px){
     .desktop-dashboard-img{
@@ -185,5 +195,8 @@
 @media screen and (max-width: 992px){
     .mobile-dashboard-img{
         width: 100%;
+    }
+    .approach-container-block{
+        padding-top: 30px;
     }
 }
