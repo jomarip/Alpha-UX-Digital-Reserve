@@ -24,7 +24,7 @@ a:hover{
     text-decoration: none;
 }
 #wallet-page .favourites_component,#wallet-page .all_denarii_component,
-a.canvasjs-chart-credit, #wallet-page #wallet_detail_component .signed-balance-navigation,
+a.canvasjs-chart-credit,
 #learn_reward_component {
     display: none;
 }
@@ -33,6 +33,27 @@ a.canvasjs-chart-credit, #wallet-page #wallet_detail_component .signed-balance-n
 }
 div#main-container{
     background-color: #fff;
+}
+.share-details-popup{
+    display: none;
+    top: 0;
+    left: -630px;
+    bottom: 0;
+    z-index:1000;
+    width: 600px;
+    height: 100vh;
+    overflow: auto;
+    position: fixed;
+    background-color: #fff;
+    box-shadow: 0 0 19px 0 rgba(0, 0, 0, 0.5);
+    transition: 0.3s left ease-in-out;
+    -o-transition: 0.3s left ease-in-out;
+    -moz-transition: 0.3s left ease-in-out;
+    -webkit-transition: 0.3s left ease-in-out;
+}
+.share-details-popup.active{
+    left: 0;
+    display: block;
 }
 @media screen and (min-width: 992px){
     .dashboard-main-container{

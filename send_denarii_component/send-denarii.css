@@ -88,6 +88,7 @@
 }
 .send-denarii-modal-innerlay form .form-group .form-value.field-focus {
     border-bottom: 2px solid #3f9dfe;
+    font-size: 48px;
 }
 .send-denarii-modal-innerlay form .form-group .form-value.field-focus + label{
     top: -15px;
