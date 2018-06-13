@@ -5,7 +5,7 @@
 #loginSection.signup-open .backdrop,
 #loginSection.signup-open .join-signup-wrapper{
     left: 0;
-    opacity: 0.96;
+    opacity: 0.95;
 }
 .unsigned-login-wrapper,
 .unsigned-forgotpwd-wrapper,
@@ -30,12 +30,13 @@
     -webkit-transition: 0.3s all ease-in-out;
 }
 .unsigned-login-wrapper{
-    opacity: 0.96;
+    opacity: 0.95;
 }
 .unsigned-login-wrapper .login-content,
 .unsigned-forgotpwd-wrapper .forgotpwd-content,
 .join-signup-wrapper .signup-content{
     padding: 50px 80px;
+    height: 100%;
 }
 .unsigned-login-wrapper .login-content .login-header #dark-close-icon,
 .unsigned-forgotpwd-wrapper .forgotpwd-content .forgotpwd-header .darkpwd-close-icon,
@@ -210,6 +211,7 @@
     .unsigned-forgotpwd-wrapper .forgotpwd-content,
     .join-signup-wrapper .signup-content{
         padding: 30px;
+        height: 100%;
     }
     .unsigned-login-wrapper .login-content .login-text,
     .unsigned-forgotpwd-wrapper .forgotpwd-content .forgotpwd-text,
@@ -220,6 +222,14 @@
     .unsigned-forgotpwd-wrapper .forgotpwd-content form,
     .join-signup-wrapper .signup-content form{
         margin-top: 50px;
+    }
+    #loginSection.login-open .backdrop,
+    #loginSection.login-open .unsigned-login-wrapper,
+    #loginSection.forgotpwd-open .backdrop,
+    #loginSection.forgotpwd-open .unsigned-forgotpwd-wrapper,
+    #loginSection.signup-open .backdrop,
+    #loginSection.signup-open .join-signup-wrapper{
+        opacity: 1;
     }
     
 }
