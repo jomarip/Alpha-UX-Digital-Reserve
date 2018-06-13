@@ -6,8 +6,6 @@
     display: block;
     width: 31px;
     height: 31px;
-    background-color: #010101;
-    opacity: 0.5;
 }
 #signed-main-header .navbar-expand-lg .navbar-nav .nav-link,.signed-list-link, .logout-btn,.signed-header-wrapper{
     padding: 0;
@@ -56,6 +54,33 @@
     border: none;
     background-color: transparent;
     font-family: AvertaRegular;
+}
+@media screen and (min-width: 992px){
+    div.user-profile-pic{
+        position: relative;
+    }
+    .profile-dropdown-wrapper{
+        position: absolute;
+        border-radius: 2px;
+        background-color: #ffffff;
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.21);
+        width: 120px;
+        right: 0;
+        top: calc(100% + 10px);
+        z-index: 100;
+        padding: 14px 0 5px;
+        display: none;
+    } 
+    .profile-dropdown-wrapper li{
+        padding: 0 20px 14px;
+        font-family: AvertaBold;
+        font-size: 10px;
+        color: #878fa4;
+        cursor: pointer;
+    }
+    .profile-dropdown-wrapper li.logout-option{
+        color: #ff4c4c;
+    }
 }
 @media screen and (min-width: 1024px){
     .signed-header-wrapper{

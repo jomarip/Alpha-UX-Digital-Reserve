@@ -13,6 +13,7 @@ li.learn-item-list {
     padding-bottom: 16px;
     margin-bottom: 19px;
     border-bottom: solid 1px #c3c3c3;
+    cursor: pointer;
 }
 li.learn-item-list:last-child{
     border: none;
