@@ -108,7 +108,7 @@ input[type=number]::-webkit-outer-spin-button {
     
 }
 .contact-us-popop-innerlay{
-    padding: 40px 20px;
+    padding: 50px 20px;
 }
 .contact-header{
     margin-bottom: 17px;
@@ -164,8 +164,5 @@ input[type=number]::-webkit-outer-spin-button {
     .contact-btn-wrap{
         margin: 30px 0;
     }
-    .contact-us-popup-overlay{
-        padding-bottom: 81px;
-        padding-top: 60px;
-    }
+  
 }
