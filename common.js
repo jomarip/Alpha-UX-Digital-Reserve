@@ -51,7 +51,10 @@ $(document).ready(function() {
                         $('#home-container').show();
                         $('#about-us-conatiner').hide();
                         $('#faq-container').hide(); 
-                        if($('body').hasClass('overflow-hidden-menu')){
+                        if($('body').hasClass('modal-open')){
+                            $('body').addClass('overflow-hidden-menu');
+                        }
+                        else{
                             $('body').removeClass('overflow-hidden-menu');
                         }
                     }
