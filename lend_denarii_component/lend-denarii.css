@@ -96,8 +96,7 @@
     }	
     .lend-denarii-modal-innerlay form  .form-group input{	
         font-size: 22px;
-        color: #010101;
-        opacity: 0.5;
+        color: rgba(1, 1, 1, 0.5);
         padding: 0;	
         border: none;	
         border-bottom: solid 1px #a0a0a0;	
@@ -112,6 +111,7 @@
     .lend-denarii-modal-innerlay form  .form-group input.lend-amount-value{
         font-size: 48px;	
         color: #0c152e;
+        opacity: 1;
     }
     .lend-block{	
         margin-bottom: 25px;	

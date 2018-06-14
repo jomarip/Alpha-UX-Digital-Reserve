@@ -94,9 +94,9 @@
     top: -15px;
     font-size: 10px;
 }
-.request-denarii-modal-innerlay form  .form-group input{
-    font-size: 48px;
-    color: #0c152e;
+.request-denarii-modal-innerlay form .form-group input{
+    font-size: 22px;
+    color: rgba(1, 1, 1, 0.5);
     padding: 0;
     border: none;
     border-bottom: solid 1px #a0a0a0;
@@ -107,6 +107,11 @@
     z-index: 1;
     background-color: transparent;
     line-height: 40px;
+}
+.request-denarii-modal-innerlay form .form-group input.request-denarii-value{
+    color: #0c152e;
+    font-size: 48px;
+    opacity: 1;
 }
 .request-block{
     margin-bottom: 25px;
@@ -171,10 +176,13 @@
     .denarii-submit-btn-wrap{
         margin-top: 43px;
     }
+   
 }
 @media screen and (max-width: 992px){
     form.request-denarii-form
     {
         width: 100%;
     }
+   
+
 }
