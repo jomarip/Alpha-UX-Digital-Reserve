@@ -64,6 +64,7 @@
         -webkit-transition: 0.3s all ease-in-out;	
         transform: translate(-50%);	
         z-index: 0;	
+        width: 100%;
     }	
     .lend-denarii-modal-innerlay form .form-group{	
         position: relative;	
@@ -94,8 +95,9 @@
         font-size: 10px;	
     }	
     .lend-denarii-modal-innerlay form  .form-group input{	
-        font-size: 48px;	
-        color: #0c152e;	
+        font-size: 22px;
+        color: #010101;
+        opacity: 0.5;
         padding: 0;	
         border: none;	
         border-bottom: solid 1px #a0a0a0;	
@@ -107,6 +109,10 @@
         background-color: transparent;	
         line-height: 40px;
     }	
+    .lend-denarii-modal-innerlay form  .form-group input.lend-amount-value{
+        font-size: 48px;	
+        color: #0c152e;
+    }
     .lend-block{	
         margin-bottom: 25px;	
     }	
@@ -133,38 +139,43 @@
         margin-top: 34px;	
     }	
     @media screen and (min-width: 1024px){	
-        .lend-denarii-modal-overlay{	
-            opacity: 0.9;	
-        }	
-        .lend-denarii-modal-innerlay{	
-            padding: 50px 77px 98px;	
-        }	
-        .lend-denarii-modal-wrapper{	
-            margin-bottom: 99px;	
-        }	
-        .lend-denarii-header-block .content-wrap{	
-            margin-bottom: 69px;	
-            width: 35%;	
-        }	
-        .denarii-submit-btn-wrap, .lend-denarii-field-block{	
-            width: 100%;	
-        }	
-        .field-block{	
-            margin-bottom: 56px;	
-        }	
-        .duration-block, .estimated-block, .denarii-btn{	
-            width: 49%;	
-        }	
-        .lend-denarii-form{	
-           width: 900px;	
-        }	
-        .commit-amount-block .form-value.field-focus ~  .increment-icon{	
-            left: 35%;	
-        }	
-        .commit-amount-block .form-value.field-focus ~  .decrement-icon{	
-            right: 35%;	
-        }	
-        .denarii-submit-btn-wrap{	
-            margin-top: 43px;	
-        }	
+    .lend-denarii-modal-overlay{	
+        opacity: 0.9;	
+    }	
+    .lend-denarii-modal-innerlay{	
+        padding: 50px 77px 98px;	
+    }	
+    .lend-denarii-modal-wrapper{	
+        margin-bottom: 99px;	
+    }	
+    .lend-denarii-header-block .content-wrap{	
+        margin-bottom: 69px;	
+        width: 35%;	
+    }	
+    .denarii-submit-btn-wrap, .lend-denarii-field-block{	
+        width: 100%;	
+    }	
+    .field-block{	
+        margin-bottom: 56px;	
+    }	
+    .duration-block, .estimated-block, .denarii-btn{	
+        width: 49%;	
+    }	
+    .lend-denarii-form{	
+        width: 900px;	
+    }	
+    .commit-amount-block .form-value.field-focus ~  .increment-icon{	
+        left: 35%;	
+    }	
+    .commit-amount-block .form-value.field-focus ~  .decrement-icon{	
+        right: 35%;	
+    }	
+    .denarii-submit-btn-wrap{	
+        margin-top: 43px;	
+    }	
+}
+@media screen and (max-width: 992px){
+    .lend-denarii-field-block{
+        width: 100%;
     }
+}
