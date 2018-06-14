@@ -58,6 +58,9 @@ table {
 .overflow-hidden{
     overflow: hidden;
 }
+* {
+    -webkit-overflow-scrolling: touch;
+}
 /* 400 */
 @font-face {
     font-family: AvertaRegular;
