@@ -1,4 +1,10 @@
 $(document).ready(function() {
+//    $('.modal').on('shown.bs.modal', function () {
+//       alert('shown');
+//     })
+//     $('.modal').on('hidden', function () {
+//         alert('hidden');
+//       })
     $('#signed-header-container').load('../signed_header_component/signed-header.html');
     $('#send-denarii-conatainer').load('../send_denarii_component/send-denarii.html')
     $('#lend-denarii-container').load('../lend_denarii_component/lend-denarii.html')
@@ -145,10 +151,7 @@ $(document).ready(function() {
             }
         })
     });
-    $('.modal').on('shown.bs.modal', function () {
-        debugger;
-      alert('szxdcfvgbhnjmkfg');
-    })
+    
     // $(document).on('click', '.denarii-modal', function(){
     //     if($('body').hasClass('.modal-open')){
     //         $('body').addClass('overflow-hidden-menu');
@@ -157,17 +160,17 @@ $(document).ready(function() {
     //         $('body').removeClass('overflow-hidden-menu');
     //     }
     // });
-    $(document).on('click', '#user-profile-pic', function(e){
-            e.stopPropagation();
-            $('.profile-dropdown-wrapper').toggle(250)
-        });
     
-        $(document).click(function(event){
-            var $trigger = $("#user-profile-pic");
-            if($trigger !== event.target && !$trigger.has(event.target).length){
-                $(".profile-dropdown-wrapper").hide(250);
-            } 
-        });
+    $(document).on('click', '#user-profile-pic', function(e){
+        e.stopPropagation();
+        $('.profile-dropdown-wrapper').toggle(250)
+    });
+    $(document).click(function(event){
+        var $trigger = $("#user-profile-pic");
+        if($trigger !== event.target && !$trigger.has(event.target).length){
+            $(".profile-dropdown-wrapper").hide(250);
+        } 
+    });
 });
 
 

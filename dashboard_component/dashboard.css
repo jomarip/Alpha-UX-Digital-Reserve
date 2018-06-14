@@ -145,7 +145,7 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0; 	
 }
 .data-field{
-    min-height: 76px;
+    height: 76px;
 }
 input[type="date"]::-webkit-calendar-picker-indicator,
 input[type="date"]::-webkit-inner-spin-button{
