@@ -105,6 +105,7 @@
         text-align: center;	
         z-index: 1;	
         background-color: transparent;	
+        line-height: 40px;
     }	
     .lend-block{	
         margin-bottom: 25px;	
