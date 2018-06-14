@@ -43,8 +43,13 @@
                 </span>
 
                 <ul class="profile-dropdown-wrapper">
-                    <li class="profile-dropdown-option">Change Avatar</li>
-                    <li class="profile-dropdown-option logout-option">Logout</li>
+                    <li class="profile-dropdown-option">
+                        <label for="upload-photo">Change Avatar</label>
+                        <input type="file" name="photo" id="upload-photo" accept=".png, .jpg, .jpeg"/>
+                    </li>
+                    <li class="profile-dropdown-option logout-option">
+                        <button>Logout</button> 
+                    </li>
                 </ul>
             </div>
         </nav>

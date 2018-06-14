@@ -81,7 +81,7 @@ $(document).ready(function() {
             $('#learn_detail_component').load('dashboard_detail_component/dashboard-detail.html');
             $('#learn_reward_component').load('learn_component/learn_reward_component/learn-reward.html');
             $('#learn_quiz_component').load('learn_component/learn_quiz_component/learn-quiz.html');
-           
+            $('#learn_detail_modal_component').load('learn_component/learn_detail_modal_component/learn-detail.html');
         }
         else{
             $('#dashboard-page').addClass('active');
@@ -153,7 +153,18 @@ $(document).ready(function() {
         else{
             
         }
-    })
+    });
+    $(document).on('click', '#user-profile-pic', function(e){
+            e.stopPropagation();
+            $('.profile-dropdown-wrapper').toggle(250)
+        });
+    
+        $(document).click(function(event){
+            var $trigger = $("#user-profile-pic");
+            if($trigger !== event.target && !$trigger.has(event.target).length){
+                $(".profile-dropdown-wrapper").hide(250);
+            } 
+        });
 });
 
 
