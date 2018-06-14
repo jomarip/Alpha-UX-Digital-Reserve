@@ -69,12 +69,4 @@ span.dashboard-recent-transaction-value.debit-transaction{
         max-height: 730px;
     }
 }
-@media screen and (min-width: 1025px){
-    .dashboard-component-main-wrapper.wallet-all-transaction-main-wrapper{
-        height: auto;
-    }
-    .dashboard-component-main-wrapper.wallet-all-transaction-main-wrapper,
-    .all-transactions-table-wrap{
-        max-height: 745px;
-    }
-}
+
