@@ -160,17 +160,17 @@ $(document).ready(function() {
     //         $('body').removeClass('overflow-hidden-menu');
     //     }
     // });
-    $(document).on('click', '#user-profile-pic', function(e){
-            e.stopPropagation();
-            $('.profile-dropdown-wrapper').toggle(250)
-        });
     
-        $(document).click(function(event){
-            var $trigger = $("#user-profile-pic");
-            if($trigger !== event.target && !$trigger.has(event.target).length){
-                $(".profile-dropdown-wrapper").hide(250);
-            } 
-        });
+    $(document).on('click', '#user-profile-pic', function(e){
+        e.stopPropagation();
+        $('.profile-dropdown-wrapper').toggle(250)
+    });
+    $(document).click(function(event){
+        var $trigger = $("#user-profile-pic");
+        if($trigger !== event.target && !$trigger.has(event.target).length){
+            $(".profile-dropdown-wrapper").hide(250);
+        } 
+    });
 });
 
 

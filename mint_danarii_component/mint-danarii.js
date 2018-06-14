@@ -19,7 +19,7 @@ $(document).ready(function($) {
       }
      });
      $(".amount-value").keyup(function(){
-       var input_value = this.value;
+       var input_value = this.val;
        $(document).on('click','.increment-icon', function(){
             var inc_value = ++input_value;
             $(".amount-value").val(inc_value);
