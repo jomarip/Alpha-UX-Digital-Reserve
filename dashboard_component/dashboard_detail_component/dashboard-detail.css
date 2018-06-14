@@ -38,6 +38,11 @@
 }
 .dashboard-details-info-item.reputation-info .dashboard-details-info-value{
     color: #93c65c;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.dashboard-details-info-item.reputation-info .dashboard-details-info-value i{
+    max-width: 26px;
 }
 @media screen and (min-width: 992px){
     div.detail_component{
