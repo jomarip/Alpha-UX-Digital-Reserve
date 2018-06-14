@@ -165,3 +165,6 @@ input[type=tel]::-webkit-outer-spin-button {
     appearance: none;
     margin: 0; 
 }
+body.modal-open {
+    position: fixed;
+  }
