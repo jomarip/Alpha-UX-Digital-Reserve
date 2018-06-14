@@ -127,6 +127,9 @@ button{
 .overflow-hidden-menu-popup{
     overflow: hidden;
 }
+body.modal-open {
+    position: fixed;
+  }
 @media screen and (max-width:991px){
     .overflow-hidden-menu{
         overflow: hidden;
