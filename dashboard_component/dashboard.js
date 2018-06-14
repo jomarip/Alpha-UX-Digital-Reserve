@@ -146,12 +146,12 @@ $(document).ready(function() {
         })
        
     });
-    $(document).on('click', '.modal-overflow', function(){
+    $(document).on('click', '.denarii-modal', function(){
         if($('body').hasClass('.modal-open')){
             $('body').addClass('overflow-hidden-menu');
         }
         else{
-            
+            $('body').removeClass('overflow-hidden-menu');
         }
     });
     $(document).on('click', '#user-profile-pic', function(e){
