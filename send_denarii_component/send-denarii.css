@@ -89,15 +89,14 @@
 }
 .send-denarii-modal-innerlay form .form-group .form-value.field-focus {
     border-bottom: 2px solid #3f9dfe;
-    font-size: 48px;
 }
 .send-denarii-modal-innerlay form .form-group .form-value.field-focus + label{
     top: -15px;
     font-size: 10px;
 }
-.send-denarii-modal-innerlay form  .form-group input{
-    font-size: 48px;
-    color: #0c152e;
+.send-denarii-modal-innerlay form .form-group input{
+    font-size: 22px;
+    color: rgba(1, 1, 1, 0.5);
     padding: 0;
     border: none;
     border-bottom: solid 1px #a0a0a0;
@@ -108,6 +107,11 @@
     z-index: 1;
     background-color: transparent;
     line-height: 40px;
+}
+.send-denarii-modal-innerlay form .form-group input.send-denarii-amount{
+    color: #0c152e;
+    font-size: 48px;
+    opacity: 1;
 }
 .send-block{
     margin-bottom: 25px;
@@ -172,4 +176,11 @@
     .denarii-submit-btn-wrap{
         margin-top: 43px;
     }
+   
+}
+@media screen and (max-width: 992px){
+    .send-denarii-field-block{
+        width: 100%;
+    }
+   
 }

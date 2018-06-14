@@ -124,7 +124,7 @@
         z-index: 1000;
     }
     .signed-nav-items-wrap{
-        height: calc(100vh - 71px);
+        min-height: 100vh;
         justify-content: center;
         overflow-x: hidden;
         overflow-y: auto;

@@ -96,7 +96,7 @@
 }
 .borrow-denarii-modal-innerlay form  .form-group input{
     font-size: 22px;
-    color: #010101;
+    color: rgba(1, 1, 1, 0.5);
     padding: 0;
     border: none;
     border-bottom: solid 1px #a0a0a0;
@@ -107,7 +107,6 @@
     z-index: 1;
     line-height: 0.82;
     background-color: transparent;
-    opacity: 0.5;
 }
 .borrow-denarii-modal-innerlay form  .form-group input.interest-value{
     font-size: 48px;
@@ -154,6 +153,9 @@
     }
     .borrow-denarii-form{
        width: 900px;
+    }
+    .borrow-denarii-modal-innerlay form  .form-group input{
+        font-size: 48px;
     }
 }
 @media screen and (max-width: 992px){
