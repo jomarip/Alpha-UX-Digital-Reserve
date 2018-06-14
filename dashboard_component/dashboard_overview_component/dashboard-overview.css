@@ -28,6 +28,7 @@ li.nav-item.filter-item .dashboard-detail-heading{
     direction: rtl;
     border: none;
     background: transparent;
+    text-transform: capitalize;
 }
 .tab-content{
     flex: 1;
