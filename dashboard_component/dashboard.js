@@ -144,16 +144,19 @@ $(document).ready(function() {
             else {
             }
         })
-       
     });
-    $(document).on('click', '.denarii-modal', function(){
-        if($('body').hasClass('.modal-open')){
-            $('body').addClass('overflow-hidden-menu');
-        }
-        else{
-            $('body').removeClass('overflow-hidden-menu');
-        }
-    });
+    $('.modal').on('shown.bs.modal', function () {
+        debugger;
+      alert('szxdcfvgbhnjmkfg');
+    })
+    // $(document).on('click', '.denarii-modal', function(){
+    //     if($('body').hasClass('.modal-open')){
+    //         $('body').addClass('overflow-hidden-menu');
+    //     }
+    //     else{
+    //         $('body').removeClass('overflow-hidden-menu');
+    //     }
+    // });
     $(document).on('click', '#user-profile-pic', function(e){
             e.stopPropagation();
             $('.profile-dropdown-wrapper').toggle(250)
