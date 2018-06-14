@@ -64,6 +64,7 @@
     -webkit-transition: 0.3s all ease-in-out;
     transform: translate(-50%);
     z-index: 0;
+    width: 100%;
 }
 .mint-denarii-modal-innerlay form .form-group{
     position: relative;

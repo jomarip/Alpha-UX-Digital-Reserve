@@ -65,6 +65,7 @@
     -webkit-transition: 0.3s all ease-in-out;
     transform: translate(-50%);
     z-index: 0;
+    width: 100%;
 }
 .borrow-denarii-modal-innerlay form .form-group{
     position: relative;
@@ -94,8 +95,8 @@
     font-size: 10px;
 }
 .borrow-denarii-modal-innerlay form  .form-group input{
-    font-size: 48px;
-    color: #0c152e;
+    font-size: 22px;
+    color: #010101;
     padding: 0;
     border: none;
     border-bottom: solid 1px #a0a0a0;
@@ -104,8 +105,14 @@
     padding-bottom: 17px;
     text-align: center;
     z-index: 1;
+    line-height: 0.82;
     background-color: transparent;
-    line-height: 40px;
+    opacity: 0.5;
+}
+.borrow-denarii-modal-innerlay form  .form-group input.interest-value{
+    font-size: 48px;
+    color: #0c152e;
+    opacity: 1;
 }
 .field-block{
     margin-bottom: 25px;
@@ -147,5 +154,10 @@
     }
     .borrow-denarii-form{
        width: 900px;
+    }
+}
+@media screen and (max-width: 992px){
+    .field-block {
+        width: 100%;
     }
 }

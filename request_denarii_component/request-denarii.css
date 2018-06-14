@@ -64,6 +64,7 @@
     -webkit-transition: 0.3s all ease-in-out;
     transform: translate(-50%);
     z-index: 0;
+    width: 100%;
 }
 .request-denarii-modal-innerlay form .form-group{
     position: relative;
@@ -110,7 +111,10 @@
 .request-block{
     margin-bottom: 25px;
 }
-.request-submit-btn-wrap, .denarii-btn, .request-denarii-modal-innerlay form  .form-group input{
+.request-submit-btn-wrap, .denarii-btn{
+    width: 100%;
+}
+.request-denarii-modal-innerlay form  .form-group input{
     width: 100%;
 }
 .denarii-btn{
@@ -166,5 +170,11 @@
     }
     .denarii-submit-btn-wrap{
         margin-top: 43px;
+    }
+}
+@media screen and (max-width: 992px){
+    form.request-denarii-form
+    {
+        width: 100%;
     }
 }
