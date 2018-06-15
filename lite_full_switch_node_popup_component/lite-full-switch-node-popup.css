@@ -63,7 +63,7 @@
 }
 
 .lite-node-instruction-content, .lite-node-popup-btn{
-    font-family: AvertaExtraBold;
+    font-family: AvertaBold;
 }
 .lite-node-instruction-content{
     margin-left: 18px;
@@ -86,6 +86,9 @@
 
 .lite-full-content-block{
     margin-bottom: 56px;
+}
+.lite-info-wrapper:hover .lite-node-popup-head {
+    font-family: AvertaUltraBold;
 }
 @media screen and (min-width: 1024px){
     .lite-full-switch-node-popop-innerlay{
@@ -134,8 +137,9 @@
         color: #3f9dfe;
         background-color: #fff;
     }
-    .modal-open .modal.lite-full-node-block{
-        background-color: rgba(10,18,42,0.7);
+    .modal-open .modal.lite-full-node-block.show{
+        opacity: 0.9;
+        background-color: #0a122a;
     }
 }
 @media screen and (max-width: 992px){
