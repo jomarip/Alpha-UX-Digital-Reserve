@@ -161,6 +161,7 @@
     }
     .menu-close-icon{
         display: block;
+        z-index: 1000;
     }
     #signed-main-header .signed-header-wrapper .signed-nav-items-wrap .signed-list-link.signin-active{
         font-family: AvertaExtraBold;
