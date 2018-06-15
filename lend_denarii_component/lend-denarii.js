@@ -19,6 +19,7 @@ $(document).ready(function($) {
          }	
         });	
         $(".lend-amount-value").keyup(function(){	
+          var symbol = '$';
           var input_value = this.value;	
           $(document).on('click','.increment-icon', function(){	
                var inc_value = ++input_value;	
@@ -26,7 +27,7 @@ $(document).ready(function($) {
           })	
           $(document).on('click','.decrement-icon', function(){	
                var dec_value = --input_value;	
-               $(".lend-amount-value").val('$' + dec_value);	
+               $(".lend-amount-value").val('$' + dec_value);
            })	
          });	
       });

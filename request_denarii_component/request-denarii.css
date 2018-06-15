@@ -44,6 +44,10 @@
 .request-denarii-modal-innerlay form .form-group label, .request-denarii-modal-innerlay form  .form-group input{
     font-family: AvertaRegular;
 }
+.data-field{
+    display: block;
+    padding: 0;
+}
 .request-denarii-modal-innerlay form .form-group label{
     left: 50%;
     top: 50%;
