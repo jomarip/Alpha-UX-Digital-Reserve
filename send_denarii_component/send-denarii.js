@@ -16,15 +16,15 @@ $(document).ready(function($) {
       }
      });
     
-     $(".amount-value").keyup(function(){
-         var input_value = this.value();
+     $(".send-denarii-amount").keyup(function(){
+        var input_value = this.value;
        $(document).on('click','.increment-icon', function(){
             var inc_value = ++input_value;
-            $(".amount-value").val(inc_value);
+            $(".send-denarii-amount").val(inc_value);
        })
        $(document).on('click','.decrement-icon', function(){
             var dec_value = --input_value;
-            $(".amount-value").val(dec_value);
+            $(".send-denarii-amount").val(dec_value);
         })
       });
    });  

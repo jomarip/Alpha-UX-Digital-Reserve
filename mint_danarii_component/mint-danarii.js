@@ -29,4 +29,4 @@ $(document).ready(function($) {
             $(".amount-value").val(dec_value);
         })
       });
-   });  
+   });
