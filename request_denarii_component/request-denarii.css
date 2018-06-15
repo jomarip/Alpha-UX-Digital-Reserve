@@ -45,6 +45,7 @@
     font-family: AvertaRegular;
 }
 .data-field{
+    height: 76px;
     display: block;
     padding: 0;
 }
