@@ -68,6 +68,7 @@
     line-height: 1.47;
     color: #fff;
     padding: 17px 0;
+    
 }
 .cancel-btn{
     background-color: #b9b9b9;
@@ -103,8 +104,9 @@
     .node-instructions-wrap{
         padding-left: 17px;
     }
-    .modal-open .modal.switch-node-popup{
-        background-color: rgba(10,18,42,0.7);
+    .modal-open .modal.switch-node-popup.show{
+        opacity: 0.9;
+        background-color: #0a122a;
     }
 }
 @media screen and (max-width: 992px){
