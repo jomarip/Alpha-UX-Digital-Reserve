@@ -151,3 +151,14 @@
         justify-content: center;
     }
 }
+@media screen and (min-width: 1024px) and (max-height: 768px){
+    .nav-item .nav-link.list-link, .navbar-nav .nav-link.list-link:focus, .navbar-nav .nav-link.list-link:hover{
+        padding: 13px 8px;
+    }
+    .btn-wrapper{
+        margin-left: 10px;
+    }
+    .btn.login-btn {
+        padding: 13px 48.5px;
+    }
+}
