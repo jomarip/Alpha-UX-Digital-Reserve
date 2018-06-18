@@ -124,7 +124,6 @@ button{
 }
 #faq-container + .main-footer-container{
     padding-bottom: 76px;
-    /* background-image: linear-gradient(112deg, #0f1b3a, #090f23); */
     margin: 0;
 }  
 .overflow-hidden-menu-popup{
@@ -141,6 +140,12 @@ body.modal-open {
     }
     .main-header-container{
         padding-bottom: 10px;
+    }
+}
+@media screen and (min-width: 1440px){
+    body.modal-open{
+        left: 50%;
+        transform: translate(-50%, 0);
     }
 }
 -input[type=number]::-webkit-inner-spin-button, 	

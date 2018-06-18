@@ -5,7 +5,6 @@ $(document).ready(function() {
         if($('body').hasClass('overflow-hidden')){
             $('body').removeClass('overflow-hidden');
         }else{
-            console.log('has');
         };
         $('#loginSection').removeClass('login-open');
     })
@@ -27,7 +26,6 @@ $(document).ready(function() {
         if($('body').hasClass('overflow-hidden')){
             $('body').removeClass('overflow-hidden');
         }else{
-            console.log('has');
         };
         $('#loginSection').removeClass('signup-open');
     })
@@ -42,7 +40,6 @@ $(document).ready(function() {
         if($('body').hasClass('overflow-hidden')){
             $('body').removeClass('overflow-hidden');
         }else{
-            console.log('dont have');
         };
         $('#loginSection').removeClass('forgotpwd-open');
     })

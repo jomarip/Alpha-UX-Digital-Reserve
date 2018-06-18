@@ -4,8 +4,6 @@
 }
 
 .share-details-wrapper{
-    /* position: static; */
-    /* opacity: 0.9; */
     font-family: AvertaRegular;
     background-color: #ffffff;
     -webkit-backdrop-filter: blur(10px);
@@ -77,11 +75,6 @@
     padding-right: 22px;
     -webkit-appearance: none;
 }
-/* .share-details-wrapper .share-details-content form .form-group input:focus + label{
-    left: 0;
-    top: -6px;
-    font-size: 10px;
-} */
 .share-details-wrapper .share-details-content form .form-group input.field-focus + label{	
     left: 0;
     top: -15px;	

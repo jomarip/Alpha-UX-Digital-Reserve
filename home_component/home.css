@@ -9,22 +9,6 @@
     position: relative;
     background-color: #409dfe;
 } 
-/* .home-subheader > span::after{
-    top: 50%;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 50px;
-    z-index: -1;
-    content: "";
-    display: block;
-    position: absolute;
-    background-color: #3f9dfe;
-    transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-} */
 .home-context{
     color: #ffffff;
     opacity: 0.5;
@@ -189,7 +173,6 @@
 }
 .whats-digitalr-wrapper .whats-tdr-video-wrapper img{
     width: 100%;
-    /* height: 391px; */
     object-fit: contain;
 }
 .whats-digitalr-wrapper .whats-tdr-content-wrapper p{
@@ -205,7 +188,6 @@
 }
 .tdr-working-wrapper{
     padding: 130px 77px;
-    /* background-image: linear-gradient(112deg, #0f1b3a, #090f23); */
 }
 .tdr-working-wrapper .tdr-working-heading{
     text-align: center;
@@ -389,7 +371,6 @@
         margin-bottom: 35px;
     }
     .about-us-reputation-wrapper{
-        /* border-left: 1px dashed rgba(255, 255, 255, 0.3); */
         position: relative;
     }
     .about-us-reputation-wrapper::after{

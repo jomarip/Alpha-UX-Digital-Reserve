@@ -5,7 +5,6 @@ $(document).ready(function() {
     //Join Sidebar
     $('.revolution-btn').on('click', () => {
         if($('body').hasClass('overflow-hidden')){
-            console.log('has');
         }else{
             setTimeout(function() {
             $('body').addClass('overflow-hidden');
@@ -16,7 +15,6 @@ $(document).ready(function() {
     //Login Sidebar
     $('.login-btn').on('click', () => {
         if($('body').hasClass('overflow-hidden')){
-            console.log('has');
         }else{
             setTimeout(function() {
             $('body').addClass('overflow-hidden');
@@ -24,8 +22,5 @@ $(document).ready(function() {
         }
         $('#loginSection').addClass('login-open');
     })
-    //Shared Details Sidebar
-    // $('*****').on('click', () => {
-    //     $('#shareDetailsSection').addClass('share-details-open');
-    // })
+
 });

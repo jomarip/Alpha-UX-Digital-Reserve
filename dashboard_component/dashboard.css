@@ -145,7 +145,6 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0; 	
 }
 .data-field{
-    /* height: 76px; */
     display: block;
     padding: 0;
 }
@@ -170,4 +169,10 @@ input[type=tel]::-webkit-outer-spin-button {
 body.modal-open {
     position: fixed;
     width: 100%;
+}
+@media screen and (min-width: 1440px){
+    body.modal-open{
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
 }

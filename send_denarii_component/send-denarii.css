@@ -139,9 +139,6 @@
 .denarii-submit-btn-wrap{
     margin-top: 34px;
 }
-/* input [type="tel"].amount-value.field-focus::before{
-    content: "$";
-}  */
 @media screen and (min-width: 1024px){
     .send-denarii-modal-overlay{
         opacity: 0.9;

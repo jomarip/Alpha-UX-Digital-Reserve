@@ -1,10 +1,4 @@
 $(document).ready(function() {
-//    $('.modal').on('shown.bs.modal', function () {
-//       alert('shown');
-//     })
-//     $('.modal').on('hidden', function () {
-//         alert('hidden');
-//       })
     $('#signed-header-container').load('../signed_header_component/signed-header.html');
     $('#send-denarii-conatainer').load('../send_denarii_component/send-denarii.html')
     $('#lend-denarii-container').load('../lend_denarii_component/lend-denarii.html')
@@ -114,20 +108,6 @@ $(document).ready(function() {
         
     })
     $(document).on('click', '.signed-balance-navigation', function(){
-        // $('#dashboard-page,#learn-page').removeClass('active');
-        // $('#wallet-page').addClass('active');
-        // $('.nav-item').each(function(){
-        //     if($(this).find('a').attr('data-attr')=="Wallet"){
-        //         $(this).find('a').addClass('signin-active');
-        //     }
-        //     else{
-        //         $(this).find('a').removeClass('signin-active')
-        //     }
-        // });
-        // $('#wallet_all_transactions_component').load('wallet_all_transactions_component/wallet-all-transactions.html');
-        // $('#wallet_detail_component').load('dashboard_detail_component/dashboard-detail.html');
-        // $('#wallet_favourites_component').load('dashboard_favourites_component/dashboard-favourites.html');
-        // $('#wallet_all_denarii_component').load('dashboard_all_denarii_component/dashboard-all-denarii.html');
         $(".share-details-popup").addClass('active');
         $('body').addClass('overflow-hidden-menu-popup');
 
@@ -151,15 +131,6 @@ $(document).ready(function() {
             }
         })
     });
-    
-    // $(document).on('click', '.denarii-modal', function(){
-    //     if($('body').hasClass('.modal-open')){
-    //         $('body').addClass('overflow-hidden-menu');
-    //     }
-    //     else{
-    //         $('body').removeClass('overflow-hidden-menu');
-    //     }
-    // });
     
     $(document).on('click', '#user-profile-pic', function(e){
         e.stopPropagation();
