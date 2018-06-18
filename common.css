@@ -132,6 +132,7 @@ button{
 }
 body.modal-open {
     position: fixed;
+    width: 100%;
   }
 @media screen and (max-width:991px){
     .overflow-hidden-menu{
