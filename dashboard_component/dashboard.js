@@ -145,8 +145,10 @@ $(document).ready(function() {
         }
         else {
             $(this).addClass('field-focus');
+
         }
     });
+    
        
         $(document).on('click', '#user-profile-pic', function(e){
             e.stopPropagation();
