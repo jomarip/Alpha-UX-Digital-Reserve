@@ -35,41 +35,30 @@
 .minting-progress-status,.dashboard-mint-value {
     margin-bottom: 5px;
 }
-
-.progress{
-    position: relative;
+#minting-progress-container {
+    width: 140px;
+    height: 116.6px;
     margin: 0 auto;
-    text-align: center;
+}
+#minting-progress-container svg{
+    stroke-linecap: round;  
     height: 100%;
-    background: transparent;
-    justify-content: center;
-  }
-  .barOverflow{ /* Wraps the rotating .bar */
-    position: relative;
-    overflow: hidden; /* Comment this line to understand the trick */
-    width: 90px;
-    height: 45px;
-      border-radius: 90px 90px 0 0;
-    -moz-border-radius: 90px 90px 0 0;
-    -webkit-border-radius: 90px 90px 0 0;
-    border: 5px solid red;
-    border-bottom: none;
-    
-  }
-  .bar{
-    position:absolute;
-    top:45px;
-    width: inherit;
-    height: inherit;
-    border-radius: 0 0 45px 45px;
-    box-sizing: border-box;
-    border: 5px solid currentColor; /* Use currentColor... */
-    color:green; /* ...to ease the control over colors in jQuery */
-    border-top:0;
-    /* since we're rotating a half circle we need to translate to transform origin */
-    transform-origin: 50% top;
-    -webkit-transform-origin: 50% top;
-  }
+}
+.progress-text{
+    top: 70px!important;
+    display: flex!important;
+    align-items: flex-end;
+    transform: translate(-50%, -17px)!important;
+}
+.progress-text,.progress-text span.progress-percent {
+    font-size: 36px;
+    font-family: AvertaBold;
+    color: #333!important;
+}
+.progress-text span.progress-percent{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
 @media screen and (min-width: 992px){
     .minting-progress-wrap{
         flex: 1;
@@ -86,5 +75,10 @@
     .dashboard-component-main-wrapper.dashboard-minting-main-wrapper{
         height: 360px;
         max-height: 360px;
+    }
+    .dashboard-component-main-wrapper.dashboard-minting-main-wrapper>div{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
     }
 }
