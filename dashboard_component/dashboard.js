@@ -1,8 +1,5 @@
 $(document).ready(function() {
-<<<<<<< HEAD
-=======
 
->>>>>>> b608152a019c36bdef1e2265b40cc0702c734a53
     $('#signed-header-container').load('../signed_header_component/signed-header.html');
     $('#send-denarii-conatainer').load('../send_denarii_component/send-denarii.html')
     $('#lend-denarii-container').load('../lend_denarii_component/lend-denarii.html')
@@ -136,7 +133,6 @@ $(document).ready(function() {
         })
     $(".form-values-container input").focus(function(){
         $(this).addClass("field-focus");
-    //   $(this).next('.val-button').addClass('update-value');
         
         }).blur(function(){
         $(this).removeClass("field-focus");
@@ -145,28 +141,13 @@ $(document).ready(function() {
         if(tmpval == '') {
         if( $(this).hasClass('field-focus')){
             $(this).removeClass('field-focus');
-            // $(this).next('.val-button').removeClass('update-value');
         }
         }
         else {
             $(this).addClass('field-focus');
-        //   $(this).next('.val-button').removeClass('update-value');
         }
     });
-    
-<<<<<<< HEAD
-    $(document).on('click', '#user-profile-pic', function(e){
-        e.stopPropagation();
-        $('.profile-dropdown-wrapper').toggle(250)
-    });
-    $(document).click(function(event){
-        var $trigger = $("#user-profile-pic");
-        if($trigger !== event.target && !$trigger.has(event.target).length){
-            $(".profile-dropdown-wrapper").hide(250);
-        } 
-=======
-
-    
+       
         $(document).on('click', '#user-profile-pic', function(e){
             e.stopPropagation();
             $('.profile-dropdown-wrapper').toggle(250)
@@ -177,7 +158,6 @@ $(document).ready(function() {
                 $(".profile-dropdown-wrapper").hide(250);
             } 
         });
->>>>>>> b608152a019c36bdef1e2265b40cc0702c734a53
     });
 
 });
