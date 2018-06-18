@@ -46,6 +46,7 @@
     font-size: 20px;
     color: #3f9dfe;
     margin-bottom: 8px;
+    font-family: AvertaUltraBold;
 }
 .full-node-popup-content{
     margin-bottom: 9px;
@@ -113,9 +114,6 @@
     }
     .lite-node-instructions-wrap{
         margin-bottom: 15px;
-    }
-    .lite-node-popup-head{
-        font-family: AvertaExtraBold;
     }
     .lite-info-wrapper:hover .hover-checkList-icon{ 
         display: block;
