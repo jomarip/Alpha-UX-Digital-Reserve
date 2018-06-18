@@ -27,7 +27,7 @@
 }
 .faq-footer-wrapper{
     /* background-image: linear-gradient(139deg, #0f1b3a, #090f23); */
-    padding: 56px 30px 33px;
+    padding: 56px 30px 20px;
 }
 .faq-sub-footer-heading {
     font-family: AvertaExtraBold;    
@@ -117,7 +117,9 @@ a.faq-subcontent-collapse:hover{
     content: 'read less...';
     color: #3f9dfe;    
 }
- 
+.faq-sub-link-content-wrapper:last-child {
+    border: none;
+}
 @media screen and (min-width:1024px){
     .faq-sub-link-item{
         padding-right: 20px;    
