@@ -130,7 +130,7 @@ $(document).ready(function() {
             }
             else {
             }
-        })
+        });
     $(".form-values-container input").focus(function(){
         $(this).addClass("field-focus");
         
@@ -148,6 +148,7 @@ $(document).ready(function() {
 
         }
     });
+});
     
        
         $(document).on('click', '#user-profile-pic', function(e){
@@ -160,8 +161,7 @@ $(document).ready(function() {
                 $(".profile-dropdown-wrapper").hide(250);
             } 
         });
-    });
-    onPageLoad();
+        onPageLoad();
 });
 
 function onPageLoad() {
