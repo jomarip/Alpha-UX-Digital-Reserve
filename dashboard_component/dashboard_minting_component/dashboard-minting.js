@@ -1,5 +1,5 @@
 window.onload = function onLoad() {
-
+  setTimeout(function(){
     var semiBar = new ProgressBar.SemiCircle("#minting-progress-container", {
         strokeWidth: 7,
         trailWidth: 7,
@@ -19,7 +19,7 @@ window.onload = function onLoad() {
             transform: null
           }
         },
-        step: (state, shape) => {
+        step: (state, shape, attachment) => {
           shape.path.setAttribute("stroke", state.color);
           shape.path.setAttribute("stroke-width", state.width);
           shape.setText('<span class="progress-value">'+Math.round(shape.value() * 100)+'</span> <span class="progress-percent">%</span>');
@@ -28,4 +28,5 @@ window.onload = function onLoad() {
       semiBar.animate(0.75, {
         duration: 2000
       });
-        };
+    }, 3000)
+};
