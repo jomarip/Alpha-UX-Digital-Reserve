@@ -4,6 +4,7 @@
     margin: 0;
     overflow-x: hidden;
     overflow-y: auto;
+    height: 100%;
 }
 .contact-us-popop-innerlay{
     height: 100vh;
@@ -12,6 +13,7 @@
     overflow-x: hidden;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
+    position: fixed;
 }
 .contact-us-popup-wrapper, .contact-popup-close{
     padding: 0;
