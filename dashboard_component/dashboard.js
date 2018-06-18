@@ -133,7 +133,6 @@ $(document).ready(function() {
         })
     $(".form-values-container input").focus(function(){
         $(this).addClass("field-focus");
-    //   $(this).next('.val-button').addClass('update-value');
         
         }).blur(function(){
         $(this).removeClass("field-focus");
@@ -142,17 +141,13 @@ $(document).ready(function() {
         if(tmpval == '') {
         if( $(this).hasClass('field-focus')){
             $(this).removeClass('field-focus');
-            // $(this).next('.val-button').removeClass('update-value');
         }
         }
         else {
             $(this).addClass('field-focus');
-        //   $(this).next('.val-button').removeClass('update-value');
         }
     });
-    
-
-    
+       
         $(document).on('click', '#user-profile-pic', function(e){
             e.stopPropagation();
             $('.profile-dropdown-wrapper').toggle(250)
