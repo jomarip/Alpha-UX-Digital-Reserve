@@ -152,9 +152,9 @@
     .borrow-denarii-form{
        width: 900px;
     }
-    /* .borrow-denarii-modal-innerlay form  .form-group input{
-        font-size: 48px;
-    } */
+    .borrow-denarii-modal-innerlay form  .form-group input{
+        font-size: 34px;
+    }
 }
 @media screen and (max-width: 992px){
     .field-block {
