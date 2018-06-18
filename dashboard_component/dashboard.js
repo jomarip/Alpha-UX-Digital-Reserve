@@ -162,6 +162,8 @@ $(document).ready(function() {
 
 });
 window.onload = function onLoad() {
+
+    setTimeout(function(){
     var your_overview_options = {
         animationEnabled: true,  
         title:{
@@ -285,4 +287,5 @@ window.onload = function onLoad() {
             }]
         };
         $("#network-chart-container").CanvasJSChart(network_overview_options);
+    }, 3000)
     }
