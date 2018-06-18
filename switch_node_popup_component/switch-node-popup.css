@@ -3,7 +3,6 @@
     min-height: calc(100vh - 40px);
     border-radius: 6px;
     margin: 20px;
-    opacity: 0.95;
     box-shadow: 0 0 19px 0 rgba(0, 0, 0, 0.5);
 }
 .modal-header.switch-header-wrapper {
@@ -105,8 +104,7 @@
         padding-left: 17px;
     }
     .modal-open .modal.switch-node-popup.show{
-        opacity: 0.9;
-        background-color: #0a122a;
+        background-color: rgba(10, 18, 42, 0.9);
     }
 }
 @media screen and (max-width: 992px){
