@@ -1,5 +1,6 @@
 
 window.onload = function onLoad() {
+  setTimeout(function(){
     
     var your_overview_options = new CanvasJS.Chart("your-overview-chart-container", {
         animationEnabled: true,  
@@ -125,4 +126,6 @@ window.onload = function onLoad() {
         });
         
         network_overview_options.render();
+    }, 2000)
+
 }
