@@ -181,7 +181,7 @@ window.onload = function onLoad() {
             transform: null
           }
         },
-        step: (state, shape) => {
+        step: (state, shape, attachment) => {
           shape.path.setAttribute("stroke", state.color);
           shape.path.setAttribute("stroke-width", state.width);
           shape.setText('<span class="progress-value">'+Math.round(shape.value() * 100)+'</span> <span class="progress-percent">%</span>');
