@@ -163,9 +163,6 @@
     .denarii-submit-btn-wrap, .request-denarii-field-block{
         width: 100%;
     }
-    .field-block{
-        margin-bottom: 56px;
-    }
     .duration-block, .estimated-block, .denarii-btn{
         width: 49%;
     }
@@ -188,6 +185,4 @@
     {
         width: 100%;
     }
-   
-
 }
