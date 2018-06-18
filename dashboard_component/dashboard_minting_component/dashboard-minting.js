@@ -28,5 +28,5 @@ window.onload = function onLoad() {
       semiBar.animate(0.75, {
         duration: 2000
       });
-    }, 3000)
+    }, 2000)
 };
