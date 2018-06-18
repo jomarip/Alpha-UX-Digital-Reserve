@@ -35,7 +35,6 @@ div#main-container{
     background-color: #fff;
 }
 .share-details-popup{
-    display: none;
     top: 0;
     left: -630px;
     bottom: 0;
@@ -46,14 +45,13 @@ div#main-container{
     position: fixed;
     background-color: #fff;
     box-shadow: 0 0 19px 0 rgba(0, 0, 0, 0.5);
-    transition: 0.3s left ease-in-out;
-    -o-transition: 0.3s left ease-in-out;
-    -moz-transition: 0.3s left ease-in-out;
-    -webkit-transition: 0.3s left ease-in-out;
+    transition: 0.3s all ease-in-out;
+    -o-transition: 0.3s all ease-in-out;
+    -moz-transition: 0.3s all ease-in-out;
+    -webkit-transition: 0.3s all ease-in-out;
 }
 .share-details-popup.active{
     left: 0;
-    display: block;
 }
 @media screen and (min-width: 992px){
     .dashboard-main-container{
