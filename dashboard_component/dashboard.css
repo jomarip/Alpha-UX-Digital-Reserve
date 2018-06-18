@@ -155,7 +155,9 @@ input[type="date"]::-webkit-inner-spin-button{
 }
 input[type="date"]::-webkit-datetime-edit-year-field:not([aria-valuenow]),
 input[type="date"]::-webkit-datetime-edit-month-field:not([aria-valuenow]),
-input[type="date"]::-webkit-datetime-edit-day-field:not([aria-valuenow]) {
+input[type="date"]::-webkit-datetime-edit-day-field:not([aria-valuenow]),
+input::-webkit-datetime-edit,
+input:focus::-webkit-datetime-edit {
     color: transparent;
 }
 input::-webkit-datetime-edit{ color: transparent; }
@@ -167,6 +169,12 @@ input[type=tel]::-webkit-outer-spin-button {
     appearance: none;
     margin: 0; 
 }
+input[type=date]:required:invalid::-webkit-datetime-edit {
+    color: transparent;
+ }
+ input[type=date]:focus::-webkit-datetime-edit {
+    color: black !important;
+ }
 body.modal-open {
     position: fixed;
     width: 100%;
