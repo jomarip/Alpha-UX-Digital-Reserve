@@ -111,7 +111,7 @@
     color: #0c152e;
     opacity: 1;
 }
-.field-block{
+.borrow-denarii-form .field-block{
     margin-bottom: 25px;
 }.denarii-submit-btn-wrap, .denarii-btn, .borrow-denarii-modal-innerlay form  .form-group input{
     width: 100%;

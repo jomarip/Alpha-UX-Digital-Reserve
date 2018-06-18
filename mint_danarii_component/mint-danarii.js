@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $(document).ready(function($) {
     $(".borrow-denarii-container  input").focus(function(){
       $(this).addClass("field-focus");
@@ -15,6 +16,9 @@ $(document).ready(function($) {
           $(this).addClass('field-focus');
       }
      });
+=======
+$(document).ready(function() {
+>>>>>>> b608152a019c36bdef1e2265b40cc0702c734a53
      $(".amount-value").keyup(function(){
        var input_value = this.value;
        $(document).on('click','.increment-icon', function(){
@@ -25,5 +29,5 @@ $(document).ready(function($) {
             var dec_value = --input_value;
             $(".amount-value").val('$' + dec_value);
         })
-      });
-   });
+    });
+});
