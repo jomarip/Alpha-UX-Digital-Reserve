@@ -43,6 +43,7 @@
 }
 .dashboard-details-info-item.reputation-info .dashboard-details-info-value i{
     max-width: 26px;
+    height: 26px;;
 }
 @media screen and (min-width: 992px){
     div.detail_component{
