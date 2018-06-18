@@ -1,10 +1,5 @@
 $(document).ready(function() {
-//    $('.modal').on('shown.bs.modal', function () {
-//       alert('shown');
-//     })
-//     $('.modal').on('hidden', function () {
-//         alert('hidden');
-//       })
+
     $('#signed-header-container').load('../signed_header_component/signed-header.html');
     $('#send-denarii-conatainer').load('../send_denarii_component/send-denarii.html')
     $('#lend-denarii-container').load('../lend_denarii_component/lend-denarii.html')
@@ -114,20 +109,6 @@ $(document).ready(function() {
         
     })
     $(document).on('click', '.signed-balance-navigation', function(){
-        // $('#dashboard-page,#learn-page').removeClass('active');
-        // $('#wallet-page').addClass('active');
-        // $('.nav-item').each(function(){
-        //     if($(this).find('a').attr('data-attr')=="Wallet"){
-        //         $(this).find('a').addClass('signin-active');
-        //     }
-        //     else{
-        //         $(this).find('a').removeClass('signin-active')
-        //     }
-        // });
-        // $('#wallet_all_transactions_component').load('wallet_all_transactions_component/wallet-all-transactions.html');
-        // $('#wallet_detail_component').load('dashboard_detail_component/dashboard-detail.html');
-        // $('#wallet_favourites_component').load('dashboard_favourites_component/dashboard-favourites.html');
-        // $('#wallet_all_denarii_component').load('dashboard_all_denarii_component/dashboard-all-denarii.html');
         $(".share-details-popup").addClass('active');
         $('body').addClass('overflow-hidden-menu-popup');
 
@@ -150,30 +131,41 @@ $(document).ready(function() {
             else {
             }
         })
+    $(".form-values-container input").focus(function(){
+        $(this).addClass("field-focus");
+    //   $(this).next('.val-button').addClass('update-value');
+        
+        }).blur(function(){
+        $(this).removeClass("field-focus");
+        $(this).next('.val-button').removeClass('update-value');
+        tmpval = $(this).val();
+        if(tmpval == '') {
+        if( $(this).hasClass('field-focus')){
+            $(this).removeClass('field-focus');
+            // $(this).next('.val-button').removeClass('update-value');
+        }
+        }
+        else {
+            $(this).addClass('field-focus');
+        //   $(this).next('.val-button').removeClass('update-value');
+        }
     });
     
-    // $(document).on('click', '.denarii-modal', function(){
-    //     if($('body').hasClass('.modal-open')){
-    //         $('body').addClass('overflow-hidden-menu');
-    //     }
-    //     else{
-    //         $('body').removeClass('overflow-hidden-menu');
-    //     }
-    // });
+
     
-    $(document).on('click', '#user-profile-pic', function(e){
-        e.stopPropagation();
-        $('.profile-dropdown-wrapper').toggle(250)
+        $(document).on('click', '#user-profile-pic', function(e){
+            e.stopPropagation();
+            $('.profile-dropdown-wrapper').toggle(250)
+        });
+        $(document).click(function(event){
+            var $trigger = $("#user-profile-pic");
+            if($trigger !== event.target && !$trigger.has(event.target).length){
+                $(".profile-dropdown-wrapper").hide(250);
+            } 
+        });
     });
-    $(document).click(function(event){
-        var $trigger = $("#user-profile-pic");
-        if($trigger !== event.target && !$trigger.has(event.target).length){
-            $(".profile-dropdown-wrapper").hide(250);
-        } 
-    });
+
 });
-
-
 window.onload = function onLoad() {
 
     var your_overview_options = {
