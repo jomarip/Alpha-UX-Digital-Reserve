@@ -36,7 +36,7 @@ div#main-container{
 }
 .share-details-popup{
     top: 0;
-    left: -630px;
+    left: -100%;
     bottom: 0;
     z-index:1000;
     width: 600px;

@@ -11,7 +11,7 @@
 .unsigned-forgotpwd-wrapper,
 .join-signup-wrapper{
     top: 0;
-    left: -630px;
+    left: -100%;
     bottom: 0;
     z-index: 2;
     width: 600px;
