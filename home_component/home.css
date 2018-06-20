@@ -371,6 +371,7 @@
         margin-bottom: 35px;
     }
     .about-us-reputation-wrapper{
+        padding-left: 15px;
         position: relative;
     }
     .about-us-reputation-wrapper::after{
