@@ -6,7 +6,6 @@
     box-shadow: 0 0 19px 0 rgba(0, 0, 0, 0.5);
     max-width: 100%;
 }
-
 .modal-header.lite-full-switch-header-wrapper {
     padding: 0;
     border: none;
@@ -61,7 +60,6 @@
 .hover-checkList-icon{
     display: none;
 }
-
 .lite-node-instruction-content, .lite-node-popup-btn{
     font-family: AvertaBold;
 }
@@ -97,6 +95,7 @@
     }
     .modal-dialog.modal-dialog-centered.lite-full-switch-node-popup-overlay{
         max-width: 908px;
+        display: flex !important;
     }
     .modal-header.lite-full-switch-header-wrapper {
         margin-bottom: 17px;
@@ -146,8 +145,6 @@
     }
      .lite-full-switch-node-popup-overlay{
         margin: 0;
-    }
-    .lite-full-switch-node-popup-overlay{
         max-width: 100%;
     }
     .modal-open .modal.lite-full-node-block{
