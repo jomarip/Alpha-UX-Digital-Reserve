@@ -39,7 +39,7 @@ div#main-container{
     left: -100%;
     bottom: 0;
     z-index:1000;
-    width: 600px;
+    width: 100%;
     height: 100vh;
     overflow: auto;
     position: fixed;
@@ -104,6 +104,9 @@ div#main-container{
     #learn-page div.detail_component{
         height: 50%;
         flex: 1;
+    }
+    .share-details-popup{
+        width: 600px;
     }
 }
 .dashboard-main-container{

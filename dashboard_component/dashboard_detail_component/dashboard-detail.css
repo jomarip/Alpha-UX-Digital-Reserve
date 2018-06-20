@@ -26,12 +26,10 @@
 .dashboard-details-info-item .dashboard-details-info-value{
     font-size: 26px;
     margin-bottom: 5px;
+    font-family: AvertaRegular;
 }
 .dashboard-wallet-amt, .dashboard-details-info-item .dashboard-details-info-value{
     color: #121d38;
-}
-.dashboard-details-info-item .dashboard-details-info-value{
-    font-family: AvertaRegular;
 }
 .dashboard-details-info-item.next-payment-date-info .dashboard-details-info-value{
     color: #d44556;
@@ -43,7 +41,12 @@
 }
 .dashboard-details-info-item.reputation-info .dashboard-details-info-value i{
     max-width: 26px;
-    height: 26px;;
+    height: 26px;
+}
+@media screen and (max-width: 374px){
+    .dashboard-details-info-item .dashboard-details-info-value{
+        font-size: 20px;
+    }
 }
 @media screen and (min-width: 992px){
     div.detail_component{
@@ -57,6 +60,11 @@
     }
     .dashboard-details-info-wrap{
         flex: 1;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    .dashboard-details-info-item .dashboard-details-info-value{
+        font-size: 20px;
     }
 }
 @media screen and (min-width: 1024px) and (min-height: 769px){
