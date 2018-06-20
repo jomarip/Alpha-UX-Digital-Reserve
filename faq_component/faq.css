@@ -7,9 +7,14 @@
 .faq-header-content, .faq-desktop-footer-content, .faq-mobile-footer-content{
     opacity: 0.5;
     font-family: AvertaRegular;
-    font-size: 15px;
     line-height: 1.47;
     color: #fff;
+}
+.faq-mobile-footer-content{
+    font-size: 12px;
+}
+.faq-header-content{
+    font-size: 13px;
 }
 .faq-sub-links{
     background-color: #f7f7f7;
@@ -103,6 +108,8 @@
 .faq-sub-link-content-wrapper a.faq-subcontent-collapse.collapsed{
     margin:10px 0;
     display: block;
+    color: #3f9dfe;
+
 }
 a.faq-subcontent-collapse:hover{
     text-decoration: none;
@@ -115,9 +122,6 @@ a.faq-subcontent-collapse:hover{
 .faq-sub-link-content-wrapper a:not(.collapsed):after {
     content: 'read less...';
     color: #3f9dfe;    
-}
-.faq-sub-link-content-wrapper:last-child {
-    border: none;
 }
 @media screen and (min-width:1024px){
     .faq-sub-link-item{
@@ -139,6 +143,12 @@ a.faq-subcontent-collapse:hover{
     .faq-sub-link-header{
         font-size: 32px;
     }
+    .faq-main-header-container .nodes-image-wrapper{
+        padding: 160px 77px 113px;
+    }
+    .faq-header-content, .faq-desktop-footer-content, .faq-mobile-footer-content{
+        font-size: 15px;
+    }
 }
 @media screen and (max-width: 992px){
     .faq-sublinks-container{
@@ -146,5 +156,15 @@ a.faq-subcontent-collapse:hover{
     }
     .faq-sub-link-header,.faq-info{
         padding-right: 30px;
+    }
+    .faq-sub-link-content-wrapper:last-child {
+        border: none; 
+        margin-bottom: 0;
+    }
+    .faq-mobile-footer-content{
+        line-height: 1.83;
+    }
+    .faq-header-content{
+        line-height: 1.69;
     }
 }

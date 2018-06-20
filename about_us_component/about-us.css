@@ -13,7 +13,7 @@
 }
 .about-us-content{
     font-family: AvertaRegular;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 1.69;
     color: #fff;
     opacity: 0.5;
@@ -144,6 +144,10 @@
         position: relative;
         justify-content: flex-end;
     }
+    .about-us-team-subheader{
+        color: #fff;
+        margin-bottom: 27px;
+    }
     .dashboard-img{
         position: absolute;
         width: 50%;
@@ -162,11 +166,14 @@
     .mission-sub-header-block .about-us-context,.about-us-sub-header-wrap .about-us-content{
         width: 65%;
     }
-    .nodes-image-wrapper{
-        padding:170px 77px 139px;
+    .about-us-wrapper .nodes-image-wrapper{
+        padding:170px 77px 113px;
     }
     .about-us-header{
        margin-bottom: 29px;
+    }
+    .details-header-wrap{
+        margin-bottom: 120px;
     }
     .desktop-dashboard-img{
         height: calc(100% + 85px);
@@ -180,6 +187,9 @@
         line-height: 1.47;
     }
     .about-us-context{
+        margin-bottom: 83px;
+    }
+    .approach-text-wrapper .about-us-context{
         margin-bottom: 37px;
     }
     .about-us-contact-btn, .about-us-join-resolution{
