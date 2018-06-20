@@ -211,6 +211,8 @@
     margin-bottom: 100px;
 }
 .tdr-working-heading > .tdr-working-options > ul  li.active a{ 
+    color: #fff;
+    border-color: transparent;
     background-color: #3f9dfe;
 }
 .tdr-working-heading > .tdr-working-options > ul  li a{ 
@@ -229,9 +231,14 @@
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
 }
-.tdr-working-heading > .tdr-working-options > ul  li a:hover{
+.tdr-working-heading > .tdr-working-options > ul li a:hover{
+    color: #fff;
+    border-color: transparent;
     background-color: #3f9dfe;
- }
+}
+.tdr-working-heading > .tdr-working-options > ul li a:focus{
+    border-color: transparent;
+}
 .tdr-working-heading > .tdr-working-options > ul li:first-child a{
     border-radius: 3px 0 0 3px;
 } 
