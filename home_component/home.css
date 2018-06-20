@@ -69,15 +69,15 @@
     background: white;
 }
 .digital-reserve-wrapper::before {
-    top: 10%;
+    top: 156px;
     right: 0;
-    width: 55%;
-    height: 565px;
+    width: 81%;
+    height: 550px;
     content: "";
     display: block;
     position: absolute;
-    background: url('../assets/images/more-digitalr.png') no-repeat;
-    background-size: contain;
+    background: url(../assets/images/tdr-banner2.1.png) no-repeat;
+    background-size: 100% 100%;
 }
 .digital-reserve-wrapper::after {
     right: 0;
@@ -120,10 +120,38 @@
     width: 85%;
 }
 .more-digitalr-list > ul > li:not(:last-child){
-    margin-bottom: 40px;
+    margin-bottom: 43px;
 }
+/* .more-digitalr-list > ul > li:first-child > h4:after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    height: 144px;
+    width: 1095px;
+    background: url('../assets/images/tdr-banner2.1line.png') no-repeat;
+    background-size: contain;
+}
+.more-digitalr-list > ul > li:nth-child(2) > h4:after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    height: 144px;
+    width: 1095px;
+    background: url('../assets/images/tdr-banner2.3line.png') no-repeat;
+    background-size: contain;
+}
+.more-digitalr-list > ul > li:nth-child(3) > h4:after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    height: 144px;
+    width: 1095px;
+    background: url('../assets/images/tdr-banner2.2line.png') no-repeat;
+    background-size: contain;
+} */
 .more-digitalr-list > ul > li > h4{
     color: #50a6ff;
+    position: relative;
     font-size: 15px;
     line-height: 1.47;
     font-family: AvertaExtraBold;
@@ -299,13 +327,86 @@
 .tdr-working-join > a{
     margin: 0;
 }
-@media screen and (min-width: 1024px){
-    .tdr-working-list-contents .reputation-wrap,
-    .tdr-working-list-index ul > .tdr-working-list-section {
-        width: 22%;
+
+@media (max-width: 1366px) and (min-width: 1281px){
+    .digital-reserve-wrapper:before{
+        top: 190px;
+        width: 81%;
+        height: 440px;
+    }
+    .more-digitalr-list > ul > li:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 1280px) and (min-width: 1201px){
+    .digital-reserve-wrapper:before{
+        top: 190px;
+        width: 80%;
+        height: 440px;
+    }
+    .more-digitalr-list > ul > li:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 1081px){
+    .digital-reserve-wrapper:before{
+        top: 185px;
+        width: 78%;
+        height: 430px;
+    }
+    .more-digitalr-heading .more-digitalr-subheader, .whats-tdr-heading{
+        font-size: 36px;
+    }
+    .more-digitalr-list > ul > li > p{
+        font-size: 14px;
+    }
+    .more-digitalr-list > ul > li:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 1080px) and (min-width: 1025px){
+    .digital-reserve-wrapper:before{
+        top: 214px;
+        width: 76%;
+        height: 400px;
+    }
+    .more-digitalr-heading .more-digitalr-subheader, .whats-tdr-heading{
+        font-size: 33px;
+    }
+    .more-digitalr-list > ul > li > p{
+        font-size: 12px;
+    }
+    .more-digitalr-list > ul > li:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 1024px) and (min-width: 992px){
+    .digital-reserve-wrapper:before{
+        top: 190px;
+        width: 75%;
+        height: 378px;
+    }
+    .more-digitalr-list > ul > li:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    .more-digitalr-heading .more-digitalr-subheader, .whats-tdr-heading{
+        font-size: 30px;
+    }
+    .more-digitalr-heading .more-digitalr-context{
+        font-size: 13px;
+    }
+    .more-digitalr-list > ul > li > p{
+        font-size: 11px;
     }
 }
 @media screen and (max-width: 991px){
+    /* .tdr-working-list .tdr-working-list-index{
+        display: none;
+    }
+    .tdr-working-list-contents .reputation-wrap > span{
+        display: block;
+    } */
     .home-text-wrapper {
         padding: 19px 0px 7px;
     }
@@ -390,6 +491,15 @@
         border-left: 1px dashed rgba(255, 255, 255, 0.3);
         left: 0;
     }
+}
+@media screen and (min-width: 992px){
+    .tdr-working-list-contents .reputation-wrap,
+    .tdr-working-list-index ul > .tdr-working-list-section {
+        width: 22%;
+    }
+    /* .more-digitalr-list > ul > li > h4{
+
+    } */
 }
 @media (min-width: 992px) and (max-width: 1275px){
     .home-text-wrapper {
