@@ -151,3 +151,8 @@
         background-color: #0c142e;
     }
 }
+@media screen and (min-width: 1440px){
+    .switch-node-popup, .lite-full-node-block{
+        max-height: 100vh;
+    }
+}
