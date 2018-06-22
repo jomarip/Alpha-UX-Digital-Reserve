@@ -2,13 +2,13 @@ $(document).ready(function($) {
 	$(".lend-amount-value").keyup(function(){	
 		var input_raw_val = this.value;
     var input_value = input_raw_val.replace('$','');
-		$(document).on('click','.increment-icon', function(){	
+		$(document).on('click','.inc-lend-amount', function(){	
 			if(input_value >= 0){
 				var inc_value = ++input_value;	
 				$(".lend-amount-value").val('$' + inc_value);	
 			}
 		})	
-		$(document).on('click','.decrement-icon', function(){	
+		$(document).on('click','.des-lend-amount', function(){	
 			if(input_value > 0){
 				var dec_value = --input_value;	
 				$(".lend-amount-value").val('$' + dec_value);

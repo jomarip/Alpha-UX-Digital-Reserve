@@ -2,13 +2,13 @@ $(document).ready(function($) {
      $(".amount-value").keyup(function(){
         var input_raw_val = this.value;
         var input_value = input_raw_val.replace('$','');
-       $(document).on('click','.increment-icon', function(){
+       $(document).on('click','.inc-commit-value', function(){
             if(input_value >= 0){
                 var inc_value = ++input_value;
                 $(".amount-value").val('$' + inc_value);	
             }
        })
-       $(document).on('click','.decrement-icon', function(){
+       $(document).on('click','.dec-commit-value', function(){
             if(input_value > 0){
                 var dec_value = --input_value;
                 $(".amount-value").val('$'+ dec_value);
@@ -48,6 +48,23 @@ $(document).ready(function($) {
             if(input_value > 0){
                 var dec_value = --input_value;
                 $(".estimated-value").val('$'+ dec_value);
+            }
+        })
+    });
+    $(".mint-reward-field").keyup(function(){
+        var input_raw_val = this.value;
+        var input_value = input_raw_val.replace('$','');
+       $(document).on('click','.reward-inc-btn', function(){
+           if(input_value >= 0){
+            var inc_value = ++input_value;
+            $(".mint-reward-field").val('$' + inc_value);	
+           }
+            
+       })
+       $(document).on('click','.reward-dec-btn', function(){
+            if(input_value > 0){
+                var dec_value = --input_value;
+                $(".mint-reward-field").val('$'+ dec_value);
             }
         })
     });

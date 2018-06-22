@@ -161,10 +161,10 @@
     .lend-denarii-form{	
         width: 900px;	
     }	
-    .commit-amount-block .form-value.field-focus ~  .increment-icon{	
+    .expected-interest-rate .form-value.field-focus ~  .increment-icon{	
         left: 35%;	
     }	
-    .commit-amount-block .form-value.field-focus ~  .decrement-icon{	
+    .expected-interest-rate .form-value.field-focus ~  .decrement-icon{	
         right: 35%;	
     }	
     .denarii-submit-btn-wrap{	

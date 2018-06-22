@@ -155,6 +155,12 @@
     .borrow-denarii-modal-innerlay form  .form-group input{
         font-size: 34px;
     }
+    .borrow-amount-block .form-value.field-focus ~ .increment-icon{
+        left: 35%;
+    }
+    .borrow-amount-block .form-value.field-focus ~ .decrement-icon{
+        right: 35%;
+    }
 }
 @media screen and (max-width: 992px){
     .field-block {
