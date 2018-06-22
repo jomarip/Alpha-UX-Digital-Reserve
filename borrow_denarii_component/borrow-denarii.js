@@ -35,7 +35,7 @@ $(document).ready(function() {
     $(".repayment-value").keyup(function(){
         var input_month_val = this.value;
         var input_duration_value = input_month_val.replace('Month','');
-        $(document).on('click','.increment-icon', function(){
+        $(document).on('click','.inc-repayment-value', function(){
             if(input_duration_value < 12 ){
                 var inc_value = ++input_duration_value;
                 $(".repayment-value").val(inc_value + 'Month');	
@@ -44,7 +44,7 @@ $(document).ready(function() {
 
             }
         })
-        $(document).on('click','.decrement-icon', function(){
+        $(document).on('click','.des-repayment-value', function(){
             if(input_duration_value > 1){
                 var inc_value = --input_duration_value;
                 $(".repayment-value").val(inc_value + 'Month');	    
