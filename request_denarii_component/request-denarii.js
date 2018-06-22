@@ -2,13 +2,17 @@ $(document).ready(function($) {
     $(".request-denarii-value").keyup(function(){
         var input_raw_val = this.value;
         var input_value = input_raw_val.replace('$','');
-      $(document).on('click','.increment-icon', function(){
+      $(document).on('click','.inc-request-amt-value', function(){
+        if(input_value >= 0){
           var inc_value = ++input_value;
           $(".request-denarii-value").val('$'  + inc_value);
+        }
       })
-      $(document).on('click','.decrement-icon', function(){
+      $(document).on('click','.des-request-amt-value', function(){
+        if(input_value > 0){
           var dec_value = --input_value;
           $(".request-denarii-value").val('$' + dec_value);
+        }
       })
     });
    

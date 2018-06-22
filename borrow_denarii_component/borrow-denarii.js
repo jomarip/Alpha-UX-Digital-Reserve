@@ -2,13 +2,13 @@ $(document).ready(function() {
     $(".interest-value").keyup(function(){
         var input_raw_val = this.value;
         var input_value = input_raw_val.replace('%','');
-    $(document).on('click','.increment-icon', function(){
+    $(document).on('click','.inc-interest-value', function(){
         if(input_value >= 0){
         var inc_value = ++input_value;
         $(".interest-value").val(inc_value + '%') ;
         }
     })
-    $(document).on('click','.decrement-icon', function(){
+    $(document).on('click','.des-interest-value', function(){
         if(input_value > 0){
             var dec_value = --input_value;
             $(".interest-value").val(dec_value + '%');
@@ -54,7 +54,7 @@ $(document).ready(function() {
     $(".form-values-container input").focus(function(){
         $(this).addClass("field-focus");
         if($(this).hasClass('lend-amount-value') || $(this).hasClass('send-denarii-amount') || $(this).hasClass('request-denarii-value') || $(this).hasClass('mint-denarii-amount') || 
-        $(this).hasClass('estimated-value')){
+        $(this).hasClass('estimated-value') || $(this).hasClass('mint-reward-field')){
             if($(this).val().includes('$')){
 
             }

@@ -170,12 +170,12 @@
     .request-denarii-form{
        width: 900px;
     }
-    .commit-amount-block .form-value.field-focus ~  .increment-icon{
+    /* .commit-amount-block .form-value.field-focus ~  .increment-icon, .estimated-block .form-value.field-focus ~ .increment-icon{
         left: 35%;
     }
-    .commit-amount-block .form-value.field-focus ~  .decrement-icon{
+    .commit-amount-block .form-value.field-focus ~  .decrement-icon, .estimated-block .form-value.field-focus ~ .decrement-icon{
         right: 35%;
-    }
+    } */
     .denarii-submit-btn-wrap{
         margin-top: 43px;
     }
