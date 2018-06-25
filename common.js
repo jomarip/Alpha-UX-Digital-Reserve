@@ -45,22 +45,7 @@ $(document).ready(function() {
         }
         else if(attt_value == "ContactUs"){
             $('body').addClass('overflow-hidden-menu');
-            $(document).on('click', '.contact-popup-close', function(){
-                $('.nav-item').each(function(){
-                    if($(this).find('a').attr('data-attr')=="Home"){
-                        $('#home-container').show();
-                        $('#about-us-conatiner').hide();
-                        $('#faq-container').hide(); 
-                        if($('body').hasClass('modal-open')){
-                            $('body').addClass('overflow-hidden-menu');
-                        }
-                        else{
-                            $('body').removeClass('overflow-hidden-menu');
-                        }
-                    }
-                })
-            })
-           
+            
         }
         else if(attt_value == "Home"){
             $('#home-container').show();
@@ -71,5 +56,15 @@ $(document).ready(function() {
             $('#home-container').show();
         }
     })
-
+    $(document).on('click', '.contact-popup-close', function(){
+        $('#home-container').show();
+        $('#about-us-conatiner').hide();
+        $('#faq-container').hide(); 
+        if($('body').hasClass('modal-open')){
+            $('body').addClass('overflow-hidden-menu');
+        }
+        else{
+            $('body').removeClass('overflow-hidden-menu');
+        }
+    })
 });
