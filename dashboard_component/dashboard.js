@@ -149,8 +149,6 @@ $(document).ready(function() {
         }
     });
 });
-    
-       
         $(document).on('click', '#user-profile-pic', function(e){
             e.stopPropagation();
             $('.profile-dropdown-wrapper').toggle(250)

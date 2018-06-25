@@ -132,6 +132,7 @@ div#main-container{
     #learn-page div.detail_component{
         height: 360px;
     }
+    
 }
 @media screen and (min-width: 1200px){
     .dashboard-main-container{
@@ -166,4 +167,13 @@ body.modal-open {
         left: 50%;
         transform: translate(-50%, 0);
     }
+}
+@media screen and (min-width: 1024px){
+    .request-date-value div#ui-datepicker-div{
+        left: 350px!important;
+    }
+    /* .due-date-field div#ui-datepicker-div{
+        right: 350px!important;
+        left: auto!important;
+    } */
 }

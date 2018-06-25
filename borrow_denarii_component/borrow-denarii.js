@@ -63,6 +63,14 @@ $(document).ready(function() {
                 
             }
         }
+        else if($(this).hasClass('request-date-value') || $(this).hasClass('due-date-field')){
+            $(this).each(function() {
+                console.log('date picker');
+                $(this).datepicker();
+                // $(this).addClass('date-picker-block');
+            });
+        }
+
         else if($(this).hasClass('duration-value') || $(this).hasClass('lock-period-value')){
             if($(this).val().includes('Month')){
             }
