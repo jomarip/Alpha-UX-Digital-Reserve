@@ -65,9 +65,7 @@ $(document).ready(function() {
         }
         else if($(this).hasClass('request-date-value') || $(this).hasClass('due-date-field')){
             $(this).each(function() {
-                console.log('date picker');
                 $(this).datepicker();
-                // $(this).addClass('date-picker-block');
             });
         }
 
@@ -124,9 +122,7 @@ $(document).ready(function() {
     $(".borrow-denarii-container input").focus(function(){
         $(this).addClass("field-focus");
         if($(this).hasClass('interest-value')){
-            if($(this).val().includes('%')){
-                //
-                
+            if($(this).val().includes('%')){                
             }
             else{
                 $(this).val('%');

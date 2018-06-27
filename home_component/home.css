@@ -7,7 +7,6 @@
 .home-subheader > span{
     z-index: 0;    
     position: relative;
-    background-color: #409dfe;
 } 
 .home-context{
     color: #ffffff;
@@ -122,33 +121,6 @@
 .more-digitalr-list > ul > li:not(:last-child){
     margin-bottom: 43px;
 }
-/* .more-digitalr-list > ul > li:first-child > h4:after{
-    content: "";
-    position: absolute;
-    top: 10px;
-    height: 144px;
-    width: 1095px;
-    background: url('../assets/images/tdr-banner2.1line.png') no-repeat;
-    background-size: contain;
-}
-.more-digitalr-list > ul > li:nth-child(2) > h4:after{
-    content: "";
-    position: absolute;
-    top: 10px;
-    height: 144px;
-    width: 1095px;
-    background: url('../assets/images/tdr-banner2.3line.png') no-repeat;
-    background-size: contain;
-}
-.more-digitalr-list > ul > li:nth-child(3) > h4:after{
-    content: "";
-    position: absolute;
-    top: 10px;
-    height: 144px;
-    width: 1095px;
-    background: url('../assets/images/tdr-banner2.2line.png') no-repeat;
-    background-size: contain;
-} */
 .more-digitalr-list > ul > li > h4{
     color: #50a6ff;
     position: relative;
@@ -401,12 +373,6 @@
     }
 }
 @media screen and (max-width: 991px){
-    /* .tdr-working-list .tdr-working-list-index{
-        display: none;
-    }
-    .tdr-working-list-contents .reputation-wrap > span{
-        display: block;
-    } */
     .home-text-wrapper {
         padding: 19px 0px 7px;
     }
@@ -497,9 +463,6 @@
     .tdr-working-list-index ul > .tdr-working-list-section {
         width: 22%;
     }
-    /* .more-digitalr-list > ul > li > h4{
-
-    } */
 }
 @media (min-width: 992px) and (max-width: 1275px){
     .home-text-wrapper {
