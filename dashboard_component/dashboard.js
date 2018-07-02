@@ -17,7 +17,6 @@ $(document).ready(function() {
     $('#switch-node-progress-container').load('../switch_lite_node_progress_component/switch-lite-node-progress.html')
     $('#switch-node-popup-container').load('../switch_node_popup_component/switch-node-popup.html');
     $('#lite-full-node-popup-container').load('../lite_full_switch_node_popup_component/lite-full-switch-node-popup.html');
-     
     $(document).on('click', '.signed-toggle-icon', function(){
         $('.signed-header-wrapper').toggleClass('show-signed-menu');
         if($('.signed-header-wrapper').hasClass('show-signed-menu')){
@@ -50,7 +49,7 @@ $(document).ready(function() {
             $('#dashboard_recent_transactions_component').load('dashboard_recent_transactions_component/dashboard-recent-transactions.html');
             $('#dashboard_minting_component').load('dashboard_minting_component/dashboard-minting.html');
             $('#dashboard_overview_component').load('dashboard_overview_component/dashboard-overview.html');
-            
+            onPageLoad();
         }  
         else if( attr_value == "Wallet"){
             $('#dashboard-page,#learn-page').removeClass('active');
@@ -162,13 +161,14 @@ $(document).ready(function() {
                 $(".profile-dropdown-wrapper").hide(250);
             } 
         });
+        
         onPageLoad();
 });
 
 function onPageLoad() {
 
   setTimeout(function(){
-    
+    $('#dashboard_overview_component').find('.dashboard-component-main-wrapper').outerHeight($('#dashboard_detail_component').outerHeight());
     var your_overview_options = new CanvasJS.Chart("your-overview-chart-container", {
         animationEnabled: true,  
         title:{
@@ -322,7 +322,7 @@ function onPageLoad() {
           semiBar.animate(0.75, {
             duration: 2000
           });
-    }, 2000)    
+    }, 1000)    
 
 }
 
