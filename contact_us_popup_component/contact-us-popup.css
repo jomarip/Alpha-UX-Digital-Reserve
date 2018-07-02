@@ -20,6 +20,9 @@
     border: none;
     background-color: transparent;
 }
+button.contact-popup-close img {
+    width: 14px;
+}
 .contact-us-logo{
     width: 218px;
     height: auto;

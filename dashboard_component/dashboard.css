@@ -74,6 +74,11 @@ div#main-container{
     div#dashboard_recent_transactions_component,div#dashboard_minting_component {
         flex: 1;
     }
+    div#dashboard_recent_transactions_component .dashboard-component-main-wrapper{
+      max-height: 360px;
+      overflow: auto;
+      overflow-x: hidden;
+    }
     div#main-container{
         position: relative;
     }
@@ -98,6 +103,11 @@ div#main-container{
     }
     #wallet_all_transactions_component{
         height: 100%;
+    }
+    #wallet_all_transactions_component .dashboard-component-main-wrapper{
+        max-height: 703px;
+        overflow: auto;
+        overflow-x: hidden;
     }
     .dashboard-main-container.active{
         display:flex!important;
