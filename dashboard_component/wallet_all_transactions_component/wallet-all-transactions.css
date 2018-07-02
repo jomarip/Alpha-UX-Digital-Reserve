@@ -9,6 +9,7 @@
     border: none;
     background: transparent;
     text-transform: capitalize;
+    float: right;
 }
 span.dashboard-recent-transaction-value {
     font-size: 18px;
