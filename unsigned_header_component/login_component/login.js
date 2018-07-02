@@ -62,5 +62,6 @@ $(document).ready(function($) {
     $("#loginSubmit").change(function(){
         $('#loginSection').removeClass('login-open');
         $('#enter-passkey-modal').modal('show'); 
+        $('body').removeClass('overflow-hidden');
     });
 }); 
