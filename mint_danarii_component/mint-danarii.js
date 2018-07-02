@@ -37,6 +37,31 @@ $(document).ready(function($) {
     $(".estimated-value").keyup(function(){
         var input_raw_val = this.value;
         var input_value = input_raw_val.replace('$','');
+        if(input_value == ''){
+            if($(this).hasClass('error-msg-active')){
+                $(this).removeClass('error-msg-active');
+                $('.suceess-msg').hide();
+                $('.error-msg').hide();
+            }
+        } 
+        else if(input_value  == 150){
+            $(this).addClass('sucess-active')
+            $('.suceess-msg').show();
+            $('.error-msg').hide();
+            if($(this).hasClass('error-msg-active')){
+                $(this).removeClass('error-msg-active');
+            }
+        }
+    
+        else{
+            $('.error-msg').show();
+            $('.suceess-msg').hide();
+            $(this).addClass('error-msg-active')
+            if($(this).hasClass('sucess-active')){
+                $(this).removeClass('sucess-active');
+
+            }
+        }
        $(document).on('click','.inc-estimate-value', function(){
            if(input_value >= 0){
             var inc_value = ++input_value;
@@ -67,5 +92,58 @@ $(document).ready(function($) {
                 $(".mint-reward-field").val('$'+ dec_value);
             }
         })
+    });
+   
+
+
+    $(".mint-denarii-form input").focus(function(){
+        $(this).addClass("field-focus");
+      
+        if($(this).hasClass('amount-value') || $(this).hasClass('estimated-value') ||  $(this).hasClass('mint-reward-field')){
+            if($(this).val().includes('$')){
+
+            }
+            else{
+                $(this).val('$');
+                
+            }
+            
+        }
+        else if($(this).hasClass('duration-value') || $(this).hasClass('lock-period-value')){
+            if($(this).val().includes('Month')){
+            }
+            else{
+                $(this).val('Month');
+            }
+        }
+    }).blur(function(){
+        $(this).removeClass("field-focus");
+        $(this).next('.val-button').removeClass('update-value');
+        tmpval = $(this).val();
+        if(tmpval == '') {
+        if( $(this).hasClass('field-focus')){
+            $(this).removeClass('field-focus');
+            if($(this).hasClass('error-msg-active')){
+                $(this).removeClass('error-msg-active');
+            }
+        }
+        }
+        else if(tmpval == '$'){
+            if( $(this).hasClass('field-focus')){
+                $(this).removeClass('field-focus');
+               
+            }
+            $(this).val('');
+        }
+        else if(tmpval == 'Month'){
+            if( $(this).hasClass('field-focus')){
+                $(this).removeClass('field-focus');
+               
+            }
+            $(this).val('');
+        }
+        else {
+            $(this).addClass('field-focus');
+        }
     });
 });

@@ -90,9 +90,33 @@
 .mint-denarii-modal-innerlay form .form-group .form-value.field-focus {
     border-bottom: 2px solid #3f9dfe;
 }
+.mint-denarii-modal-innerlay form .form-group .form-value.sucess-active.field-focus{
+   border-bottom: solid 2px #72b033;
+}
+.mint-denarii-modal-innerlay form .form-group .form-value.error-msg-active.field-focus{
+    border-bottom: solid 2px #d44556;
+ }
+.form-group.mint-denarii-field-block.estimated-fee-block{
+    margin-bottom: 6px; 
+}
 .mint-denarii-modal-innerlay form .form-group .form-value.field-focus + label{
     top: -15px;
     font-size: 10px;
+}
+.suceess-msg, .error-msg{
+    display: none;
+    font-family: AvertaBold;
+    font-size: 10px;
+    line-height: 1.8;
+    text-align: center;
+    color: #72b033;
+    width: 100%;
+}
+.error-msg{
+    color: #d44556;
+}
+.suceess-msg.sucess-active, .error-msg.error-msg-active{
+    display: block;
 }
 .mint-denarii-modal-innerlay form  .form-group input{
     font-size: 22px;
