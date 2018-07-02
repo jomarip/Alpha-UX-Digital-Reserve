@@ -20,6 +20,13 @@
     border: none;
     background-color: transparent;
 }
+.contact-us-popup-wrapper .contact-popup-close{
+    width: 14px;
+    height: 14px;
+}
+.contact-us-popup-wrapper .contact-popup-close .popup-close{
+    width: 100%;
+}
 .contact-us-logo{
     width: 218px;
     height: auto;
