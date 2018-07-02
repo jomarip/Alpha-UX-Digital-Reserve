@@ -131,7 +131,7 @@
 }
 @media screen and (min-width: 1024px){
     .borrow-denarii-modal-overlay{
-        opacity: 0.9;
+        opacity: 1;
     }
     .borrow-denarii-modal-innerlay{
         padding: 50px 77px 120px;

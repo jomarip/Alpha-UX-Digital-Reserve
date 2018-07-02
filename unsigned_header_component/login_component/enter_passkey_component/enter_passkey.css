@@ -131,7 +131,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 @media screen and (min-width: 1024px){
     .contact-us-popup-overlay{
-        opacity: 0.9;
+        opacity: 1;
     }
     .contact-us-popop-innerlay{
         padding: 51px 79px 108px;

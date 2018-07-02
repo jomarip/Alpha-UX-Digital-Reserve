@@ -140,7 +140,7 @@
     }	
     @media screen and (min-width: 1024px){	
     .lend-denarii-modal-overlay{	
-        opacity: 0.9;	
+        opacity: 1;	
     }	
     .lend-denarii-modal-innerlay{	
         padding: 50px 77px 98px;	
