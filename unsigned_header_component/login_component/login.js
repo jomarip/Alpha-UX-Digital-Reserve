@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    $('#enter-passkey-modal').load('unsigned_header_component/login_component/enter_passkey_component/enter_passkey.html');
 
     //Sign-in page functionality
     $('#dark-close-icon, .backdrop').on('click', () =>{
@@ -57,5 +58,10 @@ $(document).ready(function($) {
         }else {
             $(this).addClass('field-focus');
         }
+    });
+
+    
+    $("#loginSubmit").change(function(){
+        $('#enter-passkey-modal').modal('show'); 
     });
 }); 

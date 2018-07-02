@@ -1,11 +1,6 @@
 div#learn-page.dashboard-main-container.active {
     display: flex!important;
 }
-.dashboard-component-main-wrapper.learn-component-main-wrapper{
-    max-height: 438px;
-    overflow: auto;
-    overflow-x: hidden;
-}
 ul.learn-item-list-wrapper {
     padding: 11px 25px 0 20px;
 }
@@ -33,12 +28,6 @@ p.learn-list-description,h4.learn-item-heading{
 }
 @media screen and (min-width: 992px){
     .dashboard-component-main-wrapper.learn-component-main-wrapper{
-        max-height: 100%;
         margin: 0 5px 0 0;
-    }
-}
-@media screen and (min-width: 992px) and (min-height: 769px){
-    .dashboard-component-main-wrapper.learn-component-main-wrapper{
-        max-height: 730px;
     }
 }

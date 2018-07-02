@@ -50,13 +50,7 @@
 }
 @media screen and (min-width: 992px){
     div.detail_component{
-        height: calc(50% - 10px);
         margin-bottom: 10px;
-    }
-    div.detail_component .dashboard-component-main-wrapper{
-        max-height: 100%;
-        overflow: auto;
-        overflow-x: hidden;
     }
     .dashboard-details-info-wrap{
         flex: 1;
@@ -65,14 +59,5 @@
 @media screen and (min-width: 992px) and (max-width: 1200px){
     .dashboard-details-info-item .dashboard-details-info-value{
         font-size: 20px;
-    }
-}
-@media screen and (min-width: 1024px) and (min-height: 769px){
-    div.detail_component{
-        height: 360px;
-    }
-    div.detail_component .dashboard-component-main-wrapper{
-        max-height: 360px;
-        height: 100%;
     }
 }

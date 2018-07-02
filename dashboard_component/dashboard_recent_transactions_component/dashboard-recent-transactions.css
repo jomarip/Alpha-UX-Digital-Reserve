@@ -1,8 +1,4 @@
-.dashboard-component-main-wrapper.dashboard-recet-transactions-main-wrapper{
-    max-height: 360px;
-    overflow: hidden;
-    overflow-y: auto; 
-}
+
 .dashboard-recet-transactions-main-wrapper .dashboard-detail-heading{
     padding: 0 20px 28px;
 }
@@ -40,15 +36,4 @@ span.dashboard-recent-transaction-list-status {
     padding: 5px 0;
     width: 75px;
     text-align: center;
-}
-@media screen and (min-width: 992px){
-    .dashboard-component-main-wrapper.dashboard-recet-transactions-main-wrapper{
-        max-height: 100%;
-    }
-}
-@media screen and (min-width: 1024px) and (min-height: 769px){
-    .dashboard-component-main-wrapper.dashboard-recet-transactions-main-wrapper{
-        max-height: 360px;
-        height: 360px;
-    }
 }
