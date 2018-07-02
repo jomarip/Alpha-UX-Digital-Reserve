@@ -155,10 +155,10 @@
     .borrow-denarii-modal-innerlay form  .form-group input{
         font-size: 34px;
     }
-    .borrow-amount-block .form-value.field-focus ~ .increment-icon{
+    .borrow-amount-block .form-value.field-focus ~ .increment-icon, .repay-amount-block .form-value.field-focus ~ .inc-repayment-amount-value{
         left: 35%;
     }
-    .borrow-amount-block .form-value.field-focus ~ .decrement-icon{
+    .borrow-amount-block .form-value.field-focus ~ .decrement-icon, .repay-amount-block .form-value.field-focus ~ .des-repayment-amount-value {
         right: 35%;
     }
 }

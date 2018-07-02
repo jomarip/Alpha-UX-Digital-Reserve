@@ -16,6 +16,23 @@ $(document).ready(function() {
         })
     });
 
+    $(".repay-amount").keyup(function(){
+        var input_raw_val = this.value;
+        var input_value = input_raw_val.replace('$','');
+    $(document).on('click','.inc-repayment-amount-value', function(){
+        if(input_value >= 0){
+        var inc_value = ++input_value;
+        $(".repay-amount").val(inc_value + '$') ;
+        }
+    })
+    $(document).on('click','.des-repayment-amount-value', function(){
+        if(input_value > 0){
+            var dec_value = --input_value;
+            $(".repay-amount").val(dec_value + '$');
+            }
+        })
+    });
+
     $('.borrow-amount-value').keyup(function(){
         var input_amt_val = this.value;
         var input_value = input_amt_val.replace('$','');
@@ -51,10 +68,85 @@ $(document).ready(function() {
             }
         })
     });
+    $(".borrow-denarii-container input").focus(function(){
+        $(this).addClass("field-focus");
+        if($(this).hasClass('interest-value')){
+            if($(this).val().includes('%')){
+                //
+                
+            }
+            else{
+                $(this).val('%');
+            }
+        }
+        else if($(this).hasClass('borrow-amount-value')|| $(this).hasClass('repay-amount')){
+            if($(this).val().includes('$')){
+
+            }
+            else{
+                $(this).val('$');
+            
+            }
+        }
+        else if($(this).hasClass('repayment-value')){
+            if($(this).val().includes('Month')){
+
+            }
+            else{
+                $(this).val('Month');
+            
+            }
+        }
+        }).blur(function(){
+        $(this).removeClass("field-focus");
+        $(this).next('.val-button').removeClass('update-value');
+        tmpval = $(this).val();
+        if(tmpval == '') {
+        if( $(this).hasClass('field-focus')){
+            $(this).removeClass('field-focus');
+        }
+        }
+        else if(tmpval == '%'){
+            if( $(this).hasClass('field-focus')){
+                $(this).removeClass('field-focus');
+               
+            }
+            $(this).val('');
+        }
+        else if(tmpval == '$'){
+            if( $(this).hasClass('field-focus')){
+                $(this).removeClass('field-focus');
+               
+            }
+            $(this).val('');
+        }
+        else if(tmpval == 'Month'){
+            if( $(this).hasClass('field-focus')){
+                $(this).removeClass('field-focus');
+               
+            }
+            $(this).val('');
+        }
+        else {
+            $(this).addClass('field-focus');
+        }
+    });
+
+
+
     $(".form-values-container input").focus(function(){
         $(this).addClass("field-focus");
-        if($(this).hasClass('lend-amount-value') || $(this).hasClass('send-denarii-amount') || $(this).hasClass('request-denarii-value') || $(this).hasClass('mint-denarii-amount') || 
-        $(this).hasClass('estimated-value') || $(this).hasClass('mint-reward-field')){
+        if($(this).hasClass('estimated-value') ){
+
+            if($(this).val().includes('$')){
+
+            }
+            else{
+                $(this).val('$');
+                
+            }
+        }
+        if($(this).hasClass('lend-amount-value') || $(this).hasClass('send-denarii-amount') || $(this).hasClass('request-denarii-value') || $(this).hasClass('mint-denarii-amount')){
             if($(this).val().includes('$')){
 
             }
@@ -110,70 +202,6 @@ $(document).ready(function() {
             $(this).val('');
         }
         else if(tmpval == '%'){
-            if( $(this).hasClass('field-focus')){
-                $(this).removeClass('field-focus');
-               
-            }
-            $(this).val('');
-        }
-        else {
-            $(this).addClass('field-focus');
-        }
-    }); 
-
-    $(".borrow-denarii-container input").focus(function(){
-        $(this).addClass("field-focus");
-        if($(this).hasClass('interest-value')){
-            if($(this).val().includes('%')){
-                //
-                
-            }
-            else{
-                $(this).val('%');
-            }
-        }
-        else if($(this).hasClass('borrow-amount-value')){
-            if($(this).val().includes('$')){
-
-            }
-            else{
-                $(this).val('$');
-            
-            }
-        }
-        else if($(this).hasClass('repayment-value')){
-            if($(this).val().includes('Month')){
-
-            }
-            else{
-                $(this).val('Month');
-            
-            }
-        }
-        }).blur(function(){
-        $(this).removeClass("field-focus");
-        $(this).next('.val-button').removeClass('update-value');
-        tmpval = $(this).val();
-        if(tmpval == '') {
-        if( $(this).hasClass('field-focus')){
-            $(this).removeClass('field-focus');
-        }
-        }
-        else if(tmpval == '%'){
-            if( $(this).hasClass('field-focus')){
-                $(this).removeClass('field-focus');
-               
-            }
-            $(this).val('');
-        }
-        else if(tmpval == '$'){
-            if( $(this).hasClass('field-focus')){
-                $(this).removeClass('field-focus');
-               
-            }
-            $(this).val('');
-        }
-        else if(tmpval == 'Month'){
             if( $(this).hasClass('field-focus')){
                 $(this).removeClass('field-focus');
                
