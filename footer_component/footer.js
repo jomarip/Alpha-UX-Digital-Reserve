@@ -1,10 +1,8 @@
 $(document).ready(function() {
     $('#loginSection').load('../footer_component/unsigned_header_component/login_component/login.html');
     $('#shareDetailsSection').load('../footer_component/unsigned_header_component/share_details_component/share-details.html')
-    console.log('login-page')
     //Join Sidebar
     $('.open-revolution-link').on('click', () => {
-        console.log('resolution-page');
         if($('body').hasClass('overflow-hidden')){
         }else{
             setTimeout(function() {
@@ -15,7 +13,6 @@ $(document).ready(function() {
     });
     //Login Sidebar
     $('.open-login-link').on('click', () => {
-        console.log('login-page');
         if($('body').hasClass('overflow-hidden')){
         }else{
             setTimeout(function() {

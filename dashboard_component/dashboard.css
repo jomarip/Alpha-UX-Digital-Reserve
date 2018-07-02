@@ -172,8 +172,13 @@ body.modal-open {
     .request-date-value div#ui-datepicker-div{
         left: 350px!important;
     }
-    /* .due-date-field div#ui-datepicker-div{
-        right: 350px!important;
-        left: auto!important;
-    } */
+}
+@media screen and (max-width: 991px){
+    #dashboard-page div#dashboard-right-container{
+        display: table;
+        width: 100%;
+    }
+    div#dashboard_all_denarii_component{
+        display: table-header-group;
+    }
 }

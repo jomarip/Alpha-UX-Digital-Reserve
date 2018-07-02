@@ -83,6 +83,12 @@ $(document).ready(function() {
             if($(this).val().includes('$')){
 
             }
+        else if($(this).hasClass('request-date-value') || $(this).hasClass('due-date-field')){
+            $(this).each(function() {
+                $(this).datepicker();
+            });
+        }
+
             else{
                 $(this).val('$');
             
@@ -94,7 +100,6 @@ $(document).ready(function() {
             }
             else{
                 $(this).val('Month');
-            
             }
         }
         }).blur(function(){
@@ -136,16 +141,6 @@ $(document).ready(function() {
 
     $(".form-values-container input").focus(function(){
         $(this).addClass("field-focus");
-        if($(this).hasClass('estimated-value') ){
-
-            if($(this).val().includes('$')){
-
-            }
-            else{
-                $(this).val('$');
-                
-            }
-        }
         if($(this).hasClass('lend-amount-value') || $(this).hasClass('send-denarii-amount') || $(this).hasClass('request-denarii-value') || $(this).hasClass('mint-denarii-amount')){
             if($(this).val().includes('$')){
 

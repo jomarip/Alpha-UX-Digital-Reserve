@@ -14,7 +14,10 @@ $(document).ready(function() {
     $('#dashboard_overview_component').load('dashboard_overview_component/dashboard-overview.html');
     $('#dashboard-left-container').show();
     $('#share-details-wrap').load('../unsigned_header_component/share_details_component/share-details.html')
-    
+    $('#switch-node-progress-container').load('../switch_lite_node_progress_component/switch-lite-node-progress.html')
+    $('#switch-node-popup-container').load('../switch_node_popup_component/switch-node-popup.html');
+    $('#lite-full-node-popup-container').load('../lite_full_switch_node_popup_component/lite-full-switch-node-popup.html');
+     
     $(document).on('click', '.signed-toggle-icon', function(){
         $('.signed-header-wrapper').toggleClass('show-signed-menu');
         if($('.signed-header-wrapper').hasClass('show-signed-menu')){
@@ -290,13 +293,6 @@ function onPageLoad() {
         });
         
         network_overview_options.render();
-
-
-
-
-
-
-        //// testing
 
         var semiBar = new ProgressBar.SemiCircle("#minting-progress-container", {
             strokeWidth: 7,
