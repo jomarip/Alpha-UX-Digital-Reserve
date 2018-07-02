@@ -164,7 +164,7 @@
 }
 @media screen and (min-width: 1024px){
     .mint-denarii-modal-overlay{
-        opacity: 0.9;
+        opacity: 1;
     }
     .mint-denarii-modal-innerlay{
         padding: 50px 77px 98px;

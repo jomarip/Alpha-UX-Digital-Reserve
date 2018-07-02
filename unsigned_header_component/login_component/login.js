@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    $('#enter-passkey-modal').load('unsigned_header_component/login_component/enter_passkey_component/enter_passkey.html');
 
     //Sign-in page functionality
     $('#dark-close-icon, .backdrop').on('click', () =>{
@@ -60,8 +59,9 @@ $(document).ready(function($) {
         }
     });
 
-    
     $("#loginSubmit").change(function(){
+        $('#loginSection').removeClass('login-open');
         $('#enter-passkey-modal').modal('show'); 
+        $('body').removeClass('overflow-hidden');
     });
 }); 

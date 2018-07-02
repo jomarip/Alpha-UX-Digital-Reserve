@@ -6,7 +6,8 @@ $(document).ready(function() {
     $('#about-us-conatiner').load('about_us_component/about-us.html');
     $('#faq-container').load('faq_component/faq.html');
     $('#keystore-file-container').load('keystore_file_modal_component/keystore-file.html')
-    
+    $('#enter-passkey-modal').load('unsigned_header_component/login_component/enter_passkey_component/enter_passkey.html');
+
     $(document).on('click', '.toggle-icon', function(){
         $('.header-wrapper').toggleClass('show-menu');
         setTimeout(function() {
@@ -64,4 +65,6 @@ $(document).ready(function() {
             $('body').removeClass('overflow-hidden-menu');
         }
     })
+       
+    
 });

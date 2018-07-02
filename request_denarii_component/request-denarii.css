@@ -149,7 +149,7 @@
 
 @media screen and (min-width: 1024px){
     .request-denarii-modal-overlay{
-        opacity: 0.9;
+        opacity: 1;
     }
     .request-denarii-modal-innerlay{
         padding: 50px 77px 98px;

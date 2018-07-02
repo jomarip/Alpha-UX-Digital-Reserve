@@ -29,5 +29,8 @@ p.learn-list-description,h4.learn-item-heading{
 @media screen and (min-width: 992px){
     .dashboard-component-main-wrapper.learn-component-main-wrapper{
         margin: 0 5px 0 0;
+        max-height: 680px;
+        overflow: auto;
+        overflow-x: hidden;
     }
 }
